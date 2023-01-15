@@ -1,2 +1,2 @@
-# 0-1-learning-guide
-从0到1学习指南系列
+# 0-1 dev guide
+从0到1开发指南系列
