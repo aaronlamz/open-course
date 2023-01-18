@@ -5,4 +5,4 @@
 ## 目录
 
 * [Node.js 学习指南](https://aaronlamz.github.io/node-learning-ebook)
-* [LeetcodeJS 算法学习](https://aaronlamz.github.io/leetcode-js)
+* [ Leetcode 题解（JavaScript实现）](https://aaronlamz.github.io/leetcode-js)
