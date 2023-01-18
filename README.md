@@ -4,4 +4,5 @@
 
 ## 目录
 
-* [Node.js 学习指南](https://github.com/aaronlamz/node-learning-ebook)
+* [Node.js 学习指南](https://aaronlamz.github.io/node-learning-ebook)
+* [LeetcodeJS 算法学习](https://aaronlamz.github.io/leetcode-js)
