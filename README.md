@@ -2,4 +2,4 @@
 
 ## 目录
 
-* [Node.js 学习指南](https://aaronlamz.github.io/node-learning-ebook)
+* [《Node.js 学习指南》](https://aaronlamz.github.io/node-learning-ebook)
