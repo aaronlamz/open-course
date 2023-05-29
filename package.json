@@ -1,7 +1,7 @@
 {
   "name": "open-ebook",
   "version": "1.0.0",
-  "description": "Open-source learing ebooks",
+  "description": "Open-source learning ebooks",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
