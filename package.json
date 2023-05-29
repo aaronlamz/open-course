@@ -1,0 +1,27 @@
+{
+  "name": "open-ebook",
+  "version": "1.0.0",
+  "description": "Open-source learing ebooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronlamz/open-ebook.git"
+  },
+  "keywords": [
+    "ebook"
+  ],
+  "author": "Aarongo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronlamz/open-ebook/issues"
+  },
+  "homepage": "https://github.com/aaronlamz/open-ebook#readme",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
