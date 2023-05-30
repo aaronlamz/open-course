@@ -4,7 +4,7 @@
   "description": "Open-source learning ebook",
   "main": "index.js",
   "scripts": {
-    "dev:nodejs":"pnpm packages/nodejs docs:dev",
+    "dev:nodejs":"pnpm --dir packages/nodejs docs:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
