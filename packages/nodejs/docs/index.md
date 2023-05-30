@@ -4,8 +4,11 @@ layout: home
 
 hero:
   name: "Node.js 学习指南"
-  text: "Node.js 学习指南"
-  tagline: My great project tagline
+  text: "构建 Node.js 知识体系"
+  tagline: "从零开始学习 Node.js"
+  image:
+    src: /hero.png
+    alt: Hero image
   actions:
     - theme: brand
       text: Markdown Examples
