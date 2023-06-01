@@ -16,7 +16,17 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8.6.0
+      - name: Setup SSH Keys and known_hosts
+        env:
+            SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+            mkdir -p ~/.ssh
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+            ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
       - name: Run deploy.sh script
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           sh deploy.sh
 
