@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: pnpm/action-setup@v2
       with:
-        node-version: 16.x
+        version: 16.x
     - run: sh ./scripts/deploy.sh
