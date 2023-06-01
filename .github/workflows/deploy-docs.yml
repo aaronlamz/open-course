@@ -17,5 +17,7 @@ jobs:
       with:
         version: 8.6.0
     - run:
-        ls -la
-        sh /scripts/deploy.sh
+        name: Install dependencies
+        working-directory: ./scripts
+        command: |
+          sh ./scripts/deploy.sh
