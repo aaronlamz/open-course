@@ -16,7 +16,9 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8.6.0
-      - run: 
+      - run: |
+          ls -la
+          pwd
           sh deploy.sh
 
 
