@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 node -v
 pnpm -v
 echo pnpm install
