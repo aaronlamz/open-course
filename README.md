@@ -4,7 +4,7 @@
 
 [![deploy-docs](https://github.com/aaronlamz/open-ebook/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-ebook/actions/workflows/deploy-docs.yml)
 
-## 状态
+## 目录
 <!-- 未完成 -->
 - [ ] [《Node.js 学习指南》](https://www.ultimate-kernel.fun/open-ebook/nodejs/)
 
