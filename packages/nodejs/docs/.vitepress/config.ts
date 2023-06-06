@@ -4,7 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Node.js 学习指南",
   description: "构建 Node.js 知识体系",
-  base: '/ebook/',
+  base: '/open-ebook/',
+  outDir: './.vitepress/dist/nodejs', 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/hero.png',
