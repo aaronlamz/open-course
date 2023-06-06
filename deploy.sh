@@ -11,6 +11,10 @@ cd packages/nodejs/docs/.vitepress/dist
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 git init
+git branch -m master main
+git config --global init.defaultBranch main
+git config --global user.email "aaronlamz2022@gmail.com"
+git config --global user.name "aaronlamz"
 git add .
 git commit -m 'deploy site page'
 git status
