@@ -17,8 +17,7 @@ jobs:
         with:
           version: 8.6.0
       - run: |
-          ls
-          pwd
-          
+          bash deploy.sh
+
 
 

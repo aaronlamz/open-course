@@ -1,5 +1,4 @@
-pwd
-echo
+#!/bin/sh
 node -v
 pnpm -v
 echo pnpm install
