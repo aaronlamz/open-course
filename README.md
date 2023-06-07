@@ -5,8 +5,12 @@
 [![deploy-docs](https://github.com/aaronlamz/open-ebook/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-ebook/actions/workflows/deploy-docs.yml)
 
 ## 目录
+> TODO
 <!-- 未完成 -->
 - [ ] [《Node.js 学习指南》](https://www.ultimate-kernel.fun/open-ebook/nodejs/)
+- [ ] [《Vue3 学习指南》](https://www.ultimate-kernel.fun/open-ebook/vue3/)
+- [ ] [《Leetcode 题解》](https://www.ultimate-kernel.fun/open-ebook/leetcode/)
+- [ ] [《Solidity 学习指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
 
 ## 贡献 
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
