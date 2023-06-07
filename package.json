@@ -1,7 +1,7 @@
 {
   "name": "open-ebook",
   "version": "1.0.0",
-  "description": "Open-source learning ebook",
+  "description": "OpenSource learning ebook",
   "main": "index.js",
   "scripts": {
     "dev:nodejs":"pnpm --dir packages/nodejs docs:dev",

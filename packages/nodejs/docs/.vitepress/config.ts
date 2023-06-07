@@ -5,12 +5,13 @@ export default defineConfig({
   title: "Node.js 学习指南",
   description: "构建 Node.js 知识体系",
   base: '/open-ebook/nodejs/',
-  outDir: './.vitepress/dist/nodejs', 
+  outDir: './.vitepress/dist/nodejs',
+  head: [['link', { rel: 'icon', href: '/open-ebook/nodejs/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/hero.png',
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '首页', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 

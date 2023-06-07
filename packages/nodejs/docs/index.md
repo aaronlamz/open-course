@@ -6,16 +6,17 @@ hero:
   name: "Node.js 学习指南"
   text: "构建 Node.js 知识体系"
   tagline: "从零开始学习 Node.js"
+
   image:
     src: /hero.png
     alt: Hero image
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 开始学习
       link: /markdown-examples
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Github
+      link: https://github.com/aaronlamz/open-ebook
 
 features:
   - title: Feature A
