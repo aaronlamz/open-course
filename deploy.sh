@@ -8,8 +8,6 @@ pnpm build:nodejs
 
 cd packages/nodejs/docs/.vitepress/dist
 
-# 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
 git init
 git branch -m master main
 git config --global init.defaultBranch main
