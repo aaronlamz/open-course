@@ -10,7 +10,7 @@
 - [ ] [《Node.js 学习指南》](https://www.ultimate-kernel.fun/open-ebook/nodejs/)
 - [ ] [《Vue3 学习指南》](https://www.ultimate-kernel.fun/open-ebook/vue3/)
 - [ ] [《Leetcode 题解》](https://www.ultimate-kernel.fun/open-ebook/leetcode/)
-- [ ] [《Solidity 学习指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
+- [ ] [《Solidity 智能合约学习指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
 
 ## 贡献 
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
