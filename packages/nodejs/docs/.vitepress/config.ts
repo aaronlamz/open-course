@@ -12,7 +12,7 @@ export default defineConfig({
     logo: '/hero.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '指南', link: '/markdown-examples' }
     ],
 
     sidebar: [

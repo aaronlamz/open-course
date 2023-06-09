@@ -15,15 +15,15 @@ hero:
       text: 开始学习
       link: /markdown-examples
     - theme: alt
-      text: Github
+      text: 查看Github
       link: https://github.com/aaronlamz/open-ebook
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 构建体系
+    details: 告别碎片化学习，构建自己的知识体系
+  - title: 深入浅出
+    details: 从零开始，深入浅出，逐步提升
+  - title: 开发实践
+    details: 通过实践，巩固所学知识
 ---
 
