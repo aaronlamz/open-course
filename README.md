@@ -8,7 +8,7 @@
 > TODO
 <!-- 未完成 -->
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-ebook/nodejs/)
-- [ ] [《Vue3 开发指南》](https://www.ultimate-kernel.fun/open-ebook/vue3/)
+- [ ] [《Vue3 学习指南》](https://www.ultimate-kernel.fun/open-ebook/vue3/)
 - [ ] [《Leetcode 题解》](https://www.ultimate-kernel.fun/open-ebook/leetcode/)
 - [ ] [《Solidity 开发指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
 
