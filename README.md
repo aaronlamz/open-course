@@ -7,12 +7,12 @@
 ## 目录
 > TODO
 <!-- 未完成 -->
-- [ ] [《Node.js 学习指南》](https://www.ultimate-kernel.fun/open-ebook/nodejs/)
-- [ ] [《Vue3 学习指南》](https://www.ultimate-kernel.fun/open-ebook/vue3/)
+- [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-ebook/nodejs/)
+- [ ] [《Vue3 开发指南》](https://www.ultimate-kernel.fun/open-ebook/vue3/)
 - [ ] [《Leetcode 题解》](https://www.ultimate-kernel.fun/open-ebook/leetcode/)
-- [ ] [《Solidity 智能合约学习指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
+- [ ] [《Solidity 开发指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
 
-## 贡献 
+## 贡献
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
 1. Fork 本仓库
 2. 在你的仓库中修改内容，然后提交到你的仓库，commit message 需要包含`--docs`，例如：`add nodejs --docs`
