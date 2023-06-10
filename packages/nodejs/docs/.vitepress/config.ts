@@ -12,15 +12,14 @@ export default defineConfig({
     logo: '/hero.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/markdown-examples' }
+      { text: '指南', link: '/setup/introduction.md' }
     ],
 
     sidebar: [
       {
-        text: 'Node.js 简介',
+        text: '基础入门',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Node.js 简介', link: '/setup/introduction.md' },
         ]
       }
     ],
