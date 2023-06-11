@@ -10,6 +10,8 @@ pnpm build:interview
 echo pwd
 # /home/runner/work/open-ebook/open-ebook
 pwd
+ls
+rm -rf ./dist
 echo mkdir dist
 mkdir ./dist
 
@@ -25,6 +27,8 @@ cd ./dist
 echo ls
 pwd
 ls
+cd dist
+cd dist
 
 git init
 git branch -m master main
