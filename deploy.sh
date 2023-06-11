@@ -28,7 +28,6 @@ echo ls
 pwd
 ls
 cd dist
-cd dist
 
 git init
 git branch -m master main
