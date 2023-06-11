@@ -12,6 +12,7 @@
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-ebook/nodejs/)
 - [ ] [《前端面试题库》](https://www.ultimate-kernel.fun/open-ebook/interview/)
 - [ ] [《Leetcode 题解》](https://www.ultimate-kernel.fun/open-ebook/leetcode/)
+- [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-ebook/linux/)
 - [ ] [《Solidity 开发指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
 
 ## 贡献
