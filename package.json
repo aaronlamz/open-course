@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev:nodejs":"pnpm --dir packages/nodejs docs:dev",
+    "dev:interview":"pnpm --dir packages/interview docs:dev",
     "build:nodejs":"pnpm --dir packages/nodejs docs:build",
+    "build:interview":"pnpm --dir packages/interview docs:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

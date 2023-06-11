@@ -4,11 +4,13 @@
 
 ## 介绍
 本项目是一个学习小册的集合，主要是为了记录学习过程中的一些笔记，以及一些学习心得。
+
 ## 状态
-玩命更新中...
+佛系更新中...
+
 ## 目录
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-ebook/nodejs/)
-- [ ] [《Vue3 学习指南》](https://www.ultimate-kernel.fun/open-ebook/vue3/)
+- [ ] [《前端面试题库》](https://www.ultimate-kernel.fun/open-ebook/interview/)
 - [ ] [《Leetcode 题解》](https://www.ultimate-kernel.fun/open-ebook/leetcode/)
 - [ ] [《Solidity 开发指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
 

@@ -1,12 +1,14 @@
-lockfileVersion: '6.1'
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
+lockfileVersion: '6.0'
 
 importers:
 
   .: {}
+
+  packages/interview:
+    devDependencies:
+      vitepress:
+        specifier: 1.0.0-beta.1
+        version: registry.npmmirror.com/vitepress@1.0.0-beta.1(@algolia/client-search@4.17.1)
 
   packages/nodejs:
     devDependencies:
@@ -1021,3 +1023,7 @@ packages:
       '@vue/server-renderer': registry.npmmirror.com/@vue/server-renderer@3.3.4(vue@3.3.4)
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
