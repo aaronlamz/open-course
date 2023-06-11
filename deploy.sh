@@ -7,8 +7,8 @@ echo pnpm run build
 pnpm build:nodejs
 pnpm build:interview
 
-cd packages/nodejs/docs/.vitepress/dist
-cd packages/interview/docs/.vitepress/dist
+cd /packages/nodejs/docs/.vitepress/dist
+cd /packages/interview/docs/.vitepress/dist
 
 git init
 git branch -m master main
