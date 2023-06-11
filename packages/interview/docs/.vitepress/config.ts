@@ -3,23 +3,31 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "前端面试题库",
-  description: "从零构建 Node.js 知识体系",
+  description: "查漏补缺，提升自己",
   base: '/open-ebook/interview/',
   outDir: './.vitepress/dist/interview',
-  head: [['link', { rel: 'icon', href: '/open-ebook/interview/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/open-ebook/interview/logo.png' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/hero.png',
+    logo: '/logo.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/setup/introduction.md' }
+      { text: 'JavaScript', link: '/javascript/index.md' },
+      { text: 'CSS', link: '/css/index.md' },
+      { text: 'Vue', link: '/vue/index.md' },
     ],
 
     sidebar: [
       {
-        text: '基础入门',
+        text: '写在前面',
         items: [
-          { text: 'Node.js 简介', link: '/setup/introduction.md' },
+          { text: '简介', link: '/introduction.md' },
+        ]
+      },
+      {
+        text: 'JavaScript',
+        items: [
+          { text: '简介', link: '/introduction.md' },
         ]
       }
     ],

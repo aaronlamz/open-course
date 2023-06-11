@@ -3,17 +3,17 @@
 layout: home
 
 hero:
-  name: "Node.js 开发指南"
-  text: "构建 Node.js 知识体系"
-  tagline: "从零开始学习 Node.js"
+  name: "前端面试题库"
+  text: "深入浅出，构建体系"
+  tagline: "查漏补缺，巩固知识"
 
   image:
-    src: /hero.png
+    src: /logo.png
     alt: Hero image
   actions:
     - theme: brand
       text: 开始学习
-      link: /markdown-examples
+      link: /introduction
     - theme: alt
       text: 查看Github
       link: https://github.com/aaronlamz/open-ebook
@@ -24,7 +24,7 @@ features:
     details: 从零开始，深入浅出，逐步提升
   - title: 构建体系
     details: 告别碎片化学习，构建自己的知识体系
-  - title: 开发实践
-    details: 通过实践，巩固所学知识
+  - title: 查漏补缺
+    details: 从面试题库中查漏补缺，巩固知识
 ---
 
