@@ -2,6 +2,8 @@
 node -v
 pnpm -v
 
+echo git branch
+git branch
 echo git pull 
 git pull
 echo pnpm install
