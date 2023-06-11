@@ -18,6 +18,6 @@
 ## 贡献
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
 1. Fork 本仓库
-2. 在你的仓库中修改内容，然后提交到你的仓库，commit message 需要包含`--docs`，例如：`add nodejs --docs`
-3. 提交 PR 到本仓库的 `main` 分支
+2. 在你的仓库中修改内容，然后提交到你的仓库
+3. 提交 PR 到本仓库的 `main` 分支，commit message 需要包含`--docs`，例如：`add nodejs --docs`
 
