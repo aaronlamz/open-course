@@ -1,6 +1,9 @@
 #!/bin/bash
 node -v
 pnpm -v
+
+echo git pull 
+git pull
 echo pnpm install
 pnpm install
 echo pnpm run build
