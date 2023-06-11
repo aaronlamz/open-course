@@ -28,10 +28,12 @@ echo ls
 pwd
 ls
 cd dist
+pwd
+ls
 
 git init
-git branch -m master main
-git config --global init.defaultBranch main
+# git branch -m master main
+# git config --global init.defaultBranch main
 git config --global user.email "aaronlamz2022@gmail.com"
 git config --global user.name "aaronlamz"
 git add .
