@@ -11,16 +11,19 @@ echo pwd
 # /home/runner/work/open-ebook/open-ebook
 pwd
 echo mkdir dist
-mkdir dist
+mkdir ./dist
 
+echo cp -rf packages/nodejs/docs/.vitepress/dist ./dist
+echo cp -rf packages/interview/docs/.vitepress/dist ./dist
 
-cp -rf packages/nodejs/docs/.vitepress/dist dist
-cp -rf packages/interview/docs/.vitepress/dist dist
+cp -rf packages/nodejs/docs/.vitepress/dist ./dist
+cp -rf packages/interview/docs/.vitepress/dist ./dist
 
 echo cd dist
-cd dist
+cd ./dist
 
 echo ls
+pwd
 ls
 
 git init
