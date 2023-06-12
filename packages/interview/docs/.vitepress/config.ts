@@ -12,22 +12,36 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'JavaScript', link: '/javascript/index.md' },
-      { text: 'CSS', link: '/css/index.md' },
-      { text: 'Vue', link: '/vue/index.md' },
+      { text: '指南', link: '/introduction' },
     ],
 
     sidebar: [
       {
-        text: '写在前面',
+        text: '介绍',
+        collapsed: false,
         items: [
-          { text: '简介', link: '/introduction.md' },
+          { text: '写在前面', link: '/introduction.md' },
         ]
       },
       {
-        text: 'JavaScript',
+        text: 'JavaScript 系列',
+        collapsed: false,
         items: [
-          { text: '简介', link: '/introduction.md' },
+          { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
+        ]
+      },
+      {
+        text: 'CSS 系列',
+        collapsed: false,
+        items: [
+          { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
+        ]
+      },
+      {
+        text: 'Vue 系列',
+        collapsed: false,
+        items: [
+          { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
         ]
       }
     ],
