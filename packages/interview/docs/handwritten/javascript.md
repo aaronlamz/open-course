@@ -38,7 +38,24 @@ function count(str) {
 ```
 :::
 
+4、实现一个函数，接收一个日期字符串参数dateStr（格式为"YYYY-MM-DD"），返回对应的日期对象。
+::: details 点击查看答案
+```javascript
+function parseDate(dateStr) {
+  const [year, month, day] = dateStr.split('-')
+  return new Date(year, month - 1, day)
+}
+```
+:::
 
+5、编写一个函数，接受一个整数作为参数，判断该整数是否为偶数，并返回布尔值。
+::: details 点击查看答案
+```javascript
+function isEven(num) {
+  return num % 2 === 0
+}
+```
+:::
 
 ## 中等题
 
