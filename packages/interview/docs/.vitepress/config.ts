@@ -43,7 +43,16 @@ export default defineConfig({
         items: [
           { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
         ]
-      }
+      },
+      {
+        text: '笔试题系列',
+        collapsed: false,
+        items: [
+          { text: 'JavaScript', link: '/handwritten/javascript' },
+          { text: 'CSS', link: '/handwritten/css' },
+          { text: 'Vue', link: '/handwritten/vue' },
+        ]
+      },
     ],
 
     socialLinks: [
