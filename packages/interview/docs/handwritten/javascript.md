@@ -57,6 +57,24 @@ function isEven(num) {
 ```
 :::
 
+6、编写一个函数，接受一个数组作为参数，返回去除重复元素后的新数组。
+::: details 点击查看答案
+```javascript
+function unique(arr) {
+  return [...new Set(arr)]
+}
+```
+:::
+
+7、编写一个函数，接受一个数组作为参数，返回数组中的最大值和最小值组成的数组。
+::: details 点击查看答案
+```javascript
+function maxAndMin(arr) {
+  return [Math.max(...arr), Math.min(...arr)]
+}
+```
+:::
+
 ## 中等题
 
 ## 困难题
