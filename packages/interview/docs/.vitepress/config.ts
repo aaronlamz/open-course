@@ -53,6 +53,15 @@ export default defineConfig({
           { text: 'Vue', link: '/handwritten/vue' },
         ]
       },
+      {
+        text: 'LeetCode 系列',
+        collapsed: false,
+        items: [
+          { text: 'JavaScript', link: '/leetcode/javascript' },
+          { text: 'CSS', link: '/leetcode/css' },
+          { text: 'Vue', link: '/leetcode/vue' },
+        ]
+      }
     ],
 
     socialLinks: [
