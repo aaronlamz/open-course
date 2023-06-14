@@ -25,34 +25,43 @@ export default defineConfig({
       },
       {
         text: 'JavaScript 系列',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
         ]
       },
       {
         text: 'CSS 系列',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
         ]
       },
       {
         text: 'Vue 系列',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
         ]
       },
       {
         text: '笔试题系列',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'JavaScript', link: '/handwritten/javascript' },
           { text: 'CSS', link: '/handwritten/css' },
           { text: 'Vue', link: '/handwritten/vue' },
         ]
       },
+      {
+        text: 'LeetCode 系列',
+        collapsed: true,
+        items: [
+          { text: 'JavaScript', link: '/leetcode/javascript' },
+          { text: 'CSS', link: '/leetcode/css' },
+          { text: 'Vue', link: '/leetcode/vue' },
+        ]
+      }
     ],
 
     socialLinks: [
