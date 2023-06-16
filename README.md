@@ -1,9 +1,9 @@
-# 前端开发学习小册
+# 前端学习小册
 
 [![deploy-docs](https://github.com/aaronlamz/open-ebook/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-ebook/actions/workflows/deploy-docs.yml)
 
 ## 介绍
-本项目是一个前端开发学习小册的集合，主要是为了记录学习过程中的一些笔记，以及一些学习心得。
+本项目是一个前端学习小册的集合，主要是为了记录学习过程中的一些笔记，以及一些学习心得。
 
 ## 状态
 佛系更新中...
