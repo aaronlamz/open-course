@@ -76,6 +76,14 @@ function maxAndMin(arr) {
 :::
 
 ## 中等题
+1、实现一个函数，接收一个字符串参数str，将字符串中的单词顺序反转后返回。
+::: details 点击查看答案
+```javascript
+function reverseWords(str) {
+  return str.split(' ').reverse().join(' ')
+}
+```
+:::
 
 ## 困难题
 
