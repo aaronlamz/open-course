@@ -4,7 +4,8 @@ pnpm -v
 
 echo git branch
 git branch
-echo git pull 
+echo git pull
+git reset --hard origin/main
 git pull
 echo pnpm install
 pnpm install
