@@ -5,6 +5,5 @@
 :::
 
 ## 参考资料
-
 - [MDN: Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 

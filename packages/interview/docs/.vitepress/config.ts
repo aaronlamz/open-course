@@ -27,7 +27,7 @@ export default defineConfig({
         text: 'JavaScript 系列',
         collapsed: true,
         items: [
-          { text: '解释一下原型、原型链', link: '/javascript/prototype.md' },
+          { text: '解释一下原型、原型链什么', link: '/javascript/prototype.md' },
           { text: '解释一下JavaScript中的闭包（closure）是什么以及它的作用。', link: '/javascript/closure.md' },
           { text: '解释一下JavaScript中的this是什么以及它的作用。', link: '/javascript/this.md' },
           { text: '解释一下JavaScript中的执行上下文（execution context）和作用域链（scope chain）。', link: '/javascript/scope.md' },
