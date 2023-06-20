@@ -8,7 +8,7 @@ echo git pull
 git reset --hard origin/main
 git pull
 echo pnpm install
-pnpm install
+pnpm install --no-frozen-lockfile
 echo pnpm run build
 pnpm build:nodejs
 pnpm build:interview
