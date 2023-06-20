@@ -68,7 +68,7 @@ export default defineConfig({
           { text: '解释一下Vue中的nextTick', link: '/vue/next-tick.md' },
           { text: '解释一下Vue中的computed', link: '/vue/computed.md' },
           { text: '解释一下Vue中的watch', link: '/vue/watch.md' },
-          { text: 'Vue中的keep-alive 实现', link: '/vue/keep-alive.md' },
+          { text: '解释一下Vue中的keep-alive 实现', link: '/vue/keep-alive.md' },
           { text: '解释一下Vue中的slot', link: '/vue/slot.md' },
           { text: '解释一下Vue中的extend', link: '/vue/extend.md' },
           { text: '解释一下Vue中的render函数', link: '/vue/render.md' },
