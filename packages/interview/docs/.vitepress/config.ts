@@ -62,7 +62,18 @@ export default defineConfig({
         text: 'Vue 系列',
         collapsed: true,
         items: [
-          { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
+          { text: '解释一下Vue响应式原理', link: '/vue/reactive.md' },
+          { text: '解释一下Vue中的虚拟DOM', link: '/vue/virtual-dom.md' },
+          { text: '解释一下Vue中的diff算法', link: '/vue/diff.md' },
+          { text: '解释一下Vue中的nextTick', link: '/vue/next-tick.md' },
+          { text: '解释一下Vue中的computed', link: '/vue/computed.md' },
+          { text: '解释一下Vue中的watch', link: '/vue/watch.md' },
+          { text: 'Vue中的keep-alive 实现', link: '/vue/keep-alive.md' },
+          { text: '解释一下Vue中的slot', link: '/vue/slot.md' },
+          { text: '解释一下Vue中的extend', link: '/vue/extend.md' },
+          { text: '解释一下Vue中的render函数', link: '/vue/render.md' },
+          { text: '解释一下Vue中的template', link: '/vue/template.md' },
+          { text: '解释一下Vue中的vnode', link: '/vue/vnode.md' },
         ]
       },
       {
