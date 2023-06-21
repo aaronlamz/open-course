@@ -3,7 +3,7 @@
 [![deploy-docs](https://github.com/aaronlamz/open-ebook/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-ebook/actions/workflows/deploy-docs.yml)
 
 ## 介绍
-本项目是一个前端学习小册的集合，主要是为了记录学习过程中的一些笔记，以及一些学习心得。
+本项目是一个偏前端学习小册的集合，主要是为了记录学习过程中的一些笔记，以及一些学习心得。
 
 ## 状态
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
@@ -13,7 +13,7 @@
 - [ ] [《前端面试题系列》](https://www.ultimate-kernel.fun/open-ebook/interview/)
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-ebook/algorithm/)
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-ebook/linux/)
-- [ ] [《Solidity 开发指南》](https://www.ultimate-kernel.fun/open-ebook/solidity/)
+- [ ] [《Web3 学习指南》](https://www.ultimate-kernel.fun/open-ebook/web3/)
 
 ## 贡献
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
