@@ -4,9 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Node.js 开发指南",
   description: "从零构建 Node.js 知识体系",
-  base: '/open-ebook/nodejs/',
+  base: '/open-course/nodejs/',
   outDir: './.vitepress/dist/nodejs',
-  head: [['link', { rel: 'icon', href: '/open-ebook/nodejs/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/open-course/nodejs/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/hero.png',
@@ -25,7 +25,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/aaronlamz/open-ebook' }
+      { icon: 'github', link: 'https://github.com/aaronlamz/open-course' }
     ]
   }
 })

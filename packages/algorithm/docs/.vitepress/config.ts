@@ -4,9 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "数据结构与算法学习指南",
   description: "数据结构与算法学习指南",
-  base: '/open-ebook/algorithm/',
+  base: '/open-course/algorithm/',
   outDir: './.vitepress/dist/algorithm',
-  head: [['link', { rel: 'icon', href: '/open-ebook/algorithm/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/open-course/algorithm/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/hero.png',
@@ -25,7 +25,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/aaronlamz/open-ebook' }
+      { icon: 'github', link: 'https://github.com/aaronlamz/open-course' }
     ]
   }
 })

@@ -1,5 +1,5 @@
 {
-  "name": "open-ebook",
+  "name": "open-course",
   "version": "1.0.0",
   "description": "OpenSource learning ebook",
   "main": "index.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aaronlamz/open-ebook.git"
+    "url": "git+https://github.com/aaronlamz/open-course.git"
   },
   "keywords": [
     "ebook"
@@ -25,9 +25,9 @@
   "author": "aaronlamz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aaronlamz/open-ebook/issues"
+    "url": "https://github.com/aaronlamz/open-course/issues"
   },
-  "homepage": "https://github.com/aaronlamz/open-ebook#readme",
+  "homepage": "https://github.com/aaronlamz/open-course#readme",
   "workspaces": {
     "packages": [
       "packages/*"

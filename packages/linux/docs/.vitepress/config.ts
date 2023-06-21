@@ -4,9 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "template title",
   description: "template description",
-  base: '/open-ebook/template/',
+  base: '/open-course/template/',
   outDir: './.vitepress/dist/template',
-  head: [['link', { rel: 'icon', href: '/open-ebook/template/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/open-course/template/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/hero.png',
@@ -25,7 +25,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/aaronlamz/open-ebook' }
+      { icon: 'github', link: 'https://github.com/aaronlamz/open-course' }
     ]
   }
 })

@@ -4,9 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "前端面试题系列",
   description: "查漏补缺，提升自己",
-  base: '/open-ebook/interview/',
+  base: '/open-course/interview/',
   outDir: './.vitepress/dist/interview',
-  head: [['link', { rel: 'icon', href: '/open-ebook/interview/logo.png' }]],
+  head: [['link', { rel: 'icon', href: '/open-course/interview/logo.png' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
@@ -97,7 +97,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/aaronlamz/open-ebook' }
+      { icon: 'github', link: 'https://github.com/aaronlamz/open-course' }
     ]
   }
 })

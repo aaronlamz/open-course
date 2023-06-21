@@ -14,7 +14,7 @@ pnpm build:nodejs
 pnpm build:interview
 
 echo pwd
-# /home/runner/work/open-ebook/open-ebook
+# /home/runner/work/open-course/open-course
 pwd
 ls
 rm -rf dist
@@ -42,5 +42,5 @@ git config --global user.name "aaronlamz"
 git add .
 git commit -m 'deploy site page'
 git status
-git push -f git@github.com:aaronlamz/open-ebook.git main:gh-pages
+git push -f git@github.com:aaronlamz/open-course.git main:gh-pages
 

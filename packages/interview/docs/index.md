@@ -16,7 +16,7 @@ hero:
       link: /introduction
     - theme: alt
       text: 查看Github
-      link: https://github.com/aaronlamz/open-ebook
+      link: https://github.com/aaronlamz/open-course
 
 features:
 
