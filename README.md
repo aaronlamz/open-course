@@ -3,7 +3,7 @@
 [![deploy-docs](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml)
 
 ## 介绍
-本项目是一个偏前端学习小册的集合，主要是为了记录构建前端知识体系的一些笔记及学习心得，方便自己查阅，也希望能够帮助到其他人。
+本项目是一个前端开发路线学习小册的集合，主要是为了记录构建前端知识体系的一些笔记及学习心得，方便自己查阅。
 
 ## 状态
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
@@ -22,5 +22,5 @@
 3. 提交 PR 到本仓库的 `main` 分支，commit message 需要包含`--docs`，例如：`add nodejs --docs`
 
 ## 支持
-如果你觉得这个项目对你有帮助，欢迎star或者可以请我喝杯咖啡，谢谢你的支持！
+如果你觉得这个项目对你有帮助，欢迎star或者请我喝杯咖啡，谢谢你的支持！
 
