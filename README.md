@@ -1,4 +1,7 @@
-# 前端学习小册
+<div align="center">
+  <img src="./logo.svg" width="100"  alt="logo" />
+<h1 style="color:#10b981;">Open Course</h1>
+</div>
 
 [![deploy-docs](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml)
 
