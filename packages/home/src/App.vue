@@ -3,6 +3,10 @@ import { ref } from 'vue'
 
 const courses = ref([
   {
+    title: 'Github 仓库',
+    link: 'https://github.com/aaronlamz/open-course'
+  },
+  {
     title: '《Node.js 开发指南》',
     link: 'https://www.ultimate-kernel.fun/open-course/nodejs/',
   },
@@ -41,6 +45,7 @@ const removeAnimation = (event: MouseEvent): void => {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
   }
@@ -68,7 +73,10 @@ const removeAnimation = (event: MouseEvent): void => {
 .course-item {
   display: flex;
   position: relative;
-  padding: 20px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
   background-color: #f2f2f2;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
