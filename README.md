@@ -7,7 +7,7 @@
 [![deploy-docs](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml)
 
 ## 介绍
-本项目是一个前端开发路线学习小册的集合，主要是为了记录构建前端知识体系的一些笔记及学习心得，方便自己查阅。
+本项目是一个前端开发路线学习小册的集合，主要是为了记录构建前端知识体系的一些笔记及学习心得，方便自己查阅，也希望能够帮助到其他人。
 
 ## 状态
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
