@@ -27,7 +27,7 @@
 4. 提交 PR 到本仓库的 `main` 分支，commit message 需要包含`--docs`，例如：`add nodejs --docs`
 
 ## 支持
-如果你觉得这个项目对你有帮助，欢迎star或者请我喝杯咖啡，谢谢你的支持！
+如果你觉得这个项目对你有帮助，欢迎star，谢谢你的支持！
 <div>
-  <img src="./coffee.png"/ width="200px">
+  <!-- <img src="./coffee.png"/ width="200px"> -->
 </div>
