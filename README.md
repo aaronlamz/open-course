@@ -13,8 +13,8 @@
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
 
 ## 目录
-- [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《前端面试题系列》](https://www.ultimate-kernel.fun/open-course/interview/)
+- [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Web3 学习指南》](https://www.ultimate-kernel.fun/open-course/web3/)
