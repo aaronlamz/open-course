@@ -1,24 +1,27 @@
 <div align="center">
   <img src="./logo.svg" width="100"  alt="logo" />
-  <!-- <h1>Open Course</h1> -->
 </div>
 
 ##
 [![deploy-docs](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml)
 
 ## 介绍
-本项目是一个前端开发路线学习小册的集合，主要是为了记录构建前端知识体系的一些笔记及学习心得，方便自己查阅，也希望能够帮助到其他人。
+本项目是一个前端开发路线学习资源的集合，主要是为了构建前端知识体系的一些笔记及学习心得，方便自己查阅，也希望能够帮助到其他人。
 
 ## 状态
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
 
-## 目录
-- [ ] [《Roadmap》](https://www.ultimate-kernel.fun/open-course/)
+## 小册
 - [ ] [《前端面试题系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Web3 学习指南》](https://www.ultimate-kernel.fun/open-course/web3/)
+
+<!-- ## 工具 -->
+<!-- - [emoji 速查表](https://www.ultimate-kernel.fun/open-course/emoji/) -->
+
+<!-- ## 读书 -->
 
 ## 贡献
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
