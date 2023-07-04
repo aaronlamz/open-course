@@ -14,7 +14,9 @@
 - 原型链的作用是实现继承
 - 原型链的查找规则是：先在自身查找，如果没有找到，就去原型对象中查找，如果还没有找到，就去原型对象的原型对象中查找，直到找到原型链的尽头null
 - 原型链的查找是一层一层往上查找，不是一层一层往下查找
-::: 
+:::
+
+## 原型链关系图
 
 ## 参考资料
 - [MDN: Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
