@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "前端面试题系列",
-  description: "查漏补缺，提升自己",
+  description: "查漏补缺，提升自我",
   base: '/open-course/interview/',
   outDir: './.vitepress/dist/interview',
   head: [['link', { rel: 'icon', href: '/open-course/interview/logo.png' }]],
@@ -35,7 +35,7 @@ export default defineConfig({
           { text: '解释一下JavaScript中的事件循环是什么以及它的作用。', link: '/javascript/event-loop.md' },
           { text: '解释一下JavaScript中的异步编程是什么以及它的作用。', link: '/javascript/async.md' },
           { text: '解释一下JavaScript中的Promise是什么以及它的作用。', link: '/javascript/promise.md' },
-          { text: '什么是Generator函数？请描述一下Generator函数的工作原理和用途。', link: '/javascript/generator.md' },
+          { text: '解释一下什么是Generator函数？请描述一下Generator函数的工作原理和用途。', link: '/javascript/generator.md' },
           { text: '解释一下JavaScript中的Iterator是什么以及它的作用。', link: '/javascript/iterator.md' },
           { text: '解释一下JavaScript中的Symbol是什么以及它的作用。', link: '/javascript/symbol.md' },
           { text: '解释一下JavaScript中的Set是什么以及它的作用。', link: '/javascript/set.md' },
@@ -55,7 +55,7 @@ export default defineConfig({
         text: 'CSS 系列',
         collapsed: true,
         items: [
-          { text: '原型、原型链的理解', link: '/javascript/prototype.md' },
+          { text: 'BFC', link: '/css/bfc.md' },
         ]
       },
       {
