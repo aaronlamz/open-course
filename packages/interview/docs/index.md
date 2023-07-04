@@ -25,6 +25,6 @@ features:
   - title: 构建体系
     details: 告别碎片化学习，构建自己的知识体系
   - title: 查漏补缺
-    details: 从面试题库中查漏补缺，巩固知识
+    details: 从面试中查漏补缺，巩固知识
 ---
 
