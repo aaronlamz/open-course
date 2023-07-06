@@ -3,7 +3,14 @@
 </div>
 
 ##
-[![deploy-docs](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml)
+
+<a href="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml">
+  <img src="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg ">
+</a>
+
+<a href="https://badgen.net/static/Generate%20By/ChatGPT/green">
+  <img src ="https://badgen.net/static/Generate%20By/ChatGPT/green">
+</a>
 
 ## 介绍
 本项目是一个前端开发路线学习资源的集合，主要是为了构建前端知识体系的一些笔记及学习心得，方便自己查阅，也希望能够帮助到其他人。
