@@ -31,7 +31,7 @@ export default defineConfig({
           { text: '解释一下JavaScript中的闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
           { text: '解释一下JavaScript中的this是什么以及它的作用', link: '/javascript/this.md' },
           { text: '解释一下JavaScript中的执行上下文（execution context）和作用域链（scope chain）。', link: '/javascript/scope.md' },
-          { text: '解释一下JavaScript中的变量提升是什么以及它的作用。', link: '/javascript/hoisting.md' },
+          { text: '解释一下JavaScript中的变量提升是什么以及它的作用', link: '/javascript/hoisting.md' },
           { text: '解释一下JavaScript中的事件循环是什么以及它的作用。', link: '/javascript/event-loop.md' },
           { text: '解释一下JavaScript中的异步编程是什么以及它的作用。', link: '/javascript/async.md' },
           { text: '解释一下JavaScript中的Promise是什么以及它的作用。', link: '/javascript/promise.md' },
