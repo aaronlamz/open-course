@@ -3,7 +3,7 @@
 </div>
 
 ##
-
+<p align="center">
 <a href="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml">
   <img src="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg ">
 </a>
@@ -15,6 +15,7 @@
 <a href="https://flat.badgen.net/badge/icon/wiki/green?icon=wiki&label">
   <img src ="https://flat.badgen.net/badge/icon/wiki/green?icon=wiki&label">
 </a>
+</p>
 
 
 ## 介绍
