@@ -21,10 +21,10 @@ hero:
 features:
 
   - title: 深入浅出
-    details: 从零开始，深入浅出，逐步提升
+    details: 深入浅出，逐步提升
   - title: 构建体系
     details: 告别碎片化学习，构建自己的知识体系
   - title: 查漏补缺
-    details: 从面试中查漏补缺，巩固知识
+    details: 查漏补缺，巩固知识
 ---
 
