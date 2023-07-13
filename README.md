@@ -28,6 +28,7 @@
 - [ ] [《前端面试题系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
+- [ ] [《Electron 开发指南》](https://www.ultimate-kernel.fun/open-course/electron/)
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Web3 学习指南》](https://www.ultimate-kernel.fun/open-course/web3/)
 
