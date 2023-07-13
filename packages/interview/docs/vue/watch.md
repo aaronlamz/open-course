@@ -45,11 +45,14 @@ class Watcher {
     this.options = options
     this.getter = parsePath(expOrFn)
     this.value = this.get()
+    /**
+     * Watch 在结尾会立即执行一次 watcher.get，其中便会执行 getter，便会根据你监听的key，去实例上读取并返回，存放在 watcher.value 上看到了吗，从实例上读取属性，这句话。首先，watch 初始化之前，data 应该初始化完毕了，每个 data 数据都已经是响应式的
+    */
   }
   get() {
     pushTarget(this)
     const vm = this.vm
-    let value = this.getter.call(vm, vm)
+    let value = this.getter.call(vm, vm) // 监听的key，去实例上读取并返回
     popTarget()
     return value
   }
@@ -159,3 +162,6 @@ const vm = new Vue({
   }
 })
 ```
+
+## 参考
+[Watch 源码分析](https://zhuanlan.zhihu.com/p/62733342)
