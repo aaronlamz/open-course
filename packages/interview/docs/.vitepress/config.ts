@@ -63,8 +63,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '解释一下Vue响应式原理', link: '/vue/reactive.md' },
-          { text: '解释一下Vue中的虚拟DOM', link: '/vue/virtual-dom.md' },
-          { text: '解释一下Vue中的diff算法', link: '/vue/diff.md' },
+          { text: '解释一下Vue中的虚拟DOM及diff算法', link: '/vue/virtual-dom.md' },
           { text: '解释一下Vue中的nextTick', link: '/vue/next-tick.md' },
           { text: '解释一下Vue中的computed', link: '/vue/computed.md' },
           { text: '解释一下Vue中的watch', link: '/vue/watch.md' },
