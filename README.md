@@ -8,8 +8,8 @@
   <img src="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg ">
 </a>
 
-<a href="https://badgen.net/static/Generated%20By/ChatGPT/green">
-  <img src ="https://badgen.net/static/Generated%20By/ChatGPT/green">
+<a href="https://badgen.net/static/Content%20Generated%20By/ChatGPT/green">
+  <img src ="https://badgen.net/static/Content%20Generated%20By/ChatGPT/green">
 </a>
 
 <a href="https://flat.badgen.net/badge/icon/wiki/green?icon=wiki&label">
