@@ -73,6 +73,12 @@ export default defineConfig({
           { text: '解释一下Vue中的render函数', link: '/vue/render.md' },
           { text: '解释一下Vue中的template', link: '/vue/template.md' },
           { text: '解释一下Vue中的vnode', link: '/vue/vnode.md' },
+          { text: '解释一下Vue中的diff算法', link: '/vue/diff.md' },
+          { text: '解释一下Vue中的生命周期', link: '/vue/lifecycle.md' },
+          { text: '解释一下Vue中的组件通信', link: '/vue/communication.md' },
+          { text: '解释一下Vue中的路由原理', link: '/vue/router.md' },
+          { text: '解释一下Vue中的vuex原理', link: '/vue/vuex.md' },
+          { text: '解释一下Vue中的SSR原理', link: '/vue/ssr.md' },
         ]
       },
       {
