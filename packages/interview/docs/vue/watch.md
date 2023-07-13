@@ -137,20 +137,7 @@ function remove(arr, item) {
 
 Dep.target = null
 
-// remove
-
-function remove(arr, item) {
-  if (arr.length) {
-    const index = arr.indexOf(item)
-    if (index > -1) {
-      return arr.splice(index, 1)
-    }
-  }
-}
-
 ```
-
-
 
 ## watch的应用
 
