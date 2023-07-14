@@ -27,7 +27,7 @@
 ## 小册
 - [ ] [《前端面试题系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-course/algorithm/)
-- [ ] [《Qiankun 微前端开发指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
+- [ ] [《qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《Electron 开发指南》](https://www.ultimate-kernel.fun/open-course/electron/)
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
