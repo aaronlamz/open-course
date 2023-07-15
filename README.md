@@ -25,7 +25,7 @@
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
 
 ## 小册
-- [ ] [《前端面试题系列》](https://www.ultimate-kernel.fun/open-course/interview/)
+- [ ] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 - [ ] [《qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)

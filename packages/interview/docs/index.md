@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "前端面试题系列"
+  name: "前端面试系列"
   text: "深入浅出，构建体系"
   tagline: "查漏补缺，巩固知识"
 

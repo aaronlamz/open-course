@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "前端面试题系列",
+  title: "前端面试系列",
   description: "查漏补缺，提升自我",
   base: '/open-course/interview/',
   outDir: './.vitepress/dist/interview',
