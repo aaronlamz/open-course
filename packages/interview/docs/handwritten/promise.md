@@ -253,3 +253,118 @@ Promise.reject(100).catch((err) => {
   console.log(err)
 })
 
+```
+
+## 9. Promise的all方法
+
+```js
+
+let Promise = require('./promise')
+
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 1000)
+})
+
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 2000)
+})
+
+let p3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 3000)
+})
+
+Promise.all([p1, p2, p3]).then((data) => {
+  console.log(data)
+}, (err) => {
+  console.log(err)
+})
+```
+
+## 10. Promise的race方法
+
+```js
+
+let Promise = require('./promise')
+
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 1000)
+})
+
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 2000)
+})
+
+let p3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 3000)
+})
+
+```
+
+## 11. Promise的finally方法
+
+```js
+
+let Promise = require('./promise')
+
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 1000)
+})
+
+p1.then((data) => {
+  console.log(data)
+}).finally(() => {
+  console.log('finally')
+})
+```
+
+## 12. Promise的catch方法
+
+```js
+
+let Promise = require('./promise')
+
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 1000)
+})
+
+p1.then((data) => {
+  console.log(data)
+}).catch((err) => {
+  console.log(err)
+})
+```
+
+## 13. Promise的done方法
+
+```js
+
+let Promise = require('./promise')
+
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('成功')
+  }, 1000)
+})
+
+p1.then((data) => {
+  console.log(data)
+}).catch((err) => {
+  console.log(err)
+}).done()
+```
