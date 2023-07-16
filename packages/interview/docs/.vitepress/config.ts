@@ -81,6 +81,19 @@ export default defineConfig({
         ]
       },
       {
+        text: 'React 系列',
+        collapsed: true,
+        items: [
+          { text: '解释一下React中的虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
+          { text: '解释一下React中的setState', link: '/react/set-state.md' },
+          { text: '解释一下React中的生命周期', link: '/react/lifecycle.md' },
+          { text: '解释一下React中的组件通信', link: '/react/communication.md' },
+          { text: '解释一下React中的路由原理', link: '/react/router.md' },
+          { text: '解释一下React中的redux原理', link: '/react/redux.md' },
+          { text: '解释一下React中的SSR原理', link: '/react/ssr.md' },
+        ]
+      },
+      {
         text: 'HTTP 系列',
         collapsed: true,
         items: [
