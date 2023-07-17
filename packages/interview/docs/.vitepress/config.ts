@@ -27,6 +27,7 @@ export default defineConfig({
         text: 'JavaScript 系列',
         collapsed: true,
         items: [
+          { text: '介绍',link:'/javascript/'},
           { text: '解释一下原型、原型链是什么', link: '/javascript/prototype.md' },
           { text: '解释一下JavaScript中的闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
           { text: '解释一下JavaScript中的this是什么以及它的作用', link: '/javascript/this.md' },
@@ -55,6 +56,7 @@ export default defineConfig({
         text: 'CSS 系列',
         collapsed: true,
         items: [
+          { text: '介绍', link: '/css/' },
           { text: '解释一下CSS中的BFC是什么以及它的作用', link: '/css/bfc.md' }
         ]
       },
@@ -62,6 +64,7 @@ export default defineConfig({
         text: 'Vue 系列',
         collapsed: true,
         items: [
+          { text: '介绍', link: '/vue/' },
           { text: '解释一下Vue响应式原理', link: '/vue/reactive.md' },
           { text: '解释一下Vue中的虚拟DOM及diff算法', link: '/vue/virtual-dom.md' },
           { text: '解释一下Vue中的nextTick', link: '/vue/next-tick.md' },
@@ -84,6 +87,7 @@ export default defineConfig({
         text: 'React 系列',
         collapsed: true,
         items: [
+          { text: '介绍', link: '/react/' },
           { text: '解释一下React中的虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
           { text: '解释一下React中的setState', link: '/react/set-state.md' },
           { text: '解释一下React中的生命周期', link: '/react/lifecycle.md' },
@@ -97,6 +101,7 @@ export default defineConfig({
         text: 'HTTP 系列',
         collapsed: true,
         items: [
+          { text: '介绍', link: '/http/' },
           { text: '解释一下HTTP中的缓存', link: '/http/cache.md' },
           { text: '解释一下HTTP中的跨域', link: '/http/cors.md' },
           { text: '解释一下HTTP中的HTTPS', link: '/http/https.md' },
@@ -120,6 +125,7 @@ export default defineConfig({
         text: '笔试题系列',
         collapsed: true,
         items: [
+          { text: '介绍', link: '/handwritten/' },
           { text: '手写Promise实现', link: '/handwritten/promise.md' },
           { text: '手写call、apply、bind实现', link: '/handwritten/call-apply-bind.md' },
           { text: '手写new实现', link: '/handwritten/new.md' },
@@ -137,6 +143,7 @@ export default defineConfig({
         text: 'LeetCode 系列',
         collapsed: true,
         items: [
+          { text: '介绍', link: '/leetcode/' },
           { text: '两数之和', link: '/leetcode/two-sum.md' },
           { text: '两数相加', link: '/leetcode/add-two-numbers.md' },
           { text: '无重复字符的最长子串', link: '/leetcode/longest-substring-without-repeating-characters.md' },
