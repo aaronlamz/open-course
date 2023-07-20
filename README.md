@@ -30,7 +30,7 @@
 - [ ] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《Linux 运维实践》](https://www.ultimate-kernel.fun/open-course/linux/)
-- [ ] [《Solidity 开发指南》](https://www.ultimate-kernel.fun/open-course/solidity/)
+- [ ] [《Solidity 开发实践》](https://www.ultimate-kernel.fun/open-course/solidity/)
 
 ## 贡献
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
