@@ -7,7 +7,7 @@ const menuQuestions = [
     name: 'option',
     message: '请选择一个选项启动项目：',
     "dev: ": "pnpm --dir packages/interview docs:dev",
-    choices: ['dev:home', 'dev:nodejs', 'dev:interview', 'dev:algorithm', 'dev:linux'],
+    choices: ['dev:home', 'dev:nodejs', 'dev:interview', 'dev:algorithm', 'dev:linux', 'dev:qiankun'],
   },
 ];
 
@@ -29,7 +29,9 @@ inquirer.prompt(menuQuestions).then((answers) => {
     case 'dev:linux':
       executeScript('pnpm --dir packages/linux docs:dev');
       break;
-
+    case 'dev:qiankun':
+      executeScript('pnpm --dir packages/qiankun docs:dev');
+      break;
     default:
       console.log('没有匹配的选项');
   } // end switch

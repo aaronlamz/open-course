@@ -55,6 +55,12 @@ importers:
         specifier: 1.0.0-beta.1
         version: registry.npmmirror.com/vitepress@1.0.0-beta.1(@algolia/client-search@4.17.1)
 
+  packages/qiankun:
+    devDependencies:
+      vitepress:
+        specifier: 1.0.0-beta.1
+        version: registry.npmmirror.com/vitepress@1.0.0-beta.1(@algolia/client-search@4.17.1)
+
   packages/template:
     devDependencies:
       vitepress:

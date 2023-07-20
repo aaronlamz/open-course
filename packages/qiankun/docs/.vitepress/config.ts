@@ -2,11 +2,11 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "template title",
-  description: "template description",
-  base: '/open-course/template/',
-  outDir: './.vitepress/dist/template',
-  head: [['link', { rel: 'icon', href: '/open-course/template/favicon.ico' }]],
+  title: "Qiankun 微前端实践指南",
+  description: "Qiankun 微前端实践指南",
+  base: '/open-course/qiankun/',
+  outDir: './.vitepress/dist/qiankun',
+  head: [['link', { rel: 'icon', href: '/open-course/qiankun/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/hero.png',

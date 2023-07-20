@@ -10,11 +10,13 @@
     "dev:interview": "pnpm --dir packages/interview docs:dev",
     "dev:algorithm": "pnpm --dir packages/algorithm docs:dev",
     "dev:linux": "pnpm --dir packages/linux docs:dev",
+    "dev:qiankun": "pnpm --dir packages/qiankun docs:dev",
     "build:home": "pnpm --dir packages/home build",
     "build:nodejs": "pnpm --dir packages/nodejs docs:build",
     "build:interview": "pnpm --dir packages/interview docs:build",
     "build:algorithm": "pnpm --dir packages/algorithm docs:build",
     "build:linux": "pnpm --dir packages/linux docs:build",
+    "build:qiankun": "pnpm --dir packages/qiankun docs:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

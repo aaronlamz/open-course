@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "template docs"
-  text: "template text"
+  name: "Qiankun 微前端实践指南"
+  text: "Qiankun 微前端实践指南"
   tagline: "template tagline"
 
   image:
@@ -19,7 +19,6 @@ hero:
       link: https://github.com/aaronlamz/open-course
 
 features:
-
   - title: title
     details: details
   - title: title
@@ -27,4 +26,3 @@ features:
   - title: title
     details: details
 ---
-

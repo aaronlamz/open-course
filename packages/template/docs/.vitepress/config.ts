@@ -12,18 +12,16 @@ export default defineConfig({
     logo: '/hero.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/setup/introduction.md' }
+      { text: '指南', link: '/markdown-examples' }
     ],
-
     sidebar: [
       {
         text: '基础入门',
         items: [
-          { text: '简介', link: '/setup/introduction.md' },
+          { text: '简介', link: '/markdown-examples' },
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aaronlamz/open-course' }
     ]
