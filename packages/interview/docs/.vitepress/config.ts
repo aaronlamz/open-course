@@ -100,6 +100,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Node.js 系列',
+        collapsed: true,
+        items: [
+          { text: '介绍', link: '/nodejs/' },
+        ]
+      },
+      {
         text: 'HTTP 系列',
         collapsed: true,
         items: [

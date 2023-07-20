@@ -42,6 +42,10 @@ const menuItems = ref(
             title: 'Leetcode 系列',
             link: withBase('/leetcode/'),
         },
+        {
+            title: 'Node.js 系列',
+            link: withBase('/nodejs/'),
+        },
     ])
 
 </script>
