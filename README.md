@@ -29,13 +29,8 @@
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 - [ ] [《qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
-- [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
-- [ ] [《Web3 学习指南》](https://www.ultimate-kernel.fun/open-course/web3/)
-
-<!-- ## 工具 -->
-<!-- - [emoji 速查表](https://www.ultimate-kernel.fun/open-course/emoji/) -->
-
-<!-- ## 读书 -->
+- [ ] [《Linux 运维实践》](https://www.ultimate-kernel.fun/open-course/linux/)
+- [ ] [《Solidity 开发指南》](https://www.ultimate-kernel.fun/open-course/solidity/)
 
 ## 贡献
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
@@ -46,6 +41,6 @@
 
 ## 支持
 如果你觉得这个项目对你有帮助，欢迎star，谢谢你的支持！
-<div>
-  <!-- <img src="./coffee.png"/ width="200px"> -->
-</div>
+<!-- <div>
+  <img src="./coffee.png"/ width="200px">
+</div> -->
