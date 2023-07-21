@@ -3,6 +3,7 @@
 </div>
 
 ##
+
 <p align="center">
 <a href="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml">
   <img src="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg ">

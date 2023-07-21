@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Qiankun 微前端实践指南",
-  description: "Qiankun 微前端实践指南",
+  description: "微前端架构系统",
   base: '/open-course/qiankun/',
   outDir: './.vitepress/dist/qiankun',
   head: [['link', { rel: 'icon', href: '/open-course/qiankun/favicon.ico' }]],
