@@ -12,6 +12,7 @@ pnpm install --no-frozen-lockfile
 echo pnpm run build
 pnpm build:nodejs
 pnpm build:interview
+pnpm build:qiankun
 pnpm build:home
 
 echo pwd
@@ -24,10 +25,12 @@ mkdir dist
 
 echo cp -rf packages/nodejs/docs/.vitepress/dist/* dist
 echo cp -rf packages/interview/docs/.vitepress/dist/* dist
+echo cp -rf packages/qiankun/docs/.vitepress/dist/* dist
 echo cp -rf packages/home/dist/* dist
 
 cp -rf packages/nodejs/docs/.vitepress/dist/* dist
 cp -rf packages/interview/docs/.vitepress/dist/* dist
+cp -rf packages/qiankun/docs/.vitepress/dist/* dist
 cp -rf packages/home/dist/* dist
 
 
