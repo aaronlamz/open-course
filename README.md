@@ -25,11 +25,11 @@
 ## 状态
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
 
-## 小册
-- [ ] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
+## [小册](https://www.ultimate-kernel.fun/open-course)
+- [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
+- [x] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
+- [x] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-course/algorithm/)
-- [ ] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
-- [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《Linux 运维实践》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Solidity 开发实践》](https://www.ultimate-kernel.fun/open-course/solidity/)
 
