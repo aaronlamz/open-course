@@ -24,6 +24,9 @@ importers:
         specifier: ^3.2.47
         version: registry.npmmirror.com/vue@3.3.4
     devDependencies:
+      '@types/node':
+        specifier: ^20.4.3
+        version: registry.npmmirror.com/@types/node@20.4.3
       '@vitejs/plugin-vue':
         specifier: ^4.1.0
         version: registry.npmmirror.com/@vitejs/plugin-vue@4.2.3(vite@4.3.9)(vue@3.3.4)
@@ -32,7 +35,7 @@ importers:
         version: registry.npmmirror.com/typescript@5.0.2
       vite:
         specifier: ^4.3.9
-        version: registry.npmmirror.com/vite@4.3.9
+        version: registry.npmmirror.com/vite@4.3.9(@types/node@20.4.3)
       vue-tsc:
         specifier: ^1.4.2
         version: registry.npmmirror.com/vue-tsc@1.4.2(typescript@5.0.2)
@@ -539,6 +542,12 @@ packages:
     name: '@jridgewell/sourcemap-codec'
     version: 1.4.15
 
+  registry.npmmirror.com/@types/node@20.4.3:
+    resolution: {integrity: sha512-Yu3+r4Mn/iY6Mf0aihncZQ1qOjOUrCiodbHHY1hds5O+7BbKp9t+Li7zLO13zO8j9L2C6euz8xsYQP0rjGvVXw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-20.4.3.tgz}
+    name: '@types/node'
+    version: 20.4.3
+    dev: true
+
   registry.npmmirror.com/@types/web-bluetooth@0.0.17:
     resolution: {integrity: sha512-4p9vcSmxAayx72yn70joFoL44c9MO/0+iVEBIQXe3v2h2SiAsEIo/G5v6ObFWvNKRFjbrVadNf9LqEEZeQPzdA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.17.tgz}
     name: '@types/web-bluetooth'
@@ -555,7 +564,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: registry.npmmirror.com/vite@4.3.9
+      vite: registry.npmmirror.com/vite@4.3.9(@types/node@20.4.3)
       vue: registry.npmmirror.com/vue@3.3.4
     dev: true
 
@@ -1467,8 +1476,9 @@ packages:
     version: 1.0.2
     dev: true
 
-  registry.npmmirror.com/vite@4.3.9:
+  registry.npmmirror.com/vite@4.3.9(@types/node@20.4.3):
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-4.3.9.tgz}
+    id: registry.npmmirror.com/vite/4.3.9
     name: vite
     version: 4.3.9
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -1494,6 +1504,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': registry.npmmirror.com/@types/node@20.4.3
       esbuild: registry.npmmirror.com/esbuild@0.17.19
       postcss: registry.npmmirror.com/postcss@8.4.24
       rollup: registry.npmmirror.com/rollup@3.23.0
@@ -1519,7 +1530,7 @@ packages:
       mark.js: registry.npmmirror.com/mark.js@8.11.1
       minisearch: registry.npmmirror.com/minisearch@6.1.0
       shiki: registry.npmmirror.com/shiki@0.14.2
-      vite: registry.npmmirror.com/vite@4.3.9
+      vite: registry.npmmirror.com/vite@4.3.9(@types/node@20.4.3)
       vue: registry.npmmirror.com/vue@3.3.4
     transitivePeerDependencies:
       - '@algolia/client-search'
