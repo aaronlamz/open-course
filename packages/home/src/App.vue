@@ -11,7 +11,13 @@
               <a href="/">Home</a>
             </div>
             <div class="nav-item">
-              <a href="/">Open Course</a>
+              <a href="https://www.ultimate-kernel.fun/open-course/interview/">《前端面试系列》</a>
+            </div>
+            <div class="nav-item">
+              <a href="https://www.ultimate-kernel.fun/open-course/qiankun/">《Qiankun 微前端实践指南》</a>
+            </div>
+            <div class="nav-item">
+              <a href="https://www.ultimate-kernel.fun/open-course/nodejs/">《Node.js 开发指南》</a>
             </div>
             <div class="nav-item">
               <a href="https://github.com/aaronlamz/open-course" target="_blank">Github</a>
@@ -21,8 +27,30 @@
       </div>
     </div>
     <div class="main-container">
+      <div class="course-title">
+        Open Course - Web Learning Course
+      </div>
       <div class="course-container">
-
+        <a class="course-item">
+          <div class="gradient-border"></div>
+          <div class="content-box">
+            <span class="nuxt-icon logo-icon colorful-icon">
+              <svg width="358" height="338" viewBox="0 0 358 338"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M257.444 109.293L205.506 68L100.557 88.9466V184.689L152.513 226L257.444 205.053V109.293ZM195.12 83.1255V110.799L211.002 107.629V90.2678L233.948 108.507L157.366 123.79L124.053 97.3085L195.12 83.1255ZM116.438 109.145L146.99 133.427V162.412L162.871 159.243V135.746L241.553 120.038V184.865L211.002 160.582V131.597L195.12 134.767V158.263L116.438 173.971V109.145ZM162.88 210.875V183.201L146.999 186.371V203.732L124.053 185.493L200.634 170.21L233.948 196.691L162.88 210.875Z"
+                  fill="url(#paint0_linear_917_141447)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_917_141447" x1="179" y1="68" x2="179" y2="226"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#28B2FF"></stop>
+                    <stop offset="1" stop-color="#7000FF"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -88,7 +116,75 @@
 /* main-container */
 .main-container {
   width: 100%;
-  height:calc(100vh - 60px);
+  height: calc(100vh - 60px);
   background: linear-gradient(180deg, #000, #19191b);
+}
+.course-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.course-title {
+  padding-top: 50px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(180deg, #a8c3ff, #417dff);
+  color: transparent;
+  font-size: clamp(1.25rem, .229rem + 4.2vw, 4rem);
+  font-weight: 800;
+  line-height: 1.203125;
+}
+
+.course-item {
+  aspect-ratio: 358/338;
+  max-width: min(260px, 70%);
+  position: relative;
+  width: 100%;
+  -border-width: clamp(.125rem, .088rem + .16vw, .225rem);
+  align-items: center;
+  background: #000;
+  background-clip: padding-box;
+  border: var(--border-width) solid transparent;
+  border-radius: 18px;
+  color: #747474;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  transition: 318ms;
+  width: 100%;
+  cursor: pointer;
+}
+
+.content-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.colorful-icon {
+  inset: 0;
+  opacity: 1;
+  position: absolute;
+  z-index: 3;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+.gradient-border {
+  --border-width: clamp(.125rem, .088rem + .16vw, .225rem);
+  background: linear-gradient(180deg, #bd3d3d 0, #313131);
+  opacity: 1;
+  position: absolute;
+  z-index: -2;
+  border-radius: inherit;
+  content: "";
+  inset: calc(var(--border-width)*-1);
 }
 </style>
