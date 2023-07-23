@@ -185,7 +185,7 @@ svg {
 
 .gradient-border {
   --border-width: clamp(.125rem, .088rem + .16vw, .225rem);
-  background: linear-gradient(180deg, #bd3d3d 0, #313131);
+  background: linear-gradient(180deg, hsl(56.93deg 81.79% 52.4% / 80%) 0, #1e2bce);
   opacity: 1;
   position: absolute;
   z-index: 0;
@@ -197,18 +197,18 @@ svg {
 .card-icon-shadow {
   transition: 368ms;
   background-position: 50%;
-    background-size: contain;
-    background: #000;
-    border-radius: 18px;
-    height: 100%;
-    left: 50%;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    transform: translate3d(-50%,-50%,0);
-    width: 100%;
-    will-change: opacity;
-    z-index: 1;
+  background-size: contain;
+  background: #000;
+  border-radius: 18px;
+  height: 100%;
+  left: 50%;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 100%;
+  will-change: opacity;
+  z-index: 1;
 }
 
 .type-blocksuite {
