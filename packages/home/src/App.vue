@@ -8,16 +8,16 @@
         <div class="navbar-fixed">
           <div class="menu-list">
             <div class="nav-item">
-              <a href="/">Home</a>
+              <a href="/" target="_blank">Home</a>
             </div>
             <div class="nav-item">
-              <a href="https://www.ultimate-kernel.fun/open-course/interview/">《前端面试系列》</a>
+              <a href="https://www.ultimate-kernel.fun/open-course/interview/" target="_blank">《前端面试系列》</a>
             </div>
             <div class="nav-item">
-              <a href="https://www.ultimate-kernel.fun/open-course/qiankun/">《Qiankun 微前端实践指南》</a>
+              <a href="https://www.ultimate-kernel.fun/open-course/qiankun/" target="_blank">《Qiankun 微前端实践指南》</a>
             </div>
             <div class="nav-item">
-              <a href="https://www.ultimate-kernel.fun/open-course/nodejs/">《Node.js 开发指南》</a>
+              <a href="https://www.ultimate-kernel.fun/open-course/nodejs/" target="_blank">《Node.js 开发指南》</a>
             </div>
             <div class="nav-item">
               <a href="https://github.com/aaronlamz/open-course" target="_blank">Github</a>
