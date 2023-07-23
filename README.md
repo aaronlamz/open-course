@@ -26,7 +26,7 @@
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
 
 ## 首页
-[https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
+Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 
 ## 目录
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
