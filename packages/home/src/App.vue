@@ -31,26 +31,28 @@
         Open Course - Web Learning Course
       </div>
       <div class="course-container">
-        <a class="course-item">
-          <div class="gradient-border"></div>
-          <div class="content-box">
-            <span class="nuxt-icon logo-icon colorful-icon">
-              <svg width="358" height="338" viewBox="0 0 358 338"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M257.444 109.293L205.506 68L100.557 88.9466V184.689L152.513 226L257.444 205.053V109.293ZM195.12 83.1255V110.799L211.002 107.629V90.2678L233.948 108.507L157.366 123.79L124.053 97.3085L195.12 83.1255ZM116.438 109.145L146.99 133.427V162.412L162.871 159.243V135.746L241.553 120.038V184.865L211.002 160.582V131.597L195.12 134.767V158.263L116.438 173.971V109.145ZM162.88 210.875V183.201L146.999 186.371V203.732L124.053 185.493L200.634 170.21L233.948 196.691L162.88 210.875Z"
-                  fill="url(#paint0_linear_917_141447)"></path>
-                <defs>
-                  <linearGradient id="paint0_linear_917_141447" x1="179" y1="68" x2="179" y2="226"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#28B2FF"></stop>
-                    <stop offset="1" stop-color="#7000FF"></stop>
-                  </linearGradient>
-                </defs>
-              </svg>
-            </span>
-          </div>
-        </a>
+        <div class="course-item-wrapper">
+          <a class="course-item">
+            <div class="gradient-border"></div>
+            <div class="content-box">
+              <span class="nuxt-icon logo-icon colorful-icon">
+                <svg width="358" height="338" viewBox="0 0 358 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M257.444 109.293L205.506 68L100.557 88.9466V184.689L152.513 226L257.444 205.053V109.293ZM195.12 83.1255V110.799L211.002 107.629V90.2678L233.948 108.507L157.366 123.79L124.053 97.3085L195.12 83.1255ZM116.438 109.145L146.99 133.427V162.412L162.871 159.243V135.746L241.553 120.038V184.865L211.002 160.582V131.597L195.12 134.767V158.263L116.438 173.971V109.145ZM162.88 210.875V183.201L146.999 186.371V203.732L124.053 185.493L200.634 170.21L233.948 196.691L162.88 210.875Z"
+                    fill="url(#paint0_linear_917_141447)"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_917_141447" x1="179" y1="68" x2="179" y2="226"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#28B2FF"></stop>
+                      <stop offset="1" stop-color="#7000FF"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+          </a>
+          <div class="card-icon-shadow type-blocksuite"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -119,7 +121,8 @@
   height: calc(100vh - 60px);
   background: linear-gradient(180deg, #000, #19191b);
 }
-.course-container{
+
+.course-container {
   display: flex;
   justify-content: space-around;
   padding: 50px;
@@ -137,11 +140,14 @@
   line-height: 1.203125;
 }
 
-.course-item {
+.course-item-wrapper {
   aspect-ratio: 358/338;
   max-width: min(260px, 70%);
   position: relative;
   width: 100%;
+}
+
+.course-item {
   -border-width: clamp(.125rem, .088rem + .16vw, .225rem);
   align-items: center;
   background: #000;
@@ -182,9 +188,30 @@ svg {
   background: linear-gradient(180deg, #bd3d3d 0, #313131);
   opacity: 1;
   position: absolute;
-  z-index: -2;
+  z-index: 0;
   border-radius: inherit;
   content: "";
   inset: calc(var(--border-width)*-1);
+}
+
+.card-icon-shadow {
+  transition: 368ms;
+  background-position: 50%;
+    background-size: contain;
+    background: #000;
+    border-radius: 18px;
+    height: 100%;
+    left: 50%;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    width: 100%;
+    will-change: opacity;
+    z-index: 1;
+}
+
+.type-blocksuite {
+  filter: drop-shadow(-25px -60px 60px rgba(18, 70, 255, .5)) drop-shadow(25px 60px 60px rgba(215, 169, 252, .4)) drop-shadow(0 4px 60px rgba(255, 255, 255, .3));
 }
 </style>
