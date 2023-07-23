@@ -25,7 +25,10 @@
 ## 状态
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
 
-## [小册](https://www.ultimate-kernel.fun/open-course)
+## 首页
+[https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
+
+## 目录
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [x] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [x] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
