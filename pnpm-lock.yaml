@@ -61,8 +61,8 @@ importers:
   packages/qiankun:
     devDependencies:
       vitepress:
-        specifier: 1.0.0-beta.1
-        version: registry.npmmirror.com/vitepress@1.0.0-beta.1(@algolia/client-search@4.17.1)
+        specifier: 1.0.0-beta.6
+        version: registry.npmmirror.com/vitepress@1.0.0-beta.6(@algolia/client-search@4.17.1)(search-insights@2.7.0)
 
   packages/template:
     devDependencies:
@@ -1540,7 +1540,7 @@ packages:
     name: focus-trap
     version: 7.4.3
     dependencies:
-      tabbable: registry.npmmirror.com/tabbable@6.1.2
+      tabbable: registry.npmmirror.com/tabbable@6.2.0
     dev: true
 
   registry.npmmirror.com/focus-trap@7.5.2:
@@ -1947,12 +1947,6 @@ packages:
       has-flag: registry.npmmirror.com/has-flag@4.0.0
     dev: true
 
-  registry.npmmirror.com/tabbable@6.1.2:
-    resolution: {integrity: sha512-qCN98uP7i9z0fIS4amQ5zbGBOq+OSigYeGvPy7NDk8Y9yncqDZ9pRPgfsc2PJIVM9RrJj7GIfuRgmjoUU9zTHQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tabbable/-/tabbable-6.1.2.tgz}
-    name: tabbable
-    version: 6.1.2
-    dev: true
-
   registry.npmmirror.com/tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tabbable/-/tabbable-6.2.0.tgz}
     name: tabbable
@@ -2005,6 +1999,40 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/util-deprecate/-/util-deprecate-1.0.2.tgz}
     name: util-deprecate
     version: 1.0.2
+    dev: true
+
+  registry.npmmirror.com/vite@4.3.9:
+    resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-4.3.9.tgz}
+    name: vite
+    version: 4.3.9
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: registry.npmmirror.com/esbuild@0.17.19
+      postcss: registry.npmmirror.com/postcss@8.4.27
+      rollup: registry.npmmirror.com/rollup@3.26.3
+    optionalDependencies:
+      fsevents: registry.npmmirror.com/fsevents@2.3.2
     dev: true
 
   registry.npmmirror.com/vite@4.3.9(@types/node@20.4.3):
@@ -2098,7 +2126,7 @@ packages:
       mark.js: registry.npmmirror.com/mark.js@8.11.1
       minisearch: registry.npmmirror.com/minisearch@6.1.0
       shiki: registry.npmmirror.com/shiki@0.14.2
-      vite: registry.npmmirror.com/vite@4.3.9(@types/node@20.4.3)
+      vite: registry.npmmirror.com/vite@4.3.9
       vue: registry.npmmirror.com/vue@3.3.4
     transitivePeerDependencies:
       - '@algolia/client-search'
