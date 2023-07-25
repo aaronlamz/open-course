@@ -19,9 +19,15 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '指南',
+        text: '入门指南',
         items: [
           { text: '介绍', link: '/guide/introduction.md' },
+        ]
+      },
+      {
+        text: '后台管理系统实践',
+        items: [
+          { text: '路由模式', link: '/admin/introduction.md' },
         ]
       }
     ],
