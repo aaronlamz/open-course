@@ -32,6 +32,7 @@ Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [x] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [x] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
+- [ ] [《React 开发实践》](https://www.ultimate-kernel.fun/open-course/react/)
 - [ ] [《数据结构与算法学习》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 - [ ] [《Linux 运维实践》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Solidity 开发实践》](https://www.ultimate-kernel.fun/open-course/solidity/)
