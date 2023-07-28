@@ -41,6 +41,7 @@ Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.
 | 名称  | 描述 |
 | :--- | :--- |
 | [AI-For-Beginners](https://microsoft.github.io/AI-For-Beginners/) | 微软出品的人工智能入门课程，包括从入门级别的基础知识，到符号人工智能，深度学习，计算机视觉，自然语言处理，和其他AI技术，以及AI伦理等高级主题。每个主题都包含相应的学习材料，课程文本，和实践实验室。|
+| [ classcentral ](https://www.classcentral.com/) | 一个免费搜索和发现 MOOCs（大规模开放式在线课程）的网站，它汇集了来自世界顶级大学的 15,000 多门课程。|
 
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8`
