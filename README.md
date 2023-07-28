@@ -50,7 +50,7 @@ Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.
 1. Fork 本仓库
 2. 启动项目 `pnpm i && pnpm dev` 
 3. 在你的仓库中修改内容，然后提交到你的仓库
-4. 提交 PR 到本仓库的 `main` 分支，commit message 需要包含`--docs`，例如：`add nodejs --docs`
+4. 提交 PR 到本仓库的 `main` 分支，commit message 需要包含`--docs`，例如：`git commit -m "add nodejs --docs"`
 
 ## 支持
 如果你觉得这个项目对你有帮助，欢迎star，谢谢你的支持！
