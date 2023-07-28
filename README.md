@@ -38,9 +38,9 @@ Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.
 - [ ] [《Solidity 开发实践》](https://www.ultimate-kernel.fun/open-course/solidity/)
 
 ## AI 学习资源
-| 名称 | 类型 |描述 |
-| :---: |  :-------: | :---: |
-| [AI-For-Beginners](https://microsoft.github.io/AI-For-Beginners/) | 课程 | 微软出品的人工智能入门课程，包括从入门级别的基础知识，到符号人工智能，深度学习，计算机视觉，自然语言处理，和其他AI技术，以及AI伦理等高级主题。每个主题都包含相应的学习材料，课程文本，和实践实验室。|
+| 名称  | 描述 |
+| :--- | :--- |
+| [AI-For-Beginners](https://microsoft.github.io/AI-For-Beginners/) | 微软出品的人工智能入门课程，包括从入门级别的基础知识，到符号人工智能，深度学习，计算机视觉，自然语言处理，和其他AI技术，以及AI伦理等高级主题。每个主题都包含相应的学习材料，课程文本，和实践实验室。|
 
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8`
