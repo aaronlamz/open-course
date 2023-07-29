@@ -5,17 +5,17 @@
 ##
 
 <p align="center">
-<a href="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml">
-  <img src="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg ">
-</a>
+  <a href="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml">
+    <img src="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg ">
+  </a>
 
-<a href="https://chat.openai.com/">
-  <img src ="https://badgen.net/static/AIGC%20By/ChatGPT-4/green">
-</a>
+  <a href="https://chat.openai.com/">
+    <img src ="https://badgen.net/static/AIGC%20By/ChatGPT-4/green">
+  </a>
 
-<a href="https://flat.badgen.net/badge/icon/wiki/green?icon=wiki&label">
-  <img src ="https://flat.badgen.net/badge/icon/wiki/green?icon=wiki&label">
-</a>
+  <a href="https://flat.badgen.net/badge/icon/wiki/green?icon=wiki&label">
+    <img src ="https://flat.badgen.net/badge/icon/wiki/green?icon=wiki&label">
+  </a>
 </p>
 
 ## 介绍
