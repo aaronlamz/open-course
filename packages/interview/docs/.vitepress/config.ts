@@ -27,7 +27,7 @@ export default defineConfig({
         text: 'JavaScript 系列',
         collapsed: true,
         items: [
-          { text: '介绍',link:'/javascript/'},
+          { text: '介绍', link: '/javascript/' },
           { text: '解释一下原型、原型链是什么', link: '/javascript/prototype.md' },
           { text: '解释一下JavaScript中的闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
           { text: '解释一下JavaScript中的this是什么以及它的作用', link: '/javascript/this.md' },
@@ -59,7 +59,6 @@ export default defineConfig({
           { text: '介绍', link: '/css/' },
           { text: '解释一下CSS中的BFC是什么以及它的作用', link: '/css/bfc.md' },
           { text: '解释一下盒子模型', link: '/css/bbm.md' }
-
         ]
       },
       {
@@ -107,27 +106,13 @@ export default defineConfig({
         ]
       },
       {
-        text: 'HTTP 系列',
+        text: '网络协议系列',
         collapsed: true,
         items: [
-          { text: '介绍', link: '/http/' },
-          { text: '解释一下HTTP中的缓存', link: '/http/cache.md' },
-          { text: '解释一下HTTP中的跨域', link: '/http/cors.md' },
-          { text: '解释一下HTTP中的HTTPS', link: '/http/https.md' },
-          { text: '解释一下HTTP中的HTTP2.0', link: '/http/http2.md' },
-          { text: '解释一下HTTP中的HTTP3.0', link: '/http/http3.md' },
-          { text: '解释一下HTTP中的TCP', link: '/http/tcp.md' },
-          { text: '解释一下HTTP中的UDP', link: '/http/udp.md' },
-          { text: '解释一下HTTP中的TCP和UDP的区别', link: '/http/tcp-udp.md' },
-          { text: '解释一下HTTP中的TCP三次握手和四次挥手', link: '/http/tcp-handshake.md' },
-          { text: '解释一下HTTP中的HTTP1.0、HTTP1.1、HTTP2.0的区别', link: '/http/http1-1-2.md' },
-          { text: '解释一下HTTP中的HTTP状态码', link: '/http/status-code.md' },
-          { text: '解释一下HTTP中的HTTP请求方法', link: '/http/request-method.md' },
-          { text: '解释一下HTTP中的HTTP请求头', link: '/http/request-header.md' },
-          { text: '解释一下HTTP中的HTTP响应头', link: '/http/response-header.md' },
-          { text: '解释一下HTTP中的HTTP请求报文', link: '/http/request-message.md' },
-          { text: '解释一下HTTP中的HTTP响应报文', link: '/http/response-message.md' },
-          { text: '解释一下HTTP中的HTTP缓存', link: '/http/cache.md' },
+          { text: '介绍', link: '/network/' },
+          {
+            text: '详细说说从浏览器输入url到页面展现出来这个过程发生了什么', link: '/network/url.md',
+          }
         ]
       },
       {
