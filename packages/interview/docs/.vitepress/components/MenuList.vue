@@ -1,12 +1,12 @@
 <template>
     <div class="menu-list">
-        <div class="menu-item" 
-        v-for="(item, index) in menuItems" 
-        :key="index" 
+        <div class="menu-item"
+        v-for="(item, index) in menuItems"
+        :key="index"
         @click="go(item.link)">{{ item.title }}</div>
     </div>
 </template>
-  
+
 <script setup>
 import { withBase, useRouter } from 'vitepress'
 import { ref } from 'vue'
@@ -31,8 +31,8 @@ const menuItems = ref(
             link: withBase('/react/'),
         },
         {
-            title: 'HTTP系列',
-            link: withBase('/http/'),
+            title: '网络协议系列',
+            link: withBase('/network/'),
         },
         {
             title: '笔试题系列',
@@ -49,10 +49,10 @@ const menuItems = ref(
     ])
 
 </script>
-  
+
 <style>
 .menu-list {
-    column-count: 2;
+    column-count: 3;
     column-gap: 20px;
 }
 
