@@ -61,6 +61,8 @@
 <style>
 @import '~@/assets/style/global.css';
 
+
+
 .header-navbar {
   height: 60px;
   margin: 0 auto;
@@ -213,5 +215,49 @@ svg {
 
 .type-blocksuite {
   filter: drop-shadow(-25px -60px 60px rgba(18, 70, 255, .5)) drop-shadow(25px 60px 60px rgba(215, 169, 252, .4)) drop-shadow(0 4px 60px rgba(255, 255, 255, .3));
+}
+
+
+/* Responsive design for small screens */
+@media screen and (max-width: 768px) {
+  .header-navbar {
+    height: 50px;
+  }
+
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .navbar-fixed {
+    position: relative;
+    overflow-x: scroll;
+  }
+
+  .nav-item {
+    font-size: 12px;
+  }
+
+  .nav-item a {
+    padding: 0 8px;
+  }
+
+  .main-container {
+    height: calc(100vh - 50px);
+  }
+
+  .course-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .course-title {
+    padding-top: 20px;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+  }
+
+  .course-item-wrapper {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
 }
 </style>
