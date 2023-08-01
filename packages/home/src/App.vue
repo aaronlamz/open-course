@@ -121,7 +121,10 @@
 .main-container {
   width: 100%;
   height: calc(100vh - 60px);
-  background: linear-gradient(180deg, #000, #19191b);
+  /* background: linear-gradient(180deg, #000, #19191b); */
+  background: url('/galaxy.jpg') no-repeat center center;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .course-container {
@@ -181,7 +184,7 @@
 }
 
 svg {
-  height: 100%;
+  height: 110%;
   width: 100%;
 }
 
