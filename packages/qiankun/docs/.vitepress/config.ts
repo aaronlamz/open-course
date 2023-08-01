@@ -22,12 +22,14 @@ export default defineConfig({
         text: '入门指南',
         items: [
           { text: '介绍', link: '/guide/introduction.md' },
+          { text: 'qiankun 工作原理', link: '/guide/qiankun-core.md' },
+          { text: 'single-spa 工作原理', link: '/guide/single-spa-core.md' },
         ]
       },
       {
         text: '后台管理系统实践',
         items: [
-          { text: '路由模式', link: '/admin/introduction.md' },
+          { text: '选择路由模式', link: '/admin/router.md' },
         ]
       }
     ],
