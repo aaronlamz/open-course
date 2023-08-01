@@ -2,7 +2,6 @@
 
 qiankun 是一个基于 [single-spa](https://github.com/CanopyTax/single-spa) 的[微前端](https://micro-frontends.org/)实现库，旨在帮助大家能更简单、无痛的构建一个生产可用微前端架构系统。
 
-
 ## 什么是微前端
 
 微前端是一种多个团队通过独立发布功能的方式来共同构建现代化 web 应用的技术手段及方法策略。
@@ -36,7 +35,6 @@ qiankun 是一个基于 [single-spa](https://github.com/CanopyTax/single-spa) �
 - **独立运行时**：每个微应用之间状态隔离，运行时状态不共享
 
 ## 微前端的缺点
-
 
 - **性能问题**：每个微应用都有自己的依赖库和框架，这可能导致大量重复的代码和更大的应用大小。此外，多个运行时可能会导致内存和CPU资源的浪费。
 
