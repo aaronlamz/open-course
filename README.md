@@ -27,7 +27,7 @@
 ## 首页
 Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 
-## 学习小册
+## 小册
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [x] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [x] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
@@ -36,7 +36,7 @@ Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.
 - [ ] [《Linux 运维实践》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Solidity 开发实践》](https://www.ultimate-kernel.fun/open-course/solidity/)
 
-## AI 学习资源
+## AI
 | 名称  | 描述 |
 | :--- | :--- |
 | [AI-For-Beginners](https://microsoft.github.io/AI-For-Beginners/) | 微软出品的人工智能入门课程，包括从入门级别的基础知识，到符号人工智能，深度学习，计算机视觉，自然语言处理，和其他AI技术，以及AI伦理等高级主题。每个主题都包含相应的学习材料，课程文本，和实践实验室。|
