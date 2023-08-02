@@ -12,8 +12,8 @@ export default defineConfig({
     logo: '/qiankun.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/guide/introduction.md' },
-      { text: '在线示例', link: '/' },
+      { text: '指南', link: '/guide/' },
+      { text: '在线示例', link: '/demo/' },
       { text: '官方文档', link: 'https://qiankun.umijs.org/zh' },
       { text: 'Github', link: 'https://github.com/aaronlamz/open-course' }
     ],
