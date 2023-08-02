@@ -1,4 +1,4 @@
-# 解释一下Vue中的watch
+# 解释一下 Vue 中的 watch
 
 ## 什么是watch
 
@@ -8,160 +8,24 @@ watch是一个选项，它用来监听数据的变化，当数据发生变化时
 
 当我们想要在数据变化时执行异步或开销较大的操作时，就可以使用watch。
 
-## watch的优势
+## 实现原理
 
-1. watch可以监听到对象、数组的变化，而computed只能监听到属性的变化。
+在 Vue.js 中，`watch` 的实现原理与计算属性(`computed`)有很大的相似性，都基于 Vue.js 的响应式系统。但在某些细节上，`watch` 的实现方式有所不同。接下来我会简要地介绍一下其实现原理。
 
-2. watch可以监听到数据的变化，而computed只能监听到属性的变化。
+首先，你需要知道的是 Vue.js 的响应式系统依赖于 ES5 的 `Object.defineProperty` API。Vue.js 通过这个 API 监听到数据的变化，然后在需要时重新渲染视图。
 
-## watch的缺点
+1. **依赖收集**
 
-watch的缺点主要是它不能缓存计算结果，而computed可以缓存计算结果。
+   当我们创建一个 Vue 实例时，Vue.js 会遍历 `data` 对象的所有属性，并用 `Object.defineProperty` 把这些属性转为 getter/setter。当我们访问这些属性时，getter 会被调用，并且把该属性添加到当前正在计算的 watcher 的依赖中。这样我们就知道了哪个 watcher 依赖了哪个属性。
 
-## watch的实现
+2. **派发更新**
 
-watch的实现主要是通过watch方法来实现的，它接收三个参数，第一个参数是要监听的数据，第二个参数是回调函数，第三个参数是一个对象，它有两个属性，一个是deep，用来指定是否要深度监听，另一个是immediate，用来指定是否要立即执行回调函数。
+   当我们修改一个属性的值时，setter 会被调用，然后通知所有依赖这个属性的 watcher 更新。对于 `watch` 而言，这个更新操作就是执行它的回调函数。
 
-```js
+3. **异步队列**
 
-function watch(expOrFn, cb, options) {
-  const vm = this
-  options = options || {}
-  const watcher = new Watcher(vm, expOrFn, cb, options)
-  if (options.immediate) {
-    cb.call(vm, watcher.value)
-  }
-  return function unwatchFn() {
-    watcher.teardown()
-  }
-}
+   Vue.js 内部对异步队列的处理，可以确保每次只进行一次更新，并且所有的 watcher 更新顺序是一致的。当一个 watcher 被通知更新时，它并不会立即执行更新操作，而是被推入到一个队列中，然后在下一个事件循环("tick")中，Vue.js 会清空并处理整个队列。
 
-// new Watcher 实现，可以查看源码
+在源码层面，`watch` 的实现涉及到 `Watcher` 类和 `Dep` 类等。当你在 Vue 实例中定义了一个 `watch`，Vue.js 实际上会为其创建一个 `Watcher` 实例，然后通过依赖收集和派发更新的机制，实现 `watch` 的功能。
 
-class Watcher {
-  constructor(vm, expOrFn, cb, options) {
-    this.vm = vm
-    this.cb = cb
-    this.options = options
-    this.getter = parsePath(expOrFn)
-    this.value = this.get()
-    /**
-     * Watch 在结尾会立即执行一次 watcher.get，其中便会执行 getter，便会根据你监听的key，去实例上读取并返回，存放在 watcher.value 上看到了吗，从实例上读取属性，这句话。首先，watch 初始化之前，data 应该初始化完毕了，每个 data 数据都已经是响应式的
-    */
-  }
-  get() {
-    pushTarget(this)
-    const vm = this.vm
-    let value = this.getter.call(vm, vm) // 监听的key，去实例上读取并返回
-    popTarget()
-    return value
-  }
-  update() {
-    const oldValue = this.value
-    this.value = this.get()
-    this.cb.call(this.vm, this.value, oldValue)
-  }
-  teardown() {
-    this.vm = null
-  }
-}
-
-// parsePath
-
-const bailRE = /[^\w.$]/
-
-function parsePath(path) {
-  if (bailRE.test(path)) {
-    return
-  }
-  const segments = path.split('.')
-  return function(obj) {
-    for (let i = 0; i < segments.length; i++) {
-      if (!obj) return
-      obj = obj[segments[i]]
-    }
-    return obj
-  }
-}
-
-// pushTarget
-
-const targetStack = []
-
-function pushTarget(target) {
-  targetStack.push(target)
-  Dep.target = target
-}
-
-// popTarget
-
-function popTarget() {
-  targetStack.pop()
-  Dep.target = targetStack[targetStack.length - 1]
-}
-
-// Dep
-
-class Dep {
-  constructor() {
-    this.subs = []
-  }
-  addSub(sub) {
-    this.subs.push(sub)
-  }
-  removeSub(sub) {
-    remove(this.subs, sub)
-  }
-  depend() {
-    if (Dep.target) {
-      Dep.target.addDep(this)
-    }
-  }
-  notify() {
-    const subs = this.subs.slice()
-    for (let i = 0; i < subs.length; i++) {
-      subs[i].update()
-    }
-  }
-}
-
-// remove
-
-function remove(arr, item) {
-  if (arr.length) {
-    const index = arr.indexOf(item)
-    if (index > -1) {
-      return arr.splice(index, 1)
-    }
-  }
-}
-
-// Dep.target
-
-Dep.target = null
-
-```
-
-## watch的应用
-
-watch的应用主要是在Vue中，当我们想要监听数据的变化时，就可以使用watch。
-
-```js
-
-const vm = new Vue({
-  el: '#app',
-  data() {
-    return {
-      counter: 0
-    }
-  },
-  watch: {
-    counter(newValue, oldValue) {
-      console.log(newValue, oldValue)
-    }
-  }
-})
-```
-
-## 参考
-[Watch 源码分析](https://zhuanlan.zhihu.com/p/62733342)
+以上是 `watch` 的基础实现原理，要了解更详细的信息，你可以直接查看 Vue.js 的源码。
