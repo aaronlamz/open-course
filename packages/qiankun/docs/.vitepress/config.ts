@@ -25,7 +25,7 @@ export default defineConfig({
           { text: '介绍', link: '/guide/introduction.md' },
           { text: 'qiankun 工作原理', link: '/guide/qiankun-core.md' },
           { text: 'single-spa 工作原理', link: '/guide/single-spa-core.md' },
-          { text: 'JavaScript 沙箱环境', link: '/guide/sandbox.md' },
+          { text: '沙箱环境', link: '/guide/sandbox.md' },
         ]
       },
       {

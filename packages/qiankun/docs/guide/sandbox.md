@@ -1,10 +1,12 @@
-# JavaScript 沙箱环境
+# 沙箱环境
+
+## JavaScript 沙箱环境
 
 JavaScript 沙箱通常用于在一个安全的环境中运行代码，而不影响其余的应用或系统。在这个环境中运行的代码将被限制在这个沙箱中，它无法访问沙箱外的资源。这个技术常用于防止可能的恶意代码运行，或者在执行未经验证的第三方代码时降低风险。
 
 下面是一些常用的 JavaScript 沙箱方法和技术：
 
-1. **使用Web Workers**：Web Workers 在浏览器中创建一个单独的线程运行JavaScript代码，这个线程与主线程相隔离，无法访问DOM或主线程的全局变量。虽然Web Workers主要设计用来处理长时间运行的或计算密集型的任务，但由于其隔离性，也可以被用作创建沙箱环境。
+1. **使用Web Workers**：Web Workers 在浏览器中创建一个单独的线程运行 JavaScript 代码，这个线程与主线程相隔离，无法访问DOM或主线程的全局变量。虽然Web Workers主要设计用来处理长时间运行的或计算密集型的任务，但由于其隔离性，也可以被用作创建沙箱环境。
 
 2. **使用iframes**：使用 iframes 是在浏览器环境中创建 JavaScript 沙箱环境的一种常见方法。你可以在 iframe 中运行JavaScript 代码，而该代码无法访问父页面的DOM或全局变量。通过这种方式，你可以安全地执行第三方或不受信任的代码。然而，需要注意的是，iframe 与父页面之间的交互可能需要通过 postMessage 等 API 进行，以保证安全性。
 
@@ -17,6 +19,36 @@ JavaScript 沙箱通常用于在一个安全的环境中运行代码，而不影
 6. **Content Security Policy (CSP)**：CSP 是一种安全机制，用于防止跨站脚本攻击 (XSS) 和其他代码注入攻击。通过设置合适的CSP策略，你可以限制页面中的脚本如何以及在何处执行，从而可以创建一个限制性更强的沙箱环境。
 
 不论使用哪种方法，都需要谨慎对待沙箱环境的安全性。创建沙箱环境时需要确保其能有效隔离可能的恶意行为，并且可能需要定期进行安全审查和更新，以保证与最新的安全实践保持一致。
+
+## HTML 沙箱环境
+
+在微前端架构中，一个常用的HTML沙箱实现方式是使用 Shadow DOM。Shadow DOM 为 Web 组件提供了封装，使得元素的样式和行为在文档的其他部分中是私有的。
+
+下面是一个使用Shadow DOM的基本示例：
+
+```html
+<!-- 在你的HTML中添加一个主机元素 -->
+<div id="shadow-host"></div>
+
+<script>
+  // 获取主机元素
+  var shadowHost = document.getElementById('shadow-host');
+
+  // 为主机元素创建一个shadow root
+  var shadowRoot = shadowHost.attachShadow({mode: 'open'});
+
+  // 添加一些HTML到shadow root中
+  shadowRoot.innerHTML = '<p>This is inside the shadow DOM!</p>';
+</script>
+```
+
+在这个例子中，我们首先在HTML中添加一个主机元素。然后，我们使用 JavaScript 获取这个元素，并使用 `attachShadow` 方法为它创建一个shadow root。最后，我们添加一些HTML到shadow root中。在这个shadow root中的所有内容都会被封装起来，它们的样式和行为不会影响到文档的其他部分。
+
+然而，需要注意的是，虽然Shadow DOM在一定程度上提供了隔离，但它并不是一个完全的沙箱。例如，它不能隔离 JavaScript 的全局作用域，也不能防止脚本访问浏览器的 API 。因此，在使用Shadow DOM的同时，可能还需要额外的安全措施，例如CSP（内容安全策略），来防止脚本注入等安全问题。
+
+另一个沙箱技术是使用 `<iframe>` 元素。`<iframe>` 可以创建一个完全独立的执行环境，它有自己的文档、全局作用域和样式上下文。但 `<iframe>` 的开销比较大，可能会影响性能，并且使用起来也比较复杂。
+
+请注意，以上只是部分沙箱实现方式。根据你的具体需求和环境，可能会有其他的解决方案。
 
 ## Service Workers VS Web Workers
 
@@ -43,3 +75,4 @@ JavaScript 沙箱通常用于在一个安全的环境中运行代码，而不影
 3. Web Workers 是完全隔离的，它们不能访问主线程的上下文，例如 DOM 或者全局变量，它们只能通过消息传递机制与主线程通信。
 
 总的来说，两者的关键区别在于：Service Workers 是设计用来处理离线缓存、推送通知和网络请求拦截的，而 Web Workers 则是用来处理长时间运行的计算密集型任务的。
+
