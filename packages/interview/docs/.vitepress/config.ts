@@ -133,6 +133,9 @@ export default defineConfig({
           },
           {
             text: 'CDN', link: '/network/cdn.md'
+          },
+          {
+            text: 'EventLoop', link: '/network/event-loop.md'
           }
         ]
       },
