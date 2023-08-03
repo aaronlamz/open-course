@@ -131,6 +131,9 @@ export default defineConfig({
           {
             text: 'HTTP 缓存', link: '/network/http-cache.md'
           },
+          {
+            text: 'CDN', link: '/network/cdn.md'
+          }
         ]
       },
       {
