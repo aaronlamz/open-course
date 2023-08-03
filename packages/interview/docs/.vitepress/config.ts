@@ -112,7 +112,25 @@ export default defineConfig({
           { text: '介绍', link: '/network/' },
           {
             text: '详细说说从浏览器输入url到页面展现出来这个过程发生了什么', link: '/network/url.md',
-          }
+          },
+          {
+            text: 'HTTP 协议', link: '/network/http.md'
+          },
+          {
+            text: 'HTTPS 协议', link: '/network/https.md'
+          },
+          {
+            text: 'TCP 协议', link: '/network/tcp.md'
+          },
+          {
+            text: 'UDP 协议', link: '/network/udp.md'
+          },
+          {
+            text: 'WebSocket 协议', link: '/network/websocket.md'
+          },
+          {
+            text: 'HTTP 缓存', link: '/network/http-cache.md'
+          },
         ]
       },
       {
