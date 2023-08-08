@@ -34,6 +34,7 @@ Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.
 - [ ] [《React.js 开发实践》](https://www.ultimate-kernel.fun/open-course/react/)
 - [ ] [《数据结构与算法之美》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 - [ ] [《Linux 运维实践》](https://www.ultimate-kernel.fun/open-course/linux/)
+- [ ] [《Docker 入门指南》](https://www.ultimate-kernel.fun/open-course/docker/)
 <!-- - [ ] [《Solidity 开发实践》](https://www.ultimate-kernel.fun/open-course/solidity/) -->
 
 ## Open Course
