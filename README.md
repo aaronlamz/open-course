@@ -2,8 +2,6 @@
   <img src="./logo.svg" width="100"  alt="logo" />
 </div>
 
-##
-
 <p align="center">
   <a href="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml">
     <img src="https://github.com/aaronlamz/open-course/actions/workflows/deploy-docs.yml/badge.svg ">
@@ -25,7 +23,7 @@
 本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
 
 ## 首页
-Visit [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
+[https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 
 ## 小册
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
