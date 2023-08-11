@@ -13,6 +13,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/introduction' },
+      { text: 'GitHub', link: 'https://github.com/aaronlamz/open-course' },
     ],
 
     sidebar: [
@@ -30,9 +31,12 @@ export default defineConfig({
           { text: '介绍', link: '/javascript/' },
           { text: '解释一下原型、原型链是什么', link: '/javascript/prototype.md' },
           { text: '解释一下闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
-          { text: '解释一下 this 是什么以及它的作用', link: '/javascript/this.md' },
+          { text: '解释一下this是什么以及它的作用', link: '/javascript/this.md' },
           { text: '解释一下变量提升是什么以及它的作用', link: '/javascript/hoisting.md' },
-          { text: '解释一下 defer 和 async 作用以及区别', link: '/javascript/defer.md' },
+          { text: '解释一下defer和async作用以及区别', link: '/javascript/defer.md' },
+          {
+            text: '解释一下EventLoop', link: '/javascript/event-loop.md'
+          }
         ]
       },
       {
@@ -117,9 +121,7 @@ export default defineConfig({
           {
             text: 'CDN', link: '/network/cdn.md'
           },
-          {
-            text: 'EventLoop', link: '/network/event-loop.md'
-          }
+
         ]
       },
       {
