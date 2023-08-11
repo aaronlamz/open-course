@@ -1,4 +1,4 @@
-# 解释一下JavaScript中的变量提升是什么以及它的作用
+# 解释一下变量提升是什么以及它的作用
 
 在JavaScript中，变量提升是指在代码执行过程中，JavaScript引擎将声明提升到作用域的顶部。这意味着在声明之前可以使用变量。例如，以下代码将打印 undefined，而不是 ReferenceError: foo is not defined。
 ```js
