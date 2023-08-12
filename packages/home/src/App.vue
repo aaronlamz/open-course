@@ -31,7 +31,7 @@
         Open Course - Web Learning Course
       </div>
       <div class="course-container">
-        <div class="course-item-wrapper">
+        <!-- <div class="course-item-wrapper">
           <a class="course-item">
             <div class="gradient-border"></div>
             <div class="content-box">
@@ -52,7 +52,7 @@
             </div>
           </a>
           <div class="card-icon-shadow type-blocksuite"></div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
