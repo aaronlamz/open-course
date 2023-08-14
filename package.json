@@ -17,6 +17,7 @@
     "build:algorithm": "pnpm --dir packages/algorithm docs:build",
     "build:linux": "pnpm --dir packages/linux docs:build",
     "build:qiankun": "pnpm --dir packages/qiankun docs:build",
+    "build:all": "node scripts/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
