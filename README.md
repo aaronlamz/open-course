@@ -25,12 +25,16 @@
 ## 首页
 [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 
-## 小册
+## 基础
+- [ ] [《数据结构与算法之美》](https://www.ultimate-kernel.fun/open-course/algorithm/)
+
+## 前端
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [x] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [x] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《React.js 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
-- [ ] [《数据结构与算法之美》](https://www.ultimate-kernel.fun/open-course/algorithm/)
+
+## 运维
 - [ ] [《Linux 运维指南》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Docker 入门指南》](https://www.ultimate-kernel.fun/open-course/docker/)
 
