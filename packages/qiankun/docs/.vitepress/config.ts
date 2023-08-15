@@ -34,6 +34,12 @@ export default defineConfig({
         items: [
           { text: '选择路由模式', link: '/admin/router.md' },
         ]
+      },
+      {
+        text: '源码解析',
+        items: [
+          { text: 'qiankun 源码解析', link: '/source/qiankun.md' },
+        ]
       }
     ],
     socialLinks: [
