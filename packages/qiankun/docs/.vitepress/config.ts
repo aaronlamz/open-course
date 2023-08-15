@@ -15,6 +15,7 @@ export default defineConfig({
       { text: '指南', link: '/guide/' },
       { text: '在线示例', link: '/demo/' },
       { text: '官方文档', link: 'https://qiankun.umijs.org/zh' },
+      { text: '官方社区', link: 'https://github.com/umijs/qiankun/discussions' },
       { text: 'Github', link: 'https://github.com/aaronlamz/open-course' }
     ],
     sidebar: [
