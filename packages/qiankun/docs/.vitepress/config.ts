@@ -40,7 +40,13 @@ export default defineConfig({
         items: [
           { text: 'qiankun 源码解析', link: '/source/qiankun.md' },
         ]
-      }
+      },
+      {
+        text: '贡献指南',
+        items: [
+          { text: '参与贡献', link: '/contributing.md' },
+        ]
+      },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aaronlamz/open-course' }
