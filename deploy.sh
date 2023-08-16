@@ -13,6 +13,7 @@ echo pnpm run build
 pnpm build:nodejs
 pnpm build:interview
 pnpm build:qiankun
+pnpm build:algorithm
 pnpm build:home
 
 echo pwd
