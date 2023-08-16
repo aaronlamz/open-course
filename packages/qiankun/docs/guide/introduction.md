@@ -69,6 +69,3 @@ qiankun 是一个基于 [single-spa](https://github.com/CanopyTax/single-spa) �
 - **HTML 沙箱**：确保微应用之间 DOM 结构不冲突
 
 - **prefetch 预加载**：在浏览器空闲时间预加载未打开的微应用资源，加速微应用打开速度
-
-
-
