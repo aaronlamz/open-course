@@ -20,7 +20,7 @@
 本项目是一个面向前端人员的学习路线资源集合，构建前端知识体系及分享学习心得。
 
 ## 状态
-本项目处于开发阶段，目前只有一些零散的内容，后续会逐步完善。
+WIP
 
 ## 首页
 [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
