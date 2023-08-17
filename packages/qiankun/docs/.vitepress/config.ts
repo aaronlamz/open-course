@@ -40,6 +40,7 @@ export default defineConfig({
           { text: '构建子应用-Angular', link: '/admin/sub-angular.md' },
           { text: '父子应用间通信', link: '/admin/communication.md' },
           { text: '样式隔离方案', link: '/admin/style.md' },
+          { text: '公共代码复用', link: '/admin/common.md' },
           { text: 'Tab页签 KeepAlive 方案', link: '/admin/keep-alive.md' },
         ]
       },
