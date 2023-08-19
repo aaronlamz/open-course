@@ -32,6 +32,7 @@ export default defineConfig({
       {
         text: '微前端应用实践-后台管理系统',
         items: [
+          { text: '介绍', link: '/admin/index.md' },
           { text: '选择路由模式', link: '/admin/router.md' },
           { text: '构建基座应用', link: '/admin/base.md' },
           { text: '构建子应用', link: '/admin/sub.md' },
