@@ -24,7 +24,7 @@ pnpm dev
 
 5. 修改文档，查看效果
 
-6. 提交 PR， git commit message 包含 `--docs` 字样 
+6. 提交 PR
 
 
    
