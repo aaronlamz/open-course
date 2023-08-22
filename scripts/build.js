@@ -10,7 +10,6 @@ const pages = fs.readdirSync(pagesDir);
 
 async function run() {
   for (const page of pages) {
-    if(page === 'template') continue;
     const pagePath = path.resolve(pagesDir, page);
     const stat = fs.statSync(pagePath);
     if (stat.isDirectory()) {
