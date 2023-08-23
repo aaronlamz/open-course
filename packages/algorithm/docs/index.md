@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /guide/introduction.md
+      link: /guide/00.md
     - theme: alt
       text: 查看Github
       link: https://github.com/aaronlamz/open-course
