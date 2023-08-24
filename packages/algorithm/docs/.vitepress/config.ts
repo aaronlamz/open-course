@@ -26,6 +26,9 @@ export default defineConfig({
           },
           {
             text: '如何系统高效地学习数据结构与算法？', link: '/guide/02.md'
+          },
+          {
+            text: '复杂度分析', link: '/guide/03.md'
           }
         ]
       },
