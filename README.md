@@ -23,13 +23,13 @@
 WIP
 
 ## 基础
-- [ ] [《数据结构与算法之美》](https://www.ultimate-kernel.fun/open-course/algorithm/)
+- [ ] [《数据结构与算法》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 
 ## 前端
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [x] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
-- [ ] [《Node.js 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
-- [ ] [《React.js 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
+- [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
+- [ ] [《React 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 
 ## 运维
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)

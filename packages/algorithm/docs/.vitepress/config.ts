@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "数据结构与算法之美",
-  description: "数据结构与算法之美",
+  title: "数据结构与算法",
+  description: "数据结构与算法",
   base: '/open-course/algorithm/',
   outDir: './.vitepress/dist/algorithm',
   head: [['link', { rel: 'icon', href: '/open-course/algorithm/favicon.ico' }]],

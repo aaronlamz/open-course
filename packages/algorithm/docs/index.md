@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "数据结构与算法之美"
+  name: "数据结构与算法"
   text: "系统化学习，逐步提升"
   tagline: "从零开始学习数据结构与算法"
 
