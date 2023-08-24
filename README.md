@@ -22,9 +22,6 @@
 ## 状态
 WIP
 
-## 首页
-[https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
-
 ## 基础
 - [ ] [《数据结构与算法之美》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 
