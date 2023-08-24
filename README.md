@@ -27,7 +27,7 @@ WIP
 
 ## 前端
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
-- [x] [《Qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
+- [x] [《qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《React 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 
