@@ -32,8 +32,8 @@ WIP
 - [ ] [《React.js 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 
 ## 运维
-- [ ] [《Linux 运维指南》](https://www.ultimate-kernel.fun/open-course/linux/)
-- [ ] [《Docker 入门指南》](https://www.ultimate-kernel.fun/open-course/docker/)
+- [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
+- [ ] [《Docker 学习指南》](https://www.ultimate-kernel.fun/open-course/docker/)
 
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8`
