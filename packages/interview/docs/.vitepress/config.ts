@@ -32,7 +32,7 @@ export default defineConfig({
           { text: '解释一下原型、原型链是什么', link: '/javascript/prototype.md' },
           { text: '解释一下闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
           { text: '解释一下this是什么以及它的作用', link: '/javascript/this.md' },
-          { text: '解释一下变量提升是什么以及它的作用', link: '/javascript/hoisting.md' },
+          { text: '解释一下变量提升是什么以及它的作用', link: '/javascript/hosting.md' },
           { text: '解释一下defer和async作用以及区别', link: '/javascript/defer.md' },
           {
             text: '解释一下EventLoop', link: '/javascript/event-loop.md'
