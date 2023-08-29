@@ -1,58 +1,64 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  let script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = '/animation.js';
+  document.body.appendChild(script);
+})
 </script>
 
 <template>
   <div class="page-container">
-    <div class="header-navbar">
-      <div class="navbar-container">
-        <div class="navbar-fixed">
-          <div class="menu-list">
-            <div class="nav-item">
-              <a href="/" target="_blank">Home</a>
-            </div>
-            <div class="nav-item">
-              <a href="https://www.ultimate-kernel.fun/open-course/interview/" target="_blank">《前端面试系列》</a>
-            </div>
-            <div class="nav-item">
-              <a href="https://www.ultimate-kernel.fun/open-course/qiankun/" target="_blank">《qiankun 微前端实践指南》</a>
-            </div>
-            <div class="nav-item">
-              <a href="https://www.ultimate-kernel.fun/open-course/nodejs/" target="_blank">《Node.js 开发指南》</a>
-            </div>
-            <div class="nav-item">
-              <a href="https://github.com/aaronlamz/open-course" target="_blank">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="main-container">
       <div class="course-title">
-        Open Course - Web Learning Course
+        <a hef="https://github.com/aaronlamz/open-course" target="_blank">Web Developer Roadmap</a>
       </div>
       <div class="course-container">
-        <!-- <div class="course-item-wrapper">
-          <a class="course-item">
-            <div class="gradient-border"></div>
-            <div class="content-box">
-              <span class="nuxt-icon logo-icon colorful-icon">
-                <svg width="358" height="338" viewBox="0 0 358 338" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M257.444 109.293L205.506 68L100.557 88.9466V184.689L152.513 226L257.444 205.053V109.293ZM195.12 83.1255V110.799L211.002 107.629V90.2678L233.948 108.507L157.366 123.79L124.053 97.3085L195.12 83.1255ZM116.438 109.145L146.99 133.427V162.412L162.871 159.243V135.746L241.553 120.038V184.865L211.002 160.582V131.597L195.12 134.767V158.263L116.438 173.971V109.145ZM162.88 210.875V183.201L146.999 186.371V203.732L124.053 185.493L200.634 170.21L233.948 196.691L162.88 210.875Z"
-                    fill="url(#paint0_linear_917_141447)"></path>
-                  <defs>
-                    <linearGradient id="paint0_linear_917_141447" x1="179" y1="68" x2="179" y2="226"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#28B2FF"></stop>
-                      <stop offset="1" stop-color="#7000FF"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </span>
+        <main class="main flow">
+          <div class="main__cards cards">
+            <div class="cards__inner">
+              <div class="cards__card card">
+                <h2 class="card__heading">基础</h2>
+                <p class="card__price"></p>
+                <ul role="list" class="card__bullets flow">
+                  <li><a href="/open-course/interview/" class="card__cta cta">《数据结构与算法》</a></li>
+                </ul>
+              </div>
+
+              <div class="cards__card card">
+                <h2 class="card__heading">前端</h2>
+                <p class="card__price"></p>
+                <ul role="list" class="card__bullets flow">
+                  <li><a href="/open-course/algorithm/" class="card__cta cta">《前端面试系列》</a></li>
+                  <li><a href="/open-course/qiankun/" class="card__cta cta">《qiankun 微前端实践指南》</a></li>
+                  <li><a href="/open-course/nodejs/" class="card__cta cta">《Node 开发指南》</a></li>
+                  <li><a href="/open-course/react/" class="card__cta cta">《React 开发指南》</a></li>
+                </ul>
+              </div>
+
+              <div class="cards__card card">
+                <h2 class="card__heading">后端</h2>
+                <p class="card__price"></p>
+                <ul role="list" class="card__bullets flow">
+                  <li><a href="/open-course/java/" class="card__cta cta">《Java 开发指南》</a></li>
+                </ul>
+              </div>
+
+              <div class="cards__card card">
+                <h2 class="card__heading">运维</h2>
+                <p class="card__price"></p>
+                <ul role="list" class="card__bullets flow">
+                  <li><a href="/open-course/linux/" class="card__cta cta">《Linux 学习指南》</a></li>
+                  <li><a href="/open-course/docker/" class="card__cta cta">《Docker 学习指南》</a></li>
+                </ul>
+              </div>
+
             </div>
-          </a>
-          <div class="card-icon-shadow type-blocksuite"></div>
-        </div> -->
+            <div class="overlay cards__inner"></div>
+          </div>
+        </main>
       </div>
     </div>
   </div>
@@ -60,8 +66,6 @@
 
 <style>
 @import '~@/assets/style/global.css';
-
-
 
 .header-navbar {
   height: 60px;
@@ -120,7 +124,6 @@
 /* main-container */
 .main-container {
   width: 100%;
-  height: calc(100vh - 60px);
   /* background: linear-gradient(180deg, #000, #19191b); */
   background: url('/galaxy.jpg') no-repeat center center;
   background-size: cover;
@@ -134,6 +137,7 @@
 }
 
 .course-title {
+  cursor: pointer;
   padding-top: 50px;
   text-align: center;
   -webkit-background-clip: text;

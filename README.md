@@ -31,6 +31,9 @@ Work in progress
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《React 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 
+## 后端
+- [ ] [《Java 开发指南》](https://www.ultimate-kernel.fun/open-course/java/)
+
 ## 运维
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Docker 学习指南》](https://www.ultimate-kernel.fun/open-course/docker/)
