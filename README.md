@@ -20,7 +20,7 @@
 本项目是一个面向前端人员的学习路线资源集合，构建前端知识体系及分享学习心得。
 
 ## 状态
-WIP
+Work in progress
 
 ## 基础
 - [ ] [《数据结构与算法》](https://www.ultimate-kernel.fun/open-course/algorithm/)
