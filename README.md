@@ -32,7 +32,7 @@ Visit: [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《React 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 
-  ## 后端
+## 后端
 - [ ] [《Java 开发指南》](https://www.ultimate-kernel.fun/open-course/java/)
 
 ## 运维
