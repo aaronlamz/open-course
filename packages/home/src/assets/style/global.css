@@ -72,7 +72,7 @@ ul {
   align-items: start;
   gap: 1.25em;
   color: #eceff1;
-  background-color: #2b2b2b;
+  background-color: #0100004a;
   border: 1px solid #eceff133;
   border-radius: 15px;
 }
@@ -133,7 +133,7 @@ ul {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  background-color: #0d0d0d;
+  background-color: #0000006b;
   padding: 0.7em;
   border-radius: 10px;
   font-size: 1rem;
