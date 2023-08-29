@@ -21,6 +21,7 @@
 
 ## 状态
 Work in progress
+Visit: [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 
 ## 基础
 - [ ] [《数据结构与算法》](https://www.ultimate-kernel.fun/open-course/algorithm/)
