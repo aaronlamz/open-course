@@ -12,9 +12,9 @@ onMounted(() => {
 <template>
   <div class="page-container">
     <div class="main-container">
-      <div class="course-title">
-        <a hef="https://github.com/aaronlamz/open-course" target="_blank">Web Developer Roadmap</a>
-      </div>
+      <a href="https://github.com/aaronlamz/open-course" target="_blank" class="course-title">
+       Web Developer Roadmap
+      </a>
       <div class="course-container">
         <main class="main flow">
           <div class="main__cards cards">
@@ -137,6 +137,7 @@ onMounted(() => {
 }
 
 .course-title {
+  display: block;
   cursor: pointer;
   padding-top: 50px;
   text-align: center;
