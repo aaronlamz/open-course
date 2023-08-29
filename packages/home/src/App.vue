@@ -4,7 +4,7 @@ import { onMounted } from 'vue';
 onMounted(() => {
   let script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = '/animation.js';
+  script.src = '/open-course/animation.js';
   document.body.appendChild(script);
 })
 </script>
