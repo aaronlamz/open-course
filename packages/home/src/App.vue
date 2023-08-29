@@ -23,7 +23,7 @@ onMounted(() => {
                 <h2 class="card__heading">基础</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
-                  <li><a href="/open-course/interview/" class="card__cta cta">《数据结构与算法》</a></li>
+                  <li><a href="/open-course/algorithm/" class="card__cta cta">《数据结构与算法》</a></li>
                 </ul>
               </div>
 
