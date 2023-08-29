@@ -37,7 +37,7 @@ const observer = new ResizeObserver((entries) => {
 const initOverlayCard = (cardEl) => {
     const overlayCard = document.createElement("div");
     overlayCard.classList.add("card");
-    createOverlayCta(overlayCard, cardEl.lastElementChild);
+    // createOverlayCta(overlayCard, cardEl.lastElementChild);
     overlay.append(overlayCard);
     observer.observe(cardEl);
 };
