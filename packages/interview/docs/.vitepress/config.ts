@@ -44,8 +44,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/css/' },
+          { text: '解释一下盒子模型', link: '/css/bbm.md' },
           { text: '解释一下CSS中的BFC是什么以及它的作用', link: '/css/bfc.md' },
-          { text: '解释一下盒子模型', link: '/css/bbm.md' }
         ]
       },
       {

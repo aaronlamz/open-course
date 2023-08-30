@@ -1,5 +1,6 @@
+# 解释一下盒子模型
 
-# 盒子模型
+## 什么是盒子模型？
 
 盒子模型是CSS中一种用来描述和控制网页元素布局的模型。它将每个网页元素看作是一个矩形盒子，包括以下四个部分：
 
@@ -13,16 +14,14 @@
 
 盒子模型在网页布局和样式设计中扮演着重要的角色。通过合理设置盒子模型的属性，如width、height、padding、border和margin，我们可以精确地控制元素的尺寸、间距和位置。
 
+## 盒子模型的分类
 
 CSS盒子模型可以分为两种不同的盒子模型：标准盒子模型（Standard Box Model）和IE盒子模型（IE Box Model）。
 
-1. **标准盒子模型（Standard Box Model）**：
+### 1. **标准盒子模型（Standard Box Model）**：
    - 标准盒子模型是W3C（World Wide Web Consortium）标准定义的，适用于大多数现代浏览器。
    - 在标准盒子模型中，元素的总宽度（width）和高度（height）仅包括内容区域（Content）。
    - 内边距（Padding）、边框（Border）和外边距（Margin）会额外增加盒子的大小，但不会影响内容区域的尺寸。
-
-
-
 
    例如，下面是一个具有标准盒子模型的示例：
    ```html
@@ -41,7 +40,7 @@ CSS盒子模型可以分为两种不同的盒子模型：标准盒子模型（St
    </div>
    ```
 
-2. **IE盒子模型（IE Box Model）**：
+### 2. **IE盒子模型（IE Box Model）**：
    - IE盒子模型是早期IE浏览器所采用的盒子模型，在怪异模式（Quirks Mode）下使用。
    - 在IE盒子模型中，元素的总宽度（width）和高度（height）包括了内边距（Padding）、边框（Border）和内容区域（Content）。
    - 外边距（Margin）也会增加盒子的大小。

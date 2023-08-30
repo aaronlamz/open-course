@@ -9,51 +9,100 @@
 `Formatting context`：上下文格式化，是一种渲染规则，它决定了页面中的元素如何定位，以及它们与其他元素之间的相互关系和作用。
 
 > 那么`BFC`是什么？
+BFC（块格式化上下文，Block Formatting Context）是Web页面的可视化CSS渲染的部分，它是布局盒模型中的一个区域，也是浮动元素与其他元素的交互限定区域。
 
-`BFC` 是 Block Formatting Contexts (块级格式化上下文) 的缩写。它是一个 W3C CSS2.1 规范中的概念。BFC 指的是浏览器中创建的一个独立的渲染区域，这个区域拥有自己的渲染规则，决定了其子元素如何定位，以及与其他元素的相互关系和作用。
+## BFC的特性
 
-**简单来说，`BFC` 是一个完全独立的空间（布局环境），让空间里的子元素不会影响到外面的布局**。
+1. **内部的盒会在垂直方向上一个接一个地放置**：在BFC中，盒子从顶部开始垂直放置，两个盒子之间的垂直间隔是由他们的margin值决定的。在BFC中，两个相邻的块级盒子的垂直外边距会发生合并。
 
-## `BFC`有什么作用呢?
+2. **盒垂直方向的距离由margin决定**：属于同一个BFC的两个相邻盒子的margin会发生重叠。
 
-`BFC`具体有以下作用：
+3. **每个元素的左外边距与包含块的左边界相接触**：即使浮动元素也是如此，这意味着BFC中的元素不会和左浮动盒重叠。
 
-- **防止元素垂直外边距的塌陷**。这是 BFC 最主要的作用，它能够阻止内部元素的外边距与外部元素的边距合并，从而防止垂直外边距的塌陷。
-- **确定元素的位置**。BFC 可以使元素脱离文档流，改变其正常的文档流排列，确定元素的位置。
-- **解决高度塌陷**。BFC 可以包含浮动元素，使其不会影响到外部其他元素的布局。
-- **清除浮动**。当一个元素拥有 BFC 属性时，它能够清除自身内部的浮动元素对外部元素的影响。
-- **实现多列布局**。BFC 可以将子元素排列成多列布局，类似于 CSS 的 column-count 和 column-width 属性。
+4. **BFC的区域不会与float的元素区域重叠**：浮动元素会被BFC所包含，不会影响到BFC外的元素。
 
-## 怎么创建`BFC`
+5. **计算BFC的高度时，浮动元素也参与计算**：通常，浮动元素会脱离文档流，不影响外部元素。但在BFC内部，浮动元素也会参与高度计算。
 
-创建`BFC`有以下几种方式
+6. **BFC就是页面上的一个隔离的独立容器**，子元素不会影响到外部的元素，反之亦然。
 
-- 浮动框（float）除none以外;
-- 绝对定位框（position: absolute、fixed）
-- 非块框的块容器（例如 inline-blocks、table-cells 和 table-captions）
-- "overflow" 属性非 "visible" 的块框（除非这个值已扩散到整个视口）
+## 如何生成BFC？
 
-```css
-// 自定义多列布局
+要生成BFC，元素需要满足以下条件之一：
 
-.left{
-  float: left; // 创建BFC
-  width: 100px;
-  height: 300px;
-  background-color: red;
-}
+1. `float` 属性的值不为 `none`。
+2. `position` 属性的值不为 `static` 或 `relative`。
+3. `display` 属性的值为 `inline-block`、`flex`、`inline-flex`、`grid` 或 `inline-grid`。
+4. `overflow` 属性的值不为 `visible`。
 
-.right{
-  height: 300px;
-  overflow: hidden; // 创建BFC
-  background-color: pink;
-}
+## BFC的应用
 
-<div class="left"></div>
-<div class="right"></div>
-```
+1. **清除浮动**：子元素浮动，父元素不设置高度时会导致高度塌陷。可以给父元素设置生成BFC（例如：`overflow: hidden`），从而让父元素根据子元素的高度展开。
+2. **避免外边距重叠**：当两个块级元素垂直相邻时，如果下面的元素的上margin和上面的元素的下margin发生重叠，可以使用生成BFC来阻止margin的重叠。
+3. **制作两栏布局**：左边固定宽度浮动，右边生成BFC，从而实现两栏布局，且右边的内容不会跑到左边的浮动元素下方。
 
-分别设置 `left`, `right` 为`BFC`元素，就是实现了左侧固定宽度，右侧自适应宽度的布局。
+## 示例
+
+BFC (Block Formatting Context) 的创建和应用对于 CSS 布局非常有用。以下是 BFC 的一些常见应用及相应的示例代码：
+
+1. **清除内部浮动**
+
+   当你有一个只包含浮动元素的容器时，这个容器会失去其高度，导致布局崩溃。通过将容器转换为 BFC，您可以使容器包围其浮动子元素。
+
+   ```css
+   .container {
+       overflow: hidden;
+   }
+
+   .float-child {
+       float: left;
+       width: 50%;
+   }
+   ```
+
+   ```html
+   <div class="container">
+       <div class="float-child">I'm a floating child.</div>
+       <div class="float-child">Me too!</div>
+   </div>
+   ```
+
+2. **阻止外边距合并**
+
+   当两个垂直相邻的块元素具有外边距时，这些外边距会合并。创建一个 BFC 可以阻止外边距合并。
+
+   ```css
+   .block-with-margin {
+       margin: 20px 0;
+       overflow: hidden;
+   }
+   ```
+
+   ```html
+   <div class="block-with-margin">First block</div>
+   <div class="block-with-margin">Second block</div>
+   ```
+
+3. **与浮动元素互不重叠**
+
+   当你有一个浮动元素与一个非浮动元素重叠时，你可以为非浮动元素创建一个 BFC 以使其与浮动元素互不重叠。
+
+   ```css
+   .floating {
+       float: left;
+       width: 50%;
+   }
+
+   .non-floating {
+       overflow: hidden;
+   }
+   ```
+
+   ```html
+   <div class="floating">I'm floating on the left.</div>
+   <div class="non-floating">I won't overlap with the floating element.</div>
+   ```
+
+这只是 BFC 的一些应用，但它们是最常见和有用的情况。理解 BFC 可以帮助你解决很多 CSS 布局中的问题。
 
 ## `IFC`、`GFC`、`FFC`、`FFC`、`BFC`的区别
 
