@@ -54,3 +54,13 @@
 ```
 
 分别设置 `left`, `right` 为`BFC`元素，就是实现了左侧固定宽度，右侧自适应宽度的布局。
+
+## `IFC`、`GFC`、`FFC`、`FFC`、`BFC`的区别
+
+- `IFC`：内联格式化上下文，`inline-formatting context`，用于布局内联元素的格式化上下文，`inline`元素会在水平方向，一个接一个地排列。
+
+- `BFC`：块级格式化上下文，`block-formatting context`，用于布局块级元素的格式化上下文，`block`元素会在垂直方向，一个接一个地排列。
+
+- `GFC`：网格格式化上下文，`grid-formatting context`，用于布局网格元素的格式化上下文，`grid`元素会在二维方向，一个接一个地排列。
+
+- `FFC`：自适应格式化上下文，`flex-formatting context`，用于布局弹性盒子元素的格式化上下文，`flex`元素会在水平或垂直方向，一个接一个地排列。
