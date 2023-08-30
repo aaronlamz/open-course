@@ -24,6 +24,7 @@ onMounted(() => {
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
                   <li><a href="/open-course/algorithm/" class="card__cta cta">《数据结构与算法》</a></li>
+                  <li><a href="/open-course/network/" class="card__cta cta">《网络协议学习》</a></li>
                 </ul>
               </div>
 
