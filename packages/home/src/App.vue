@@ -126,7 +126,7 @@ onMounted(() => {
 .main-container {
   width: 100%;
   /* background: linear-gradient(180deg, #000, #19191b); */
-  background: url('http://s0hjw0b6i.hn-bkt.clouddn.com/galaxy.jpg') no-repeat center center;
+  background: url('/galaxy.jpg') no-repeat center center;
   background-size: cover;
   object-fit: cover;
 }
