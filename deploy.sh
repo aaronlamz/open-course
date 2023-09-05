@@ -23,7 +23,7 @@ ls
 rm -rf dist
 echo mkdir dist
 mkdir dist
-
+# TODO optimize package dist
 echo cp -rf packages/nodejs/docs/.vitepress/dist/* dist
 echo cp -rf packages/interview/docs/.vitepress/dist/* dist
 echo cp -rf packages/qiankun/docs/.vitepress/dist/* dist
