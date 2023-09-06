@@ -44,10 +44,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/typescript/' },
-          { text: '解释一下TypeScript的优缺点', link: '/typescript/advantage.md' },
           { text: '解释一下TypeScript中的泛型', link: '/typescript/generics.md' },
-          { text: '解释一下TypeScript中的类型断言', link: '/typescript/type-assertion.md' },
-          { text: '解释一下TypeScript中的类型兼容性', link: '/typescript/type-compatibility.md' },
           { text: '解释一下any和unknown的区别', link: '/typescript/any-unknown.md' },
         ]
       },
