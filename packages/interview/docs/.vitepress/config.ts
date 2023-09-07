@@ -22,6 +22,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '写在前面', link: '/introduction.md' },
+          { text: '面试攻略', link: '/interview-guide.md' },
         ]
       },
       {
