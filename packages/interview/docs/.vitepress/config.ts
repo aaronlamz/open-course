@@ -34,7 +34,6 @@ export default defineConfig({
           { text: '解释一下闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
           { text: '解释一下this是什么以及它的作用', link: '/javascript/this.md' },
           { text: '解释一下变量提升是什么以及它的作用', link: '/javascript/hosting.md' },
-          { text: '解释一下defer和async作用以及区别', link: '/javascript/defer.md' },
           {
             text: '解释一下EventLoop', link: '/javascript/event-loop.md'
           }
@@ -128,7 +127,9 @@ export default defineConfig({
           { text: '介绍', link: '/performance/' },
           { text: '优化SPA首屏加载速度', link: '/performance/first-screen.md' },
           { text: '浏览器的缓存策略', link: '/performance/browser-cache.md' },
-          { text: 'preload 和 prefetch', link: '/performance/preload-prefetch.md' },
+          { text: 'preload和prefetch', link: '/performance/preload-prefetch.md' },
+          { text: 'defer和async', link: '/performance/defer-async.md' },
+          { text: 'css是否会阻塞页面渲染', link: '/performance/css-block.md' },
         ]
       },
       {
