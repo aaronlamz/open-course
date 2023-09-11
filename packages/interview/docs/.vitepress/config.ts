@@ -12,7 +12,7 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/introduction' },
+      { text: '开始学习', link: '/introduction' },
       { text: 'GitHub', link: 'https://github.com/aaronlamz/open-course' },
     ],
 
@@ -114,13 +114,21 @@ export default defineConfig({
           {
             text: 'WebSocket 协议', link: '/network/websocket.md'
           },
-          {
-            text: 'HTTP 缓存', link: '/network/http-cache.md'
-          },
+         
           {
             text: 'CDN', link: '/network/cdn.md'
           },
 
+        ]
+      },
+      {
+        text: '性能优化系列',
+        collapsed: true,
+        items: [
+          { text: '介绍', link: '/performance/' },
+          { text: '优化SPA首屏加载速度', link: '/performance/first-screen.md' },
+          { text: '浏览器的缓存策略', link: '/performance/browser-cache.md' },
+          { text: 'preload 和 prefetch', link: '/performance/preload-prefetch.md' },
         ]
       },
       {
