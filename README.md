@@ -51,5 +51,5 @@ Visit: [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel
 4. 提交 PR 到本仓库的 `main` 分支，commit message 需要包含`--docs`，例如：`git commit -m "add nodejs --docs"`
 
 ## 支持
-如果你觉得这个项目对你有帮助，欢迎star，谢谢你的支持！
+如果你觉得这个项目对你有帮助，欢迎Star，谢谢你的支持！
 
