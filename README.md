@@ -39,7 +39,7 @@ Visit: [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel
 - [ ] [《Docker 学习指南》](https://www.ultimate-kernel.fun/open-course/docker/)
 
 ## 资源
-- [x] [Developer Roadmaps](https://roadmap.sh/)
+- [x] [Developer Roadmaps - 开发指南集合](https://roadmap.sh/)
 
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8`
