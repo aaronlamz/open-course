@@ -117,6 +117,7 @@ onMounted(() => {
 /* main-container */
 .main-container {
   width: 100%;
+  height: 100vh;
   /* background: linear-gradient(180deg, #000, #19191b); */
   background: url('/galaxy.jpg') no-repeat center center;
   background-size: cover;
@@ -126,7 +127,6 @@ onMounted(() => {
 .course-container {
   display: flex;
   justify-content: space-around;
-  padding: 50px;
 }
 
 .course-title {
