@@ -39,15 +39,7 @@ export default defineConfig({
           }
         ]
       },
-      {
-        text: 'TypeScript 系列',
-        collapsed: true,
-        items: [
-          { text: '介绍', link: '/typescript/' },
-          { text: '解释一下TypeScript中的泛型', link: '/typescript/generics.md' },
-          { text: '解释一下any和unknown的区别', link: '/typescript/any-unknown.md' },
-        ]
-      },
+     
       {
         text: 'CSS 系列',
         collapsed: true,
@@ -81,6 +73,15 @@ export default defineConfig({
           { text: '介绍', link: '/react/' },
           { text: '解释一下React中的虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
           { text: '解释一下React中的路由原理', link: '/react/router.md' },
+        ]
+      },
+      {
+        text: 'TypeScript 系列',
+        collapsed: true,
+        items: [
+          { text: '介绍', link: '/typescript/' },
+          { text: '解释一下TypeScript中的泛型', link: '/typescript/generics.md' },
+          { text: '解释一下any和unknown的区别', link: '/typescript/any-unknown.md' },
         ]
       },
       {
