@@ -132,7 +132,16 @@ export default defineConfig({
         ]
       },
       {
-        text: '笔试题系列',
+        text: '构建工具系列',
+        collapsed: true,
+        items: [
+          { text: '介绍', link: '/build-tool/' },
+          { text: 'webpack工作原理', link: '/build-tool/webpack.md' },
+          { text: 'webpack优化策略', link: '/build-tool/webpack-optimization.md' },
+        ]
+      },
+      {
+        text: '手写代码系列',
         collapsed: true,
         items: [
           { text: '介绍', link: '/handwritten/' },
