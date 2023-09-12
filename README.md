@@ -43,9 +43,6 @@
 - [ ] [《Docker 学习指南》](https://www.ultimate-kernel.fun/open-course/docker/)
 - [ ] [《Kubernetes 学习指南》](https://www.ultimate-kernel.fun/open-course/kubernetes/)
 
-## 资源
-- [x] [Developer Roadmaps - 开发指南集合](https://roadmap.sh/)
-
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8`
 
