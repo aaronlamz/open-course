@@ -39,7 +39,7 @@
 ## 后端
 - [ ] [《Go 开发实践》](https://www.ultimate-kernel.fun/open-course/golang/)
 
-## DevOps
+## 运维
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Docker 学习指南》](https://www.ultimate-kernel.fun/open-course/docker/)
 - [ ] [《Kubernetes 学习指南》](https://www.ultimate-kernel.fun/open-course/kubernetes/)
