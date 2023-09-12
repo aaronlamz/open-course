@@ -33,7 +33,7 @@
 - [ ] [《React 开发实践》](https://www.ultimate-kernel.fun/open-course/react/)
 
 ## 跨端
-- [ ] [《Electron 开发实践》](https://www.ultimate-kernel.fun/open-course/electron/)
+- [ ] [《Electron 客户端开发实践》](https://www.ultimate-kernel.fun/open-course/electron/)
 
 ## 后端
 - [ ] [《Go 开发实践》](https://www.ultimate-kernel.fun/open-course/golang/)
