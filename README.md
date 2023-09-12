@@ -20,8 +20,8 @@
 本项目是一个面向Web开发的学习路线资源集合，构建Web知识体系及分享学习心得
 
 ## 状态
-Work in progress
-Visit: [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
+> Work In Progress
+> Visit: [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 
 ## 基础
 - [ ] [《数据结构与算法》](https://www.ultimate-kernel.fun/open-course/algorithm/)
@@ -43,7 +43,6 @@ Visit: [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
 - [ ] [《Docker 学习指南》](https://www.ultimate-kernel.fun/open-course/docker/)
 - [ ] [《Kubernetes 学习指南》](https://www.ultimate-kernel.fun/open-course/kubernetes/)
-
 
 ## 资源
 - [x] [Developer Roadmaps - 开发指南集合](https://roadmap.sh/)
