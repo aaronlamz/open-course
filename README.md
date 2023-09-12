@@ -33,6 +33,12 @@ Visit: [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《React 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 
+## 跨端
+- [ ] [《Flutter 开发实践》](https://www.ultimate-kernel.fun/open-course/flutter/)
+- [ ] [《Electron 开发实践》](https://www.ultimate-kernel.fun/open-course/electron/)
+
+## 后端
+- [ ] [《Go 开发实践》](https://www.ultimate-kernel.fun/open-course/golang/)
 
 ## 运维
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
