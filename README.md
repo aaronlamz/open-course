@@ -28,15 +28,18 @@
 
 ## 前端
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
-- [x] [《qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
-- [ ] [《React 开发实践》](https://www.ultimate-kernel.fun/open-course/react/)
+- [x] [《qiankun 微前端实战指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
+- [ ] [《React 开发实战》](https://www.ultimate-kernel.fun/open-course/react/)
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 
+## Web3
+- [ ] [《Solidity 开发实战》](https://www.ultimate-kernel.fun/open-course/solidity/)
+
 ## 跨端
-- [ ] [《Electron 客户端开发实践》](https://www.ultimate-kernel.fun/open-course/electron/)
+- [ ] [《Electron 客户端开发实战》](https://www.ultimate-kernel.fun/open-course/electron/)
 
 ## 后端
-- [ ] [《Go 开发实践》](https://www.ultimate-kernel.fun/open-course/golang/)
+- [ ] [《Go 开发实战》](https://www.ultimate-kernel.fun/open-course/golang/)
 
 ## 运维
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)

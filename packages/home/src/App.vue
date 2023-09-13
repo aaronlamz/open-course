@@ -33,7 +33,7 @@ onMounted(() => {
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
                   <li><a href="/open-course/interview/" class="card__cta cta">《前端面试系列》</a></li>
-                  <li><a href="/open-course/qiankun/" class="card__cta cta">《qiankun 微前端实践指南》</a></li>
+                  <li><a href="/open-course/qiankun/" class="card__cta cta">《qiankun 微前端实战指南》</a></li>
                   <li><a href="/open-course/nodejs/" class="card__cta cta">《Node 开发指南》</a></li>
                   <li><a href="/open-course/react/" class="card__cta cta">《React 开发指南》</a></li>
                 </ul>
