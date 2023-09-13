@@ -29,8 +29,8 @@
 ## 前端
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [x] [《qiankun 微前端实践指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
-- [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [《React 开发实践》](https://www.ultimate-kernel.fun/open-course/react/)
+- [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 
 ## 跨端
 - [ ] [《Electron 客户端开发实践》](https://www.ultimate-kernel.fun/open-course/electron/)
