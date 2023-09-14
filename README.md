@@ -20,7 +20,7 @@
 本项目是一个面向Web开发的学习路线资源集合，构建Web知识体系及分享学习心得
 
 ## 状态
-> 持续更新中...[https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
+持续更新中...[https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 
 ## 基础
 - [ ] [《数据结构与算法》](https://www.ultimate-kernel.fun/open-course/algorithm/)
