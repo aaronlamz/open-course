@@ -2,117 +2,132 @@
 
 > 面试高频问题，建议理清思路，
 
-## Vue2的响应式原理主要包括以下几个步骤：
+当然可以。Vue 的响应式系统是其核心特性之一，它使得数据和 UI 之间能够保持同步。我们将从 Vue 2.x 开始详细描述，并稍后介绍 Vue 3.x 的改进和变化。
 
-1. **数据劫持（Data Hijack）**：Vue.js 使用 ES5 提供的 `Object.defineProperty()` 方法，监控程序中所有对象的属性的读写操作。这种技术也被称为 "数据劫持"。
+## Vue 2.x 响应式原理
 
-    ```javascript
-    Object.defineProperty(data, 'key', {
-        configurable: true,
-        enumerable: true,
-        get: function () {
-            // 返回值，同时可以做其他操作，如收集依赖
-        },
-        set: function (newValue) {
-            // 设置新值，同时可以做其他操作，如触发视图更新
-        }
+1. **初始化**  
+   当创建一个新的 Vue 实例时，Vue 会遍历 `data` 对象的所有属性，并使用 `Object.defineProperty` 把它们转换为 getter 和 setter。
+
+2. **getter 和 setter**  
+   - **getter**: 当属性被读取时执行。例如，在模板中使用属性时。在 getter 中，Vue 会将当前组件添加到该属性的依赖列表中。
+   - **setter**: 当属性值被修改时执行。当 setter 被调用时，Vue 会重新渲染依赖该属性的所有组件。
+
+3. **依赖收集**  
+   当组件被渲染时，会触发 getter，Vue 会记录哪些属性被访问。这样，Vue 就知道哪些组件依赖于哪些数据属性。
+
+4. **观察者 (Observer) 和 Watcher**  
+   - Vue 使用一个 Observer 类来给对象的属性添加 getter 和 setter。
+   - Watcher 用于监听某个属性或计算属性或组件的渲染函数的变化。当依赖的属性变化时，Watcher 会被通知，从而重新计算或渲染。
+
+5. **数组响应式**  
+   Vue 无法使用 `Object.defineProperty` 直接监视数组的变化。因此，Vue 重写了数组的一些方法（如 `push`、`pop`、`shift` 等），使得当数组通过这些方法被修改时，可以发送通知。
+
+## Vue 3.x 的响应式原理
+
+1. **Proxy**  
+   Vue 3 使用 `Proxy` 替代 `Object.defineProperty`，它能够直接观察对象和数组的变动，而不需要为每个属性单独定义 getter 和 setter。这使得 Vue 3 支持动态添加和删除属性，并自动将它们变为响应式。
+
+2. **Reactivity API**  
+   Vue 3 介绍了几个新的响应式 API，例如 `ref`, `reactive`, `toRefs`, `computed`, 和 `watch`。其中 `ref` 用于基本类型，`reactive` 用于对象。
+
+3. **依赖收集与变化侦测**  
+   Vue 3 的依赖收集和变化检测机制与 Vue 2 类似，但由于使用了 Proxy，它的性能更好，代码也更简洁。
+
+4. **Effects**  
+   Vue 3 引入了 effect 函数，这是响应系统的基石。当数据变化时，相关的 effect 将被重新执行。
+
+## 实现一个简单的响应系统
+理解 Vue 的响应式原理背后的代码实现，需要深入其源码和一些核心概念。为了方便理解，我会简化代码和概念。下面将根据 Vue 2.x 的版本进行描述，因为它的实现方式相对直观：
+
+### 1. **Observer 类**
+这是整个响应式系统的核心，它负责将一个普通的 JavaScript 对象转换为响应式对象。
+
+```javascript
+class Observer {
+  constructor(value) {
+    this.walk(value);
+  }
+
+  walk(obj) {
+    const keys = Object.keys(obj);
+    keys.forEach(key => {
+      defineReactive(obj, key, obj[key]);
     });
-    ```
+  }
+}
 
-2. **依赖收集（Dependency Collection）**：当访问对象属性时，"getter" 会被调用，Vue将利用这个机会进行依赖收集。也就是将使用到该属性的地方保存下来，以便当属性发生变化时，能进行通知。
-
-3. **发布订阅（Publish-Subscribe）**：当属性值改变时，"setter" 会被调用。Vue将利用这个机会把此前收集到的依赖通知到数据变化的信息，依赖处就会对变化做出响应，比如更新视图。
-
-4. **Watcher 和 Dep**：为了更好地实现依赖收集和发布订阅，Vue 引入了 Watcher 和 Dep 两个重要概念。 Dep 维护一批 Watcher，Watcher 通过 Dep 了解自己所依赖的数据是否更新。Watcher 则负责收集依赖和执行当依赖更新时的行动。
-
-5. **计算属性和监听属性**：Vue.js提供了计算属性和监听属性，它们也是基于依赖收集和发布订阅模式实现的，不过更加高级，Vue内部会为它们另外实现一种类型的  Watcher。
-
-这就是Vue的响应式原理的具体描述，理解了这个原理，你就能理解到Vue是如何实现数据和视图之间的响应式绑定的。
-
-## 代码实现
-具体实现Vue的响应式原理，主要包括以下步骤：
-
-1. **Observer类**：负责对数据对象进行遍历，包括对象的属性值还是对象，通过 `Object.defineProperty()` 来设置getter/setter，当数据变动能触发`dep.notify()`，通知所有订阅者。
-
-    ```javascript
-    class Observer {
-        constructor(value) {
-            this.walk(value);
-        }
-        walk(data) {
-            let keys = Object.keys(data);
-            for (let i = 0; i < keys.length; i++) {
-                defineReactive(data, keys[i], data[keys[i]]);
-            }
-        }
+function defineReactive(obj, key, val) {
+  // 递归子属性
+  new Observer(val);
+  Object.defineProperty(obj, key, {
+    get() {
+      return val;
+    },
+    set(newVal) {
+      val = newVal;
+      // 通知更新
+      // ...此处省略更新逻辑
     }
-    ```
+  });
+}
 
-2. **defineReactive函数**：负责定义一个响应式对象，给对象增加getter/setter。
+const data = { a: 1 };
+new Observer(data);
+```
 
-    ```javascript
-    function defineReactive(data, key, val) {
-        let dep = new Dep();
-        Object.defineProperty(data, key, {
-            enumerable: true,
-            configurable: true,
-            get: function() {
-                dep.addSub(Dep.target);
-                return val;
-            },
-            set: function(newVal) {
-                if (val === newVal) {
-                    return;
-                }
-                val = newVal;
-                // 引用赋值，将Dep.target（即当前正在执行的Watcher对象存入dep的subs中）
-                dep.notify(); // 如果有变化则会通知所有相关联的watcher对象进行update操作
-            }
-         });
-     }
-    ```
+### 2. **Dep 类 (依赖收集)**
+Dep 类实际上是一个依赖收集器，它负责管理所有的 Watcher（观察者）。
 
-3. **Dep类**：负责收集订阅者和在`setter`中通知订阅者，它维护一个数组，用来收集所有的订阅者，数据变动触发`notify()`，再调用订阅者的`update()`方法。
+```javascript
+class Dep {
+  constructor() {
+    this.subs = [];
+  }
+  
+  addSub(sub) {
+    this.subs.push(sub);
+  }
+  
+  notify() {
+    this.subs.forEach(sub => {
+      sub.update();
+    });
+  }
+}
+```
 
-    ```javascript
-    class Dep {
-        constructor() {
-            this.subs = [];
-        }
-        addSub(sub) { // 添加订阅者
-            this.subs.push(sub);
-        }
-        notify() { // 发出通知
-            this.subs.forEach((sub) => {
-                sub.update();
-            })
-        }
-    }
-    ```
+### 3. **Watcher 类**
+它是观察者，当依赖的数据发生变化时，它会接收到通知并执行相应的操作。
 
-4. **Watcher类**：负责当数据变化时执行对应的方法。
+```javascript
+class Watcher {
+  constructor(obj, key, cb) {
+    this.obj = obj;
+    this.key = key;
+    this.cb = cb;
+    this.value = this.get();
+  }
+  
+  update() {
+    this.value = this.get();
+    this.cb.call(this.obj, this.value);
+  }
+  
+  get() {
+    // 设置 Dep.target，使得 obj 的 getter 可以收集这个 watcher
+    Dep.target = this;
+    const value = this.obj[this.key];
+    Dep.target = null;
+    return value;
+  }
+}
 
-    ```javascript
-    class Watcher {
-        constructor() {
-            Dep.target = this;
-        }
-        update() { // 数据变化，更新视图等等操作
-            console.log("视图正在更新...");
-        }
-    }
-    ```
+const data = { a: 1 };
+new Observer(data);
+new Watcher(data, 'a', val => {
+  console.log('a changed:', val);
+});
+```
 
-5. **通过以上代码实现的Vue响应式原理**：
-
-    ```javascript
-    function init() {  // 初始化函数
-        let data = {
-            name: "Bearly"
-        };
-        new Observer(data);
-        console.log(data.name);
-    }
-    init();
-    ```
-注意：以上代码是为了帮助理解Vue的响应式原理，实际的Vue源码要复杂许多，具体可以参考[Vue.js源码](https://github.com/vuejs/vue)，同时Vue3采用的是Proxy代替`Object.defineProperty()`进行响应式处理，更加强大高效。
+这只是响应式系统的一个非常简化的版本，实际的 Vue 源码涉及更多细节和优化。Vue 3 的实现依赖于 `Proxy` 和 `Reflect`，其核心思想类似，但在细节上有很大差异。
