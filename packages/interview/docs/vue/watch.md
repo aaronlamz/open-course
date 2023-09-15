@@ -1,31 +1,45 @@
 # 解释一下 Vue 中的 watch
 
-## 什么是watch
+`watch` 是 Vue 中用于观察和响应 Vue 实例上的数据变动的一个特性。不同于 `computed`，`watch` 更适合于执行异步操作或更复杂的操作、响应、逻辑，比如数据的获取、操作和其他副作用。
 
-watch是一个选项，它用来监听数据的变化，当数据发生变化时，就会触发回调函数。
+### **基本原理**
+`watch` 的背后原理同样是 Vue 的响应式系统。当你声明了一个 `watch` 监听器，Vue 将创建一个观察者实例，它会在数据改变时执行特定的回调函数。
 
-## 为什么要使用watch
+### **如何工作**
+1. 当你为某个响应式数据声明一个 `watch` 监听器时，Vue 将为这个数据创建一个观察者实例。
+2. 当这个数据改变时，观察者知道并执行其回调函数。
 
-当我们想要在数据变化时执行异步或开销较大的操作时，就可以使用watch。
+### **简化的代码实现**
+以下是一个非常简化的 `watch` 的实现，用于展示其背后的核心思想：
 
-## 实现原理
+```javascript
+class Watcher {
+  constructor(obj, key, callback) {
+    this.value = obj[key];
+    this.callback = callback;
 
-在 Vue.js 中，`watch` 的实现原理与计算属性(`computed`)有很大的相似性，都基于 Vue.js 的响应式系统。但在某些细节上，`watch` 的实现方式有所不同。接下来我会简要地介绍一下其实现原理。
+    // 创建 getter 用于侦听
+    Object.defineProperty(obj, key, {
+      get: () => this.value,
+      set: newVal => {
+        const oldValue = this.value;
+        if (newVal !== oldValue) {
+          this.value = newVal;
+          this.callback(newVal, oldValue);  // 数据改变，执行回调函数
+        }
+      }
+    });
+  }
+}
 
-首先，你需要知道的是 Vue.js 的响应式系统依赖于 ES5 的 `Object.defineProperty` API。Vue.js 通过这个 API 监听到数据的变化，然后在需要时重新渲染视图。
+// 使用方式
+const data = { a: 1, b: 2 };
 
-1. **依赖收集**
+const aWatcher = new Watcher(data, 'a', (newVal, oldVal) => {
+  console.log(`a changed from ${oldVal} to ${newVal}`);
+});
 
-   当我们创建一个 Vue 实例时，Vue.js 会遍历 `data` 对象的所有属性，并用 `Object.defineProperty` 把这些属性转为 getter/setter。当我们访问这些属性时，getter 会被调用，并且把该属性添加到当前正在计算的 watcher 的依赖中。这样我们就知道了哪个 watcher 依赖了哪个属性。
+data.a = 3;  // 输出 "a changed from 1 to 3"
+```
 
-2. **派发更新**
-
-   当我们修改一个属性的值时，setter 会被调用，然后通知所有依赖这个属性的 watcher 更新。对于 `watch` 而言，这个更新操作就是执行它的回调函数。
-
-3. **异步队列**
-
-   Vue.js 内部对异步队列的处理，可以确保每次只进行一次更新，并且所有的 watcher 更新顺序是一致的。当一个 watcher 被通知更新时，它并不会立即执行更新操作，而是被推入到一个队列中，然后在下一个事件循环("tick")中，Vue.js 会清空并处理整个队列。
-
-在源码层面，`watch` 的实现涉及到 `Watcher` 类和 `Dep` 类等。当你在 Vue 实例中定义了一个 `watch`，Vue.js 实际上会为其创建一个 `Watcher` 实例，然后通过依赖收集和派发更新的机制，实现 `watch` 的功能。
-
-以上是 `watch` 的基础实现原理，要了解更详细的信息，你可以直接查看 Vue.js 的源码。
+需要注意的是，上述代码仅仅是一个简化版，真实的 Vue 源码中，对于依赖管理、通知变更等方面有很多优化和高级特性。但这个简化版代码应该能够帮助你理解 `watch` 的基本思想。
