@@ -1,4 +1,4 @@
-# 解释一下Vue中的computed
+# Vue中的computed
 
 `computed` 是 Vue 中的一个非常有用的特性，它允许我们声明性地描述某个属性与其依赖关系，当依赖的数据变化时，`computed` 属性会自动重新计算值。
 

@@ -1,4 +1,4 @@
-# 解释一下Vue中的extend
+# Vue中的extend
 
 ## 什么是extend
 

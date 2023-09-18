@@ -1,4 +1,4 @@
-# 解释一下any和unknown的区别
+# any和unknown的区别
 
 `any` 和 `unknown` 都是 TypeScript 中的类型，但它们具有不同的用途和特性。以下是 `any` 和 `unknown` 的主要区别：
 

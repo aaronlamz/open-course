@@ -1,4 +1,4 @@
-# 解释一下Vue中的虚拟DOM及diff算法
+# Vue中的虚拟DOM及diff算法
 
 当我们谈论前端框架的性能优化和渲染效率时，Vue 中的虚拟 DOM（Virtual DOM）和 diff 算法经常被提及。它们是 Vue 内部用来高效更新 DOM 的关键技术。
 

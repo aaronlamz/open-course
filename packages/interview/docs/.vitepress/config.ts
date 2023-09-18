@@ -30,12 +30,12 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/javascript/' },
-          { text: '解释一下原型、原型链是什么', link: '/javascript/prototype.md' },
-          { text: '解释一下闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
-          { text: '解释一下this是什么以及它的作用', link: '/javascript/this.md' },
-          { text: '解释一下变量提升是什么以及它的作用', link: '/javascript/hosting.md' },
+          { text: '原型、原型链是什么', link: '/javascript/prototype.md' },
+          { text: '闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
+          { text: 'this是什么以及它的作用', link: '/javascript/this.md' },
+          { text: '变量提升是什么以及它的作用', link: '/javascript/hosting.md' },
           {
-            text: '解释一下EventLoop', link: '/javascript/event-loop.md'
+            text: 'EventLoop', link: '/javascript/event-loop.md'
           }
         ]
       },
@@ -45,8 +45,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/css/' },
-          { text: '解释一下盒子模型', link: '/css/bbm.md' },
-          { text: '解释一下CSS中的BFC是什么以及它的作用', link: '/css/bfc.md' },
+          { text: '盒子模型', link: '/css/bbm.md' },
+          { text: 'CSS中的BFC是什么以及它的作用', link: '/css/bfc.md' },
         ]
       },
       {
@@ -54,16 +54,16 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/vue/' },
-          { text: '解释一下Vue响应式原理', link: '/vue/reactive.md' },
-          { text: '解释一下Vue中的虚拟DOM及diff算法', link: '/vue/virtual-dom.md' },
-          { text: '解释一下Vue中的nextTick', link: '/vue/next-tick.md' },
-          { text: '解释一下Vue中的computed', link: '/vue/computed.md' },
-          { text: '解释一下Vue中的watch', link: '/vue/watch.md' },
-          { text: '解释一下Vue中的keep-alive实现', link: '/vue/keep-alive.md' },
-          { text: '解释一下Vue中的slot', link: '/vue/slot.md' },
-          { text: '解释一下Vue中的extend', link: '/vue/extend.md' },
-          { text: '解释一下Vue中的render函数', link: '/vue/render.md' },
-          { text: '解释一下Vue中的template', link: '/vue/template.md' },
+          { text: 'Vue响应式原理', link: '/vue/reactive.md' },
+          { text: 'Vue中的虚拟DOM及diff算法', link: '/vue/virtual-dom.md' },
+          { text: 'Vue中的nextTick', link: '/vue/next-tick.md' },
+          { text: 'Vue中的computed', link: '/vue/computed.md' },
+          { text: 'Vue中的watch', link: '/vue/watch.md' },
+          { text: 'Vue中的keep-alive实现', link: '/vue/keep-alive.md' },
+          { text: 'Vue中的slot', link: '/vue/slot.md' },
+          { text: 'Vue中的extend', link: '/vue/extend.md' },
+          { text: 'Vue中的render函数', link: '/vue/render.md' },
+          { text: 'Vue中的template', link: '/vue/template.md' },
         ]
       },
       {
@@ -71,8 +71,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/react/' },
-          { text: '解释一下React中的虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
-          { text: '解释一下React中的路由原理', link: '/react/router.md' },
+          { text: 'React中的虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
+          { text: 'React中的路由原理', link: '/react/router.md' },
         ]
       },
       {
@@ -80,8 +80,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/typescript/' },
-          { text: '解释一下TypeScript中的泛型', link: '/typescript/generics.md' },
-          { text: '解释一下any和unknown的区别', link: '/typescript/any-unknown.md' },
+          { text: 'TypeScript中的泛型', link: '/typescript/generics.md' },
+          { text: 'any和unknown的区别', link: '/typescript/any-unknown.md' },
         ]
       },
       {

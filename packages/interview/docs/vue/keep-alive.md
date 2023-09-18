@@ -1,4 +1,4 @@
-# 解释一下Vue中的keep-alive实现
+# Vue中的keep-alive实现
 
 ## 什么是keep-alive
 

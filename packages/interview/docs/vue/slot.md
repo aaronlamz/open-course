@@ -1,4 +1,4 @@
-# 解释一下Vue中的slot
+# Vue中的slot
 
 ## `slot`是什么，有什么作用
 

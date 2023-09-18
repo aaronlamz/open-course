@@ -1,4 +1,4 @@
-# 解释一下Vue中的render函数
+# Vue中的render函数
 
 ## render函数的作用
 

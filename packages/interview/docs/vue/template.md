@@ -1,4 +1,4 @@
-# 解释一下Vue中的template及实现原理
+# Vue中的template及实现原理
 
 在 Vue 中，`template` 是描述组件视图应该如何显示的一种声明性方法。通过 `template`，开发者可以声明式地描述组件的 UI，而 Vue 的作用是将这些模板转换为实际的 DOM。
 
