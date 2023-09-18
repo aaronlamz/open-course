@@ -32,8 +32,8 @@
 - [ ] [《React 开发实战》](https://www.ultimate-kernel.fun/open-course/react/)
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 
-## Web3
-- [ ] [《Solidity 开发实战》](https://www.ultimate-kernel.fun/open-course/solidity/)
+<!-- ## Web3
+- [ ] [《Solidity 开发实战》](https://www.ultimate-kernel.fun/open-course/solidity/) -->
 
 ## 跨端
 - [ ] [《Electron 客户端开发实战》](https://www.ultimate-kernel.fun/open-course/electron/)
