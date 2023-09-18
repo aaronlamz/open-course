@@ -143,6 +143,7 @@ export default defineConfig({
           { text: '介绍', link: '/build-tool/' },
           { text: 'webpack工作原理', link: '/build-tool/webpack.md' },
           { text: 'webpack优化策略', link: '/build-tool/webpack-optimization.md' },
+          { text: 'webpack、rollup、vite 等工具适用场景及优缺点', link: '/build-tool/webpack-rollup-vite.md' },
         ]
       },
       {
