@@ -16,6 +16,7 @@ const element = <h1 className="greeting">Hello, world!</h1>;
 
 ### 1. 解析 (Parsing)
 
+- 当你在 JavaScript 文件中编写 JSX，它并不能被浏览器直接解析和执行。它需要一个转译器（如 Babel）将 JSX 转译成原生的 JavaScript 函数调用。
 - 当 Babel 开始转译源代码时，它首先需要理解代码的结构。它会使用 `@babel/parser` 来解析输入的代码，将字符串源代码转换为一个 AST（抽象语法树）。
 
 - 在这个阶段，例如代码 `<div>Hi</div>` 会被解析成类似以下的 AST 结构（简化版本）：
@@ -52,6 +53,7 @@ const element = <h1 className="greeting">Hello, world!</h1>;
 - 这个阶段是 Babel 的核心，它使用插件（例如 `@babel/plugin-transform-react-jsx`）来对 AST 进行修改。
 
 - 对于 JSX，转译器会找到所有的 `JSXElement` 节点，并将它们转化为 `React.createElement` 的函数调用。
+- React.createElement：这个函数会创建一个表示 UI 的对象结构，也就是虚拟 DOM 元素。虚拟 DOM 元素是一个描述 UI 部分（如元素类型、属性、子元素等）的普通对象。它们最终会被 React 转化为实际的 DOM 元素。
 
 - 举个例子，之前的 AST 结构会被转换成一个新的 AST，代表以下的 JavaScript 代码：
 

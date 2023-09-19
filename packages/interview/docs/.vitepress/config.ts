@@ -71,9 +71,20 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/react/' },
-          { text: 'JSX以及工作原理', link: '/react/jsx.md'},
-          { text: '虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
-          { text: 'setState方法是异步的还是同步的？', link: '/react/set-state.md' },
+          {
+            text: '基础概念', items: [
+              { text: 'JSX以及工作原理', link: '/react/jsx.md' },
+              { text: '虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
+              { text: 'setState方法是异步的还是同步的？', link: '/react/set-state.md' },
+            ]
+          },
+          {
+            text: '高级概念', items: [
+              { text: 'React 的 reconciliation 算法是什么？它是如何工作的？', link: '/react/reconciliation.md' },
+              { text: '能解释下 React Fiber 是什么吗？', link: '/react/fiber.md' },
+              { text: 'Hooks 是什么？它解决了什么问题？', link: '/react/hooks.md'}
+            ]
+          }
         ]
       },
       {
