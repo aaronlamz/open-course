@@ -48,7 +48,7 @@
 
 ## 资源
 - [Developer Roadmaps - 开发者路线集合](https://roadmap.sh/)
-- [BRANDMARK - 快速设计LOGO，简单易用](https://brandmark.io/)
+- [brandmark - 快速设计logo，简单易用](https://brandmark.io/)
 
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8`
