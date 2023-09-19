@@ -29,7 +29,7 @@
 ## 前端
 - [x] [《前端面试系列》](https://www.ultimate-kernel.fun/open-course/interview/)
 - [x] [《qiankun 微前端实战指南》](https://www.ultimate-kernel.fun/open-course/qiankun/)
-- [ ] [《React 开发实战》](https://www.ultimate-kernel.fun/open-course/react/)
+- [ ] [《React 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 
 <!-- ## Web3
