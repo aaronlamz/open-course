@@ -39,7 +39,7 @@ export default defineConfig({
           }
         ]
       },
-     
+
       {
         text: 'CSS 系列',
         collapsed: true,
@@ -71,8 +71,9 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/react/' },
-          { text: 'React中的虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
-          { text: 'React中的路由原理', link: '/react/router.md' },
+          { text: 'JSX以及工作原理', link: '/react/jsx.md'},
+          { text: '虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
+          { text: 'setState方法是异步的还是同步的？', link: '/react/set-state.md' },
         ]
       },
       {
@@ -117,7 +118,7 @@ export default defineConfig({
           {
             text: 'WebSocket 协议', link: '/network/websocket.md'
           },
-         
+
           {
             text: 'CDN', link: '/network/cdn.md'
           },
