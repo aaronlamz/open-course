@@ -36,7 +36,7 @@
 - [ ] [《Solidity 开发实战》](https://www.ultimate-kernel.fun/open-course/solidity/) -->
 
 ## 跨端
-- [ ] [《Electron 客户端开发实战》](https://www.ultimate-kernel.fun/open-course/electron/)
+- [ ] [《Electron 证券交易客户端开发实战》](https://www.ultimate-kernel.fun/open-course/electron/)
 
 ## 后端
 - [ ] [《Go 开发实战》](https://www.ultimate-kernel.fun/open-course/golang/)
