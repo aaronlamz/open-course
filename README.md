@@ -23,7 +23,7 @@
 持续更新中...
 
 ## 基础
-- [ ] [《数据结构与算法》](https://www.ultimate-kernel.fun/open-course/algorithm/)
+- [x] [《数据结构与算法》](https://www.ultimate-kernel.fun/open-course/algorithm/)
 - [ ] [《网络协议专题》](https://www.ultimate-kernel.fun/open-course/network/)
 
 ## 前端
@@ -32,8 +32,6 @@
 - [ ] [《React 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 
-<!-- ## Web3
-- [ ] [《Solidity 开发实战》](https://www.ultimate-kernel.fun/open-course/solidity/) -->
 
 ## 跨端
 - [ ] [《Electron 证券交易客户端开发实战》](https://www.ultimate-kernel.fun/open-course/electron/)
