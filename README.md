@@ -47,7 +47,8 @@
 - [ ] [《Kubernetes 学习指南》](https://www.ultimate-kernel.fun/open-course/kubernetes/)
 
 ## 资源
-* [Developer Roadmaps - 开发者指南集合](https://roadmap.sh/)
+- [Developer Roadmaps - 开发者路线集合](https://roadmap.sh/)
+- [BRANDMARK - 快速设计LOGO，简单易用](https://brandmark.io/)
 
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8`
