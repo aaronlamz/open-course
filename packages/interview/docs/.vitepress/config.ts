@@ -14,6 +14,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '开始学习', link: '/introduction' },
       { text: 'GitHub', link: 'https://github.com/aaronlamz/open-course' },
+      { text: '讨论区', link: 'https://github.com/aaronlamz/open-course/discussions' },
     ],
 
     sidebar: [
