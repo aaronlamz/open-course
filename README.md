@@ -44,7 +44,7 @@
 - [ ] [《Docker 学习指南》](https://www.ultimate-kernel.fun/open-course/docker/)
 - [ ] [《Kubernetes 学习指南》](https://www.ultimate-kernel.fun/open-course/kubernetes/)
 
-## DB
+## 数据库
 - [ ] [《MySQL 学习指南》](https://www.ultimate-kernel.fun/open-course/mysql/)
 - [ ] [《Redis 学习指南》](https://www.ultimate-kernel.fun/open-course/redis/)
 
