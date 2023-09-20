@@ -82,7 +82,7 @@ export default defineConfig({
             text: '高级概念', items: [
               { text: 'React 的 reconciliation 算法是什么？它是如何工作的？', link: '/react/reconciliation.md' },
               { text: '能解释下 React Fiber 是什么吗？', link: '/react/fiber.md' },
-              { text: 'Hooks 是什么？它解决了什么问题？', link: '/react/hooks.md'}
+              { text: 'Hooks 是什么？它解决了什么问题？', link: '/react/hooks.md' }
             ]
           }
         ]
@@ -156,6 +156,20 @@ export default defineConfig({
           { text: 'webpack工作原理', link: '/build-tool/webpack.md' },
           { text: 'webpack优化策略', link: '/build-tool/webpack-optimization.md' },
           { text: 'webpack、rollup、vite 等工具适用场景及优缺点', link: '/build-tool/webpack-rollup-vite.md' },
+        ]
+      },
+      {
+        text: '跨端系列',
+        collapsed: true,
+        items: [
+          {
+            text: 'Electron 基础概念',
+            items: [
+              { text: '介绍', link: '/cross-end/electron/' },
+              { text: 'Electron 的工作原理是什么？', link: '/cross-end/electron/how-electron-works.md' },
+              { text: 'Electron 的主进程和渲染进程是什么？', link: '/cross-end/electron/main-process-and-render-process.md' },
+            ]
+          }
         ]
       },
       {
