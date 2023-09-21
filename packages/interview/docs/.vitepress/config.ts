@@ -31,10 +31,10 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/javascript/' },
-          { text: '原型、原型链是什么', link: '/javascript/prototype.md' },
-          { text: '闭包（closure）是什么以及它的作用', link: '/javascript/closure.md' },
-          { text: 'this是什么以及它的作用', link: '/javascript/this.md' },
-          { text: '变量提升是什么以及它的作用', link: '/javascript/hosting.md' },
+          { text: '原型、原型链', link: '/javascript/prototype.md' },
+          { text: '闭包', link: '/javascript/closure.md' },
+          { text: 'this', link: '/javascript/this.md' },
+          { text: '变量提升', link: '/javascript/hosting.md' },
           {
             text: 'EventLoop', link: '/javascript/event-loop.md'
           }
