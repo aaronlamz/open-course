@@ -32,9 +32,9 @@
 - [ ] [《React 开发指南》](https://www.ultimate-kernel.fun/open-course/react/)
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 
-
 ## 跨端
 - [ ] [《Electron 证券客户端开发实战》](https://www.ultimate-kernel.fun/open-course/electron/)
+- [ ] [《ReactNative 学习指南》](https://www.ultimate-kernel.fun/open-course/reactnative/)
 
 ## 后端
 - [ ] [《Go 开发实战》](https://www.ultimate-kernel.fun/open-course/golang/)
@@ -46,6 +46,7 @@
 
 ## 数据库
 - [ ] [《MySQL 学习指南》](https://www.ultimate-kernel.fun/open-course/mysql/)
+- [ ] [《MongoDB 学习指南》](https://www.ultimate-kernel.fun/open-course/mongodb/)
 - [ ] [《Redis 学习指南》](https://www.ultimate-kernel.fun/open-course/redis/)
 
 ## 工具资源
