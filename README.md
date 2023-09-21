@@ -49,7 +49,7 @@
 - [ ] [《MongoDB 学习指南》](https://www.ultimate-kernel.fun/open-course/mongodb/)
 - [ ] [《Redis 学习指南》](https://www.ultimate-kernel.fun/open-course/redis/)
 
-## 工具资源
+## 资源
 - [Developer Roadmaps - 开发者路线集合](https://roadmap.sh/)
 - [brandmark - 快速设计logo、简单易用](https://brandmark.io/)
 - [free-for.dev - 程序员开源免费的资源列表](https://free-for.dev/#/)
