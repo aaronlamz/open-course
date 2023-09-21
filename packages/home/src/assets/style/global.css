@@ -101,6 +101,12 @@ ul {
     --lightness: 48.04%;
   }
 
+  .card:nth-child(5) {
+    --hue: 538.69;
+    --saturation: 100%;
+    --lightness: 48.04%;
+  }  
+
 .card__bullets {
   line-height: 1.4;
 }

@@ -40,11 +40,30 @@ onMounted(() => {
               </div>
 
               <div class="cards__card card">
+                <h2 class="card__heading">后端</h2>
+                <p class="card__price"></p>
+                <ul role="list" class="card__bullets flow">
+                  <li><a href="/open-course/golang/" class="card__cta cta">《Go 开发实战》</a></li>
+                </ul>
+              </div>
+
+              <div class="cards__card card">
                 <h2 class="card__heading">运维</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
                   <li><a href="/open-course/linux/" class="card__cta cta">《Linux 学习指南》</a></li>
                   <li><a href="/open-course/docker/" class="card__cta cta">《Docker 学习指南》</a></li>
+                  <li><a href="/open-course/kubernetes/" class="card__cta cta">《Kubernetes 学习指南》</a></li>
+                </ul>
+              </div>
+
+              <div class="cards__card card">
+                <h2 class="card__heading">数据库</h2>
+                <p class="card__price"></p>
+                <ul role="list" class="card__bullets flow">
+                  <li><a href="/open-course/mysql/" class="card__cta cta">《MySQL 学习指南》</a></li>
+                  <li><a href="/open-course/mongodb/" class="card__cta cta">《MongoDB 学习指南》</a></li>
+                  <li><a href="/open-course/redis/" class="card__cta cta">《Redis 学习指南》</a></li>
                 </ul>
               </div>
 
@@ -117,7 +136,7 @@ onMounted(() => {
 /* main-container */
 .main-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /* background: linear-gradient(180deg, #000, #19191b); */
   background: url('/galaxy.jpg') no-repeat center center;
   background-size: cover;
