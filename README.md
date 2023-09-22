@@ -35,6 +35,7 @@
 ## 跨端
 - [ ] [《Electron 证券客户端开发实战》](https://www.ultimate-kernel.fun/open-course/electron/)
 - [ ] [《ReactNative 学习指南》](https://www.ultimate-kernel.fun/open-course/reactnative/)
+- [ ] [《SwiftUI 学习指南》](https://www.ultimate-kernel.fun/open-course/swiftui/)
 
 ## 后端
 - [ ] [《Go 开发实战》](https://www.ultimate-kernel.fun/open-course/golang/)
