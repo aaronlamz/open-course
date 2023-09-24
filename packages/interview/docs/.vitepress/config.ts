@@ -87,8 +87,8 @@ export default defineConfig({
               { text: 'React中的组件生命周期', link: '/react/component-lifecycle.md' },
               { text: '什么是高阶组件（HOC）？', link: '/react/higher-order-component.md' },
               { text: '什么是受控组件和非受控组件？', link: '/react/controlled-component.md' },
-              { text: '什么是React的context，以及你如何使用它？', link: '/react/context.md' },
-              { text: '解释React中的forward refs和它们的用途', link: '/react/forward-refs.md' },
+              { text: '什么是React的context，如何使用它？', link: '/react/context.md' },
+              { text: '解释React中的forwardRefs和它们的用途', link: '/react/forward-refs.md' },
             ]
           },
           {
