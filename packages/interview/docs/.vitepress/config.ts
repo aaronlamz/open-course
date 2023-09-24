@@ -98,6 +98,7 @@ export default defineConfig({
               { text: 'Hooks 是什么？它解决了什么问题？', link: '/react/hooks.md' },
               { text: '如何处理服务端渲染（SSR）？', link: '/react/server-side-rendering.md' },
               { text: '如何处理错误和异常？', link: '/react/error-boundaries.md' },
+              { text: '如何在React应用中实现国际化？', link: '/react/internationalization.md' },
               { text: '如何在React应用中实现代码分割和动态加载？', link: '/react/code-splitting.md' },
             ]
           }, 
