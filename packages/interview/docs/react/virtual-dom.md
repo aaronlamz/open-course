@@ -2,7 +2,6 @@
 
 虚拟 DOM (Virtual DOM) 是一种编程概念，其中 UI 的表示是由虚拟节点或虚拟节点树表示的，而不是直接映射到实际的 DOM。它充当了真实 DOM 和应用状态之间的中介。虚拟 DOM 提供了一种能够在不直接操作 DOM 的情况下更新视图的机制。主要的目标是通过避免直接的 DOM 操作来提高应用的性能，因为直接的 DOM 操作通常比纯 JavaScript 和虚拟 DOM 操作要慢得多。
 
-
 ## 虚拟DOM 如何工作
 
 1. **UI 表示**：应用的 UI 被表示为虚拟 DOM 树的结构。
@@ -67,7 +66,7 @@ React 的 diff 算法与传统的 diff 算法有一些关键的不同。首先�
 
 虽然 React 的 diff 算法与传统的 diff 算法在目标和方法上有所不同，但它们的核心思想是相似的：找出两个结构之间的差异，并以最有效的方式应用这些差异。但 React 的 diff 算法为特定的任务（即比较虚拟 DOM 结构）进行了优化，因此在实际应用中往往比传统算法更高效。
 
-## diff策略有哪些？它们是如何比较的？
+## React diff策略有哪些？
 
 React 的 diff 算法采用了三种策略来减少 DOM 操作的数量，从而达到提高比较速度和效率的目的。这些策略基于两个基本假设：
 
@@ -76,19 +75,174 @@ React 的 diff 算法采用了三种策略来减少 DOM 操作的数量，从而
 
 基于这些假设，React 的 diff 算法的策略如下：
 
-1. **树级别的比较**：
+1. **tree diff**：
    - React 首先比较两棵树的根元素。如果根元素的类型不同，React 将完全销毁旧树并构建新树。例如，`<a>` 与 `<img>` 之间的元素类型是不同的，所以 React 会移除 `<a>` 及其子孙，然后添加 `<img>`。
    - 对于自定义组件，如果组件类型不同，则进行整个树的重建。
 
-2. **元素级别的比较**：
-   - 当比较两个相同类型的 React 元素时，React 会保留 DOM 节点，并仅比较和修改之前和之后它们有差异的属性。例如，当属性样式发生变化时，React 只会更新特定的样式属性，而不是整个 `style` 对象。
-   - 对于相同类型的组件元素，React 会保持同一个组件实例，而不是重新创建一个新的实例。
+2. **component diff**：
+组件比较，React对于组件的策略有两种方式，一种是相同类型的组件和不同类型的组件
+- 对同种类型组件对比，按照层级比较继续比较虚拟DOM树即可，但有种特殊的情况，当组件A如果变化为组件B的时候，有可能虚拟DOM并没有任何变化，所以用户可以通过shouldComponentUpdate() 来判断是否需要更新，判断是否计算
+- 对于不同组件来说，React会直接判定该组件为dirty component（脏组件），无论结构是否相似，只要判断为脏组件就会直接替换整个组件的所有节点
 
-3. **列表子元素的比较**：
-   - 当处理子元素数组时，React 依赖于为每个子元素设置的 `key` 属性来判定哪些子元素在不同的渲染中被保留。
-   - 如果不提供 `key`，React 会按索引顺序进行比较，这可能会导致性能问题和组件状态丢失，因为它可能会错误地将不同的元素关联起来。
-   - 有了 `key`，React 可以与旧的子元素数组进行匹配，更准确地确定哪些子元素被添加或移除。
+3. **element diff**：
+- 按元素类型进行比较
+React 首先检查两个元素的类型。如果类型不同，React 会删除原来的所有子树，然后用新元素替换整个 DOM 子树。
 
-总的来说，React 的 diff 算法通过这三种策略尽量减少需要重新渲染的部分，从而提高了更新的效率。这些策略利用了我们对 DOM 结构和常见更新模式的了解，以实现在大多数情况下的快速比较。
+例如，当一个元素从 `<div>` 变为 `<span>`，React 将会移除 `<div>` 及其所有子元素，并创建一个新的 `<span>` 及其子元素。
+
+- 按 `key` 进行比较
+当比较同类型的组合组件（比如列表）时，React 依赖 `key` 属性来区分它们。具有相同 `key` 的元素会被复用，然后只更新必要的部分。
+
+```jsx
+// 旧的 Virtual DOM
+<ul>
+  <li key="1">Apple</li>
+  <li key="2">Banana</li>
+  <li key="3">Cherry</li>
+</ul>
+
+// 新的 Virtual DOM
+<ul>
+  <li key="1">Apple</li>
+  <li key="3">Cherry</li>
+  <li key="2">Banana</li>
+</ul>
+```
+
+在这个例子中，React 会识别出元素只是进行了位置交换，然后执行相应的 DOM 操作来交换元素，而不是删除和重新创建元素。
+
+- 同一类型元素的属性比较
+如果两个元素是同一类型的，React 会保留 DOM 节点，并且仅比较和更新有变化的属性。例如，当样式从 `{color: 'red'}` 变为 `{color: 'green'}`，React 只会更新 `color` 属性，而不会重新创建整个元素。
 
 
+## 它们是如何比较的？
+
+1. **按层级比较**
+
+    React只对同一层级元素进行diff。如果一个组件在更新过程中被移动到另一个父节点，React会不复用原来组件，而是重新渲染。
+
+    ```jsx
+    // 原结构
+    <div>
+        <ComponentA />
+    </div>
+
+    // 更新后结构
+    <span>
+        <ComponentA />
+    </span>
+    ```
+    
+    在上面的例子中，`ComponentA`即使没有变化，也会被重新渲染。
+
+2. **类型相同的节点**
+
+    当新旧节点类型相同时，React会保留DOM节点，只更新必要的属性。
+
+    ```jsx
+    // 旧
+    <div className="old" />
+
+    // 新
+    <div className="new" />
+
+    // 结果：仅className会被更新。
+    ```
+
+3. **类型不同的节点**
+
+    当元素类型不同时，React会销毁旧节点并创建新节点。
+
+    ```jsx
+    // 旧
+    <div />
+
+    // 新
+    <span />
+
+    // 结果：旧的`<div>`将被销毁，新的`<span>`将被创建。
+    ```
+
+4. **列表元素的Key**
+
+    当渲染列表元素时，应该给每个元素一个唯一的`key`属性，这样React才能识别和复用它们。
+
+    ```jsx
+    // 好的做法
+    items.map(item => <li key={item.id}>{item.name}</li>)
+
+    // 不好的做法
+    items.map((item, index) => <li key={index}>{item.name}</li>)
+    ```
+
+### 代码解析
+
+下面是一个简化的diff算法的代码解析：
+
+```javascript
+function diff(oldTree, newTree) {
+  let patches = {}; // 存放所有变更
+  let index = 0;
+  
+  walk(oldTree, newTree, index, patches);
+  return patches;
+
+  function walk(oldNode, newNode, index, patches) {
+    let currentPatches = [];
+
+    if (!newNode) {
+      // 节点被删除
+    } else if (isString(oldNode) && isString(newNode)) {
+      // 文本节点
+      if (oldNode !== newNode) {
+        currentPatches.push({ type: 'TEXT', text: newNode });
+      }
+    } else if (oldNode.type === newNode.type) {
+      // 节点相同，比较属性
+      let attrsPatches = diffAttrs(oldNode.props, newNode.props);
+      if (Object.keys(attrsPatches).length > 0) {
+        currentPatches.push({ type: 'ATTRS', attrs: attrsPatches });
+      }
+      // 比较子节点
+      diffChildren(oldNode.children, newNode.children, patches);
+    } else {
+      // 节点不相同，直接替换
+      currentPatches.push({ type: 'REPLACE', newNode });
+    }
+
+    if (currentPatches.length) {
+      patches[index] = currentPatches;
+    }
+  }
+}
+```
+
+这个简化的代码片段展示了一个非常基础版本的React diff算法，目的是帮助理解其核心逻辑。
+
+这里的diff算法会递归地遍历旧的Virtual DOM树，并与新的Virtual DOM树进行比较，然后记录下所有的差异（patches）。然后这些差异可以用来更新DOM。
+
+## 时间复杂度
+
+React 的 diff 算法具有近似为 O(n) 的时间复杂度。这是相当高效的，特别是与传统的 diff 算法（通常具有 O(n^3) 的时间复杂度）相比。
+
+这样的性能得益于 React 的几个简化假设：
+
+1. **两个不同类型的元素会生成不同的树**：这意味着如果元素类型改变了，React 不会尝试比较和更新，而是直接卸载旧树并建立一个全新的树。
+
+2. **通过 `key` 属性可以标识稳定的子元素**：这简化了列表中元素的添加、删除和重新排序的复杂性。
+
+因此，在大多数实际应用场景中，React 的这种 "heuristic"（启发式）算法通常足够快，以至于用户无法感觉到任何性能下降。
+
+需要注意的是，虽然大多数情况下这种算法是有效的，但如果你的应用有特殊的性能需求，还是需要进行具体的性能优化。React DevTools 提供了一种方式来检查组件重新渲染的原因，这有助于你找出可能的性能瓶颈。
+
+React 的 diff 算法在时间复杂度方面表现得相当不错，这也是它能在复杂 UI 更新中保持高性能的一个重要原因。
+
+##  传统的 diff 算法时间复杂度为什么是 O(n^3)
+
+传统的 diff 算法主要用于比较两个序列（例如，两个字符串或两个文件）以找出最小编辑距离。最小编辑距离通常是通过动态规划来解决的，而这样的解法一般具有 O(n^2) 的时间复杂度。
+
+然而，当应用于树形结构（如 DOM 树或其他层级数据结构）时，寻找两个树之间的最小差异（编辑距离）变得更加复杂。在这种情况下，传统的 diff 算法可能需要对树的每一个节点进行比较，以找出最优的转换方法，这通常具有 O(n^3) 的时间复杂度。
+
+为什么是 O(n^3)？假设我们有两棵树，每棵树都有 N 个节点。对于第一棵树中的每一个节点，算法都需要去找第二棵树中与之相对应的最佳匹配节点。这一匹配过程本身就是一个求解最小编辑距离的问题，其时间复杂度通常是 O(N^2)。由于我们需要对每一个节点都做这样的操作，所以总体时间复杂度就成了 O(N^3)。
+
+然而，React 的 diff 算法通过一些启发式方法和假设，将这个复杂度降低到近似 O(n)，这使得其在实际应用中的性能非常出色。
