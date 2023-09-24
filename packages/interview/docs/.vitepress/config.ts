@@ -76,14 +76,38 @@ export default defineConfig({
             text: '基础概念', items: [
               { text: 'JSX以及工作原理', link: '/react/jsx.md' },
               { text: '虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
-              { text: 'setState方法是异步的还是同步的？', link: '/react/set-state.md' },
+              { text: '解释setState方法和它的工作原理', link: '/react/set-state.md' },
+              { text: '什么是props和state，它们之间有什么区别？', link: '/react/props-state.md' },
             ]
           },
           {
-            text: '高级概念', items: [
+            text: '组件和数据流', items: [
+              { text: '如何在React中进行状态管理？', link: '/react/state-management.md' },
+              { text: 'React中的组件通信方式有哪些？', link: '/react/component-communication.md' },
+              { text: 'React中的组件生命周期', link: '/react/component-lifecycle.md' },
+              { text: '什么是高阶组件（HOC）？', link: '/react/higher-order-component.md' },
+              { text: '什么是受控组件和非受控组件？', link: '/react/controlled-component.md' },
+              { text: '什么是React的context，以及你如何使用它？', link: '/react/context.md' },
+              { text: '解释React中的forward refs和它们的用途', link: '/react/forward-refs.md' },
+            ]
+          },
+          {
+            text: '高级概念和架构', items: [
               { text: 'React 的 reconciliation 算法是什么？它是如何工作的？', link: '/react/reconciliation.md' },
-              { text: '能解释下 React Fiber 是什么吗？', link: '/react/fiber.md' },
-              { text: 'Hooks 是什么？它解决了什么问题？', link: '/react/hooks.md' }
+              { text: '解释React的Fiber架构', link: '/react/fiber.md' },
+              { text: 'Hooks 是什么？它解决了什么问题？', link: '/react/hooks.md' },
+              { text: '如何处理服务端渲染（SSR）？', link: '/react/server-side-rendering.md' },
+              { text: '如何处理错误和异常？', link: '/react/error-boundaries.md' },
+              { text: '如何在React应用中实现代码分割和动态加载？', link: '/react/code-splitting.md' },
+            ]
+          }, 
+          {
+            text: '性能优化', items: [
+              { text: '如何优化React应用的性能？', link: '/react/performance.md' },
+              { text: 'React中的PureComponent和memo有什么区别？', link: '/react/pure-component-memo.md' },
+              { text: 'React中的key有什么作用？', link: '/react/key.md' },
+              { text: 'React中的懒加载和Suspense有什么作用？', link: '/react/lazy-suspense.md' },
+              { text: 'React中的Profiler有什么作用？', link: '/react/profiler.md' },
             ]
           }
         ]
