@@ -17,11 +17,25 @@
     ```
 
 3. **Ref引用**：使用React的`ref`机制，父组件可以获取子组件的引用，并直接调用其方法或访问其状态。
+这种方式一般不推荐用于组件通信，因为它破坏了组件的封装性和可复用性，但在某些特殊场景下是很有用的。
 
     ```jsx
-    this.childRef.current.someMethod();
-    ```
+    class ParentComponent extends React.Component {
+      constructor(props) {
+        super(props);
+        this.childRef = React.createRef();
+      }
 
+      componentDidMount() {
+        this.childRef.current.focus();
+      }
+
+      render() {
+        return <input ref={this.childRef} />;
+      }
+    }
+    ```
+    
 ### 子父组件通信
 
 1. **回调函数**：子组件通过props接收父组件传递下来的函数，并在适当时候调用它。
