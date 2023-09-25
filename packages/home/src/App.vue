@@ -43,7 +43,7 @@ onMounted(() => {
                 <h2 class="card__heading">后端</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
-                  <li><a href="/open-course/golang/" class="card__cta cta">《Go 开发实战》</a></li>
+                  <li><a href="/open-course/golang/" class="card__cta cta">《Golang 开发实战》</a></li>
                 </ul>
               </div>
 
