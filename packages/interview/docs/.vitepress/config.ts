@@ -55,16 +55,20 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/vue/' },
-          { text: 'Vue响应式原理', link: '/vue/reactive.md' },
-          { text: 'Vue中的虚拟DOM及diff算法', link: '/vue/virtual-dom.md' },
-          { text: 'Vue中的nextTick', link: '/vue/next-tick.md' },
-          { text: 'Vue中的computed', link: '/vue/computed.md' },
-          { text: 'Vue中的watch', link: '/vue/watch.md' },
-          { text: 'Vue中的keep-alive实现', link: '/vue/keep-alive.md' },
-          { text: 'Vue中的slot', link: '/vue/slot.md' },
-          { text: 'Vue中的extend', link: '/vue/extend.md' },
-          { text: 'Vue中的render函数', link: '/vue/render.md' },
-          { text: 'Vue中的template', link: '/vue/template.md' },
+          {
+            text: '基础概念', items: [
+              { text: '响应式原理', link: '/vue/reactive.md' },
+              { text: '虚拟DOM及diff算法', link: '/vue/virtual-dom.md' },
+              { text: 'nextTick', link: '/vue/next-tick.md' },
+              { text: 'computed', link: '/vue/computed.md' },
+              { text: 'watch', link: '/vue/watch.md' },
+              { text: 'keep-alive实现', link: '/vue/keep-alive.md' },
+              { text: 'slot', link: '/vue/slot.md' },
+              { text: 'extend', link: '/vue/extend.md' },
+              { text: 'render函数', link: '/vue/render.md' },
+              { text: 'template', link: '/vue/template.md' },
+            ]
+          }
         ]
       },
       {
@@ -101,7 +105,7 @@ export default defineConfig({
               { text: '如何在React应用中实现国际化？', link: '/react/internationalization.md' },
               { text: '如何在React应用中实现代码分割和动态加载？', link: '/react/code-splitting.md' },
             ]
-          }, 
+          },
           {
             text: '性能优化', items: [
               { text: '如何优化React应用的性能？', link: '/react/performance.md' },
