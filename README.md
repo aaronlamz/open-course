@@ -38,7 +38,7 @@
 - [ ] [《ReactNative 学习指南》](https://www.ultimate-kernel.fun/open-course/reactnative/)
 
 ## 后端
-- [ ] [《Go 开发实战》](https://www.ultimate-kernel.fun/open-course/golang/)
+- [ ] [《Golang 开发实战》](https://www.ultimate-kernel.fun/open-course/golang/)
 
 ## 运维
 - [ ] [《Linux 学习指南》](https://www.ultimate-kernel.fun/open-course/linux/)
