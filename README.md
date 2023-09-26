@@ -35,7 +35,6 @@
 
 ## 源码
 - [ ] [《React 源码学习》](https://www.ultimate-kernel.fun/open-course/react-source/)
-- [ ] [《Redux 源码学习》](https://www.ultimate-kernel.fun/open-course/redux-source/)
 - [ ] [《Vue2 源码学习》](https://www.ultimate-kernel.fun/open-course/vue-source/)
 - [ ] [《Vue3 源码学习》](https://www.ultimate-kernel.fun/open-course/vue3-source/)
 
