@@ -117,6 +117,7 @@ export default defineConfig({
           {
             text: 'React 生态', items: [
               { text: '如何处理服务端渲染（SSR）？', link: '/react/server-side-rendering.md' },
+              { text: 'Redux实现原理', link: '/react/redux.md' },
             ]
           }
         ]
