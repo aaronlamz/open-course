@@ -2,12 +2,12 @@
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Inter,Roboto,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    color: #fff;
-    background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
@@ -29,7 +29,7 @@ body {
 body {
   /* display: grid; */
   /* place-items: center; */
-  font-family: "League Spartan", system-ui, sans-serif; 
+  font-family: "League Spartan", system-ui, sans-serif;
   font-size: 1.1rem;
   line-height: 1.2;
   color: #ddd;
@@ -96,16 +96,22 @@ ul {
 }
 
 .card:nth-child(4) {
-    --hue: 438.69;
-    --saturation: 100%;
-    --lightness: 48.04%;
-  }
+  --hue: 438.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+}
 
-  .card:nth-child(5) {
-    --hue: 538.69;
-    --saturation: 100%;
-    --lightness: 48.04%;
-  }  
+.card:nth-child(5) {
+  --hue: 538.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+}
+
+.card:nth-child(6) {
+  --hue: 638.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+}
 
 .card__bullets {
   line-height: 1.4;
@@ -128,7 +134,7 @@ ul {
   font-weight: 700;
 }
 
-.flow > * + * {
+.flow>*+* {
   margin-top: var(--flow-space, 1.25em);
 }
 
@@ -152,16 +158,12 @@ ul {
   pointer-events: none;
   user-select: none;
   opacity: var(--opacity, 0);
-  -webkit-mask: radial-gradient(
-    25rem 25rem at var(--x) var(--y),
-    #000 1%,
-    transparent 50%
-  );
-  mask: radial-gradient(
-    25rem 25rem at var(--x) var(--y),
-    #000 1%,
-    transparent 50%
-  );
+  -webkit-mask: radial-gradient(25rem 25rem at var(--x) var(--y),
+      #000 1%,
+      transparent 50%);
+  mask: radial-gradient(25rem 25rem at var(--x) var(--y),
+      #000 1%,
+      transparent 50%);
   transition: 400ms mask ease;
   will-change: mask;
 }
@@ -180,12 +182,12 @@ ul {
   box-shadow: 0 0 0 1px hsl(var(--hsl));
 }
 
-:not(.overlay) > .card {
+:not(.overlay)>.card {
   transition: 400ms background ease;
   will-change: background;
 }
 
-:not(.overlay) > .card:hover {
+:not(.overlay)>.card:hover {
   --lightness: 95%;
   background: hsla(var(--hsl), 0.1);
 }
