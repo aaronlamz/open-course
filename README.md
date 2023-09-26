@@ -33,6 +33,12 @@
 - [ ] [《从零实现一个轻量React》](https://www.ultimate-kernel.fun/open-course/react-framework/)
 - [ ] [《Node 开发指南》](https://www.ultimate-kernel.fun/open-course/nodejs/)
 
+## 源码
+- [ ] [《React 源码学习》](https://www.ultimate-kernel.fun/open-course/react-source/)
+- [ ] [《Redux 源码学习》](https://www.ultimate-kernel.fun/open-course/redux-source/)
+- [ ] [《Vue2 源码学习》](https://www.ultimate-kernel.fun/open-course/vue-source/)
+- [ ] [《Vue3 源码学习》](https://www.ultimate-kernel.fun/open-course/vue3-source/)
+
 ## 跨端
 - [ ] [《Electron 证券客户端开发实战》](https://www.ultimate-kernel.fun/open-course/electron/)
 - [ ] [《ReactNative 学习指南》](https://www.ultimate-kernel.fun/open-course/reactnative/)
