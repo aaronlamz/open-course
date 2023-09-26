@@ -100,7 +100,6 @@ export default defineConfig({
               { text: 'React 的 reconciliation 算法是什么？它是如何工作的？', link: '/react/reconciliation.md' },
               { text: '解释React的Fiber架构', link: '/react/fiber.md' },
               { text: 'Hooks 是什么？它解决了什么问题？', link: '/react/hooks.md' },
-              { text: '如何处理服务端渲染（SSR）？', link: '/react/server-side-rendering.md' },
               { text: '如何处理错误和异常？', link: '/react/error-boundaries.md' },
               { text: '如何在React应用中实现国际化？', link: '/react/internationalization.md' },
               { text: '如何在React应用中实现代码分割和动态加载？', link: '/react/code-splitting.md' },
@@ -113,6 +112,11 @@ export default defineConfig({
               { text: 'React中的key有什么作用？', link: '/react/key.md' },
               { text: 'React中的懒加载和Suspense有什么作用？', link: '/react/lazy-suspense.md' },
               { text: 'React中的Profiler有什么作用？', link: '/react/profiler.md' },
+            ]
+          },
+          {
+            text: 'React 生态', items: [
+              { text: '如何处理服务端渲染（SSR）？', link: '/react/server-side-rendering.md' },
             ]
           }
         ]
