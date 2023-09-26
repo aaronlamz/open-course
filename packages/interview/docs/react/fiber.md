@@ -1,105 +1,127 @@
-# 解释React的Fiber架构
+# React的Fiber架构
 
 React 的 Fiber 架构是 React 16（也称为 React Fiber）中引入的一种新的重构算法，它旨在支持虚拟 DOM 树的增量渲染。与之前的 "Stack Reconciler" 不同，Fiber 允许 React 暂停工作，然后在稍后恢复这些工作，从而使其具有更高的灵活性。这为异步渲染、时间切片和并发模式提供了基础。
 
-以下是一些 Fiber 架构的主要特点：
+## 为什么会有 Fiber 架构？
 
-## 基本单元：Fiber
+React 在 V16 之前会面临的主要性能问题是：当组件树很庞大时，更新状态可能造成页面卡顿，这些问题的根本原因是React的更新和渲染流程是同步和不可中断的。当React开始处理组件树的更新时，它必须一直处理到结束，这有可能阻塞主线程，导致页面卡顿和不流畅的用户体验。
 
-Fiber 本质上是一个 JavaScript 对象，代表一个组件（或 DOM 节点）。每个 Fiber 对象都是一个工作单元，包含关于该组件的信息，如类型、属性等，以及指向父组件、子组件和同级组件的链接。
+为了解决这些问题，React团队引入了Fiber架构，这是React 16中的主要变革。Fiber架构的目标是使React的渲染和更新过程变得可中断。
 
-## 双缓冲
+以下是Fiber带来的主要变革：
 
-React 使用两棵 Fiber 树进行工作：当前屏幕上显示的树（称为 current Fiber 树）和下一个状态的树（称为 work-in-progress Fiber 树）。当一个更新发生时，React 在 work-in-progress 树上进行改变，并在完成后切换这两棵树。
+1. **增量渲染**：Fiber允许React将渲染工作分为多个块，并将这些工作分散到多个帧中，而不是一次性完成所有工作。
+2. **可中断性**：Fiber架构引入了任务分片的概念。React可以中断当前正在进行的工作，转而执行更为紧急的任务，可以将控制权交回浏览器，让浏览器及时地相应用户的交互——异步可中断，例如响应用户输入。
+3. **优先级调度**：不是所有更新都是相同的。有些更新（如动画或用户交互）比其他更新（如后台数据同步）更为紧急。React可以基于优先级调度和处理这些更新。
 
-## 协调/Reconciliation
+这些变革确保了即使在大型应用中，React也可以维护流畅的用户体验。Fiber架构使得React在渲染和更新组件时具有更大的灵活性，从而提高了整体的应用性能。
 
-在 Fiber 架构中，协调过程被拆分为更小的单元，并且可以被暂停和恢复。每个 Fiber 对象都有一个与之相关联的工作，比如创建、更新或删除 DOM 节点。
+## Fiber 数据结构
 
-## 时间切片/Time Slicing
+Fiber 是 React 16 (React Fiber 架构) 引入的新特性，代表一个工作单元。它是为了支持更复杂的组件和使 React 具有可中断性渲染能力而设计的。Fiber 为每一个 React 元素建立了一个数据结构，这使得 React 可以跟踪和管理渲染工作。
 
-Fiber 允许 React 将长时间运行的更新工作拆分为小块，并在浏览器的空闲时段内完成这些小块，从而不会阻塞主线程。这提高了应用的响应性。
+依赖数据结构-链表实现的。其中每个节点都是一个 Fiber，一个 Fiber 包含了 child（第一个子节点）、sibling（兄弟节点）、parent（父节点）等属性。Fiber 节点中其实还会保存节点的类型、节点的信息（比如 state、props）、节点对应的值等。
 
-## 并发模式/Concurrent Mode
+## Fiber 工作原理
 
-并发模式是建立在 Fiber 架构之上的一种新模式，它使 React 可以在多个状态之间自由地切换，例如，在数据获取过程中已经渲染了部分 UI。
+通过简化的伪代码来深入了解一下 Fiber 的工作原理。这里不会完全准确地表示 React 的内部实现，但会为你提供一个大概的框架。
 
-## Suspense 和 Lazy Loading
+假设我们有以下简单的组件树：
 
-Fiber 架构也使得 React 能够使用 Suspense 组件来处理异步加载，以及通过 `React.lazy()` 实现代码分割和懒加载。
-
-## 任务调度/Scheduling
-
-Fiber 架构引入了一个内部任务调度机制，允许 React 根据优先级执行不同类型的工作。例如，用户交互会得到更高的优先级，以保证更流畅的体验。
-
-## Hooks
-
-虽然 Hooks 并不是 Fiber 架构的直接结果，但 Fiber 的设计使得 Hooks 成为可能，从而允许函数组件具有类组件的能力。
-
-Fiber 架构为 React 带来了更高的灵活性和更多的优化可能性，它是未来 React 的并发渲染和其他高级功能的基础。
-
-## 实现原理
-
-React Fiber 的源码实现相当复杂，但其核心机制和思想是基于几个主要的函数和数据结构。以下是一些关键点：
-
-### Fiber Node
-
-一个 Fiber 节点是一个 JavaScript 对象，它包含组件的类型（函数组件、类组件、DOM 节点等）、当前 props、当前 state 以及指向其他 Fiber 节点的链接（例如父节点、子节点、兄弟节点）。
-
-```javascript
-const fiberNode = {
-  type: 'div', // 或者是一个函数或类组件
-  props: { /* ... */ },
-  state: { /* ... */ },
-  parent: parentFiber,
-  child: childFiber,
-  sibling: siblingFiber,
-  // ...其他属性
-};
-```
-
-### 协调器（Reconciler）
-
-这个部分负责比较新旧 Fiber 树，并确定哪些 Fiber 节点需要更新（称为 "side-effects"）。
-
-### 调度器（Scheduler）
-
-Fiber 架构引入了一个内部的调度器。该调度器根据优先级对任务进行排序，并决定哪个任务应该先被执行。
-
-```javascript
-function workLoop(deadline) {
-  while (nextUnitOfWork !== null && deadline.timeRemaining() > 0) {
-    nextUnitOfWork = performUnitOfWork(nextUnitOfWork);
-  }
+```jsx
+function Parent() {
+  return (
+    <div>
+      <ChildA />
+      <ChildB />
+    </div>
+  );
 }
 
-// performUnitOfWork 是执行具体任务的函数
+function ChildA() {
+  return <div>Child A</div>;
+}
+
+function ChildB() {
+  return <div>Child B</div>;
+}
 ```
 
-### 更新（Update）
+当状态或props发生变化时，React需要重新渲染该树。
 
-当有状态变更或新的 props 传入时，会生成一个或多个 Update 对象。这些对象将被放入与特定 Fiber 节点关联的更新队列中。
+### 1. 构建 Fiber Tree
 
-```javascript
-const update = {
-  payload: null,
-  callback: null,
-  next: null
+首先，React为每个组件创建一个Fiber节点。Fiber节点可以看作是该组件的一个轻量级表示，其中包含有关该组件的信息，例如其类型、key、props等。
+
+```js
+const parentFiber = {
+  type: Parent,
+  child: childAFiber,
+  sibling: childBFiber,
+  // ... 其他属性
+};
+
+const childAFiber = {
+  type: ChildA,
+  // ... 其他属性
+};
+
+const childBFiber = {
+  type: ChildB,
+  // ... 其他属性
 };
 ```
 
-### Time Slicing
+### 2. 协调阶段
 
-React 的 work loop 会按照任务优先级和剩余时间进行工作，以实现时间切片。
+在此阶段，React会遍历Fiber tree，比较每个节点的新旧props和state，以确定是否需要更新。
 
-```javascript
-requestIdleCallback(workLoop);
+```js
+function reconcile(fiber) {
+  if (hasChanged(fiber.oldProps, fiber.newProps)) {
+    fiber.effectTag = 'UPDATE';
+  }
+
+  // 遍历子节点
+  if (fiber.child) {
+    reconcile(fiber.child);
+  }
+
+  // 遍历兄弟节点
+  if (fiber.sibling) {
+    reconcile(fiber.sibling);
+  }
+}
 ```
 
-### Commit 阶段
+### 3. 提交阶段
 
-一旦所有的组件都被处理，React 将进入 Commit 阶段。在这一阶段，React 会依据之前收集到的 "side-effects" 来实际更新 DOM 节点和组件实例。
+在此阶段，React会处理所有在协调阶段标记为需要更新的Fiber节点。
 
-这只是一个非常粗略的概述，实际的实现包含更多的细节和优化。代码逻辑也经过了高度模块化和抽象，以支持更多的特性和性能优化。
+```js
+function commitFiber(fiber) {
+  if (fiber.effectTag === 'UPDATE') {
+    // 更新DOM或执行其他副作用
+    updateDOM(fiber);
+  }
 
-由于 React 的源码非常庞大并且经常更新，如果你对如何实现 Fiber 架构感兴趣，最好的方式是直接查阅 React 的源码。
+  // 遍历子节点和兄弟节点，继续提交
+  if (fiber.child) {
+    commitFiber(fiber.child);
+  }
+  if (fiber.sibling) {
+    commitFiber(fiber.sibling);
+  }
+}
+```
+
+上述伪代码为了简化只涉及了更新。实际的React代码需要处理更多的情况，例如插入、删除、错误边界等。
+
+通过这种方式，React能够快速确定哪些组件需要更新，然后在提交阶段一次性将所有更改应用到DOM，从而优化性能。
+
+
+## 参考
+
+- [Fiber 的作用和原理](https://fe.azhubaby.com/React/Fiber.html)
+
+
