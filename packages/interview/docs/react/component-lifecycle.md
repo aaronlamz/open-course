@@ -2,6 +2,9 @@
 
 在React中，组件的生命周期可以分为三个主要阶段：挂载（Mounting）、更新（Updating）和卸载（Unmounting）。React提供了一组特殊的方法，称为“生命周期方法”，这些方法会在组件不同生命周期阶段被自动调用。这里，我将以类组件为例来描述各个生命周期阶段及其对应的方法。
 
+## 生命周期图示
+![React生命周期图示](./imgs/lifecycle.awebp)
+
 ## 挂载阶段（Mounting）
 
 在挂载阶段，组件实例被创建并插入到DOM中。以下是这个阶段的生命周期方法：
@@ -178,3 +181,6 @@ class App extends React.Component {
 在父子组件中，`useEffect` 的执行顺序类似于 `componentDidMount` 和 `componentDidUpdate`：先子后父。
 
 注意：这是一个简化的示例，实际应用中可能会更复杂。但它给出了一个大致的顺序，帮助你理解父子组件是如何交互的。
+
+## 参考资料
+[我对 React v16.4 生命周期的理解](https://juejin.cn/post/6844903655372488712)
