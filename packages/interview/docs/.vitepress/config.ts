@@ -27,7 +27,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'JavaScript 系列',
+        text: 'JavaScript ',
         collapsed: true,
         items: [
           { text: '介绍', link: '/javascript/' },
@@ -42,7 +42,7 @@ export default defineConfig({
       },
 
       {
-        text: 'CSS 系列',
+        text: 'CSS ',
         collapsed: true,
         items: [
           { text: '介绍', link: '/css/' },
@@ -51,7 +51,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Vue 系列',
+        text: 'Vue ',
         collapsed: true,
         items: [
           { text: '介绍', link: '/vue/' },
@@ -72,7 +72,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'React 系列',
+        text: 'React ',
         collapsed: true,
         items: [
           { text: '介绍', link: '/react/' },
@@ -124,7 +124,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'TypeScript 系列',
+        text: 'TypeScript ',
         collapsed: true,
         items: [
           { text: '介绍', link: '/typescript/' },
@@ -133,14 +133,14 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Node.js 系列',
+        text: 'Node.js ',
         collapsed: true,
         items: [
           { text: '介绍', link: '/nodejs/' },
         ]
       },
       {
-        text: '网络协议系列',
+        text: '网络协议',
         collapsed: true,
         items: [
           { text: '介绍', link: '/network/' },
@@ -173,7 +173,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '性能优化系列',
+        text: '性能优化',
         collapsed: true,
         items: [
           { text: '介绍', link: '/performance/' },
@@ -185,7 +185,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '构建工具系列',
+        text: '构建工具',
         collapsed: true,
         items: [
           { text: '介绍', link: '/build-tool/' },
@@ -195,7 +195,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '跨端系列',
+        text: '跨端',
         collapsed: true,
         items: [
           {
@@ -209,7 +209,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '手写代码系列',
+        text: '手写代码',
         collapsed: true,
         items: [
           { text: '介绍', link: '/handwritten/' },
@@ -221,13 +221,10 @@ export default defineConfig({
           { text: '手写防抖实现', link: '/handwritten/debounce.md' },
           { text: '手写节流实现', link: '/handwritten/throttle.md' },
           { text: '手写柯里化实现', link: '/handwritten/curry.md' },
-          { text: '手写洋葱模型实现', link: '/handwritten/onion.md' },
-          { text: '手写发布订阅模式实现', link: '/handwritten/pub-sub.md' },
-          { text: '手写观察者模式实现', link: '/handwritten/observer.md' },
         ]
       },
       {
-        text: 'LeetCode 系列',
+        text: 'LeetCode ',
         collapsed: true,
         items: [
           { text: '介绍', link: '/leetcode/' },

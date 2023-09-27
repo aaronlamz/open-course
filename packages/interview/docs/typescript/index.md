@@ -1,3 +1,3 @@
-# TypeScript 系列
+# TypeScript 
 
 

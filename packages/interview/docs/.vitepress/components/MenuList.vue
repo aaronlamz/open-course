@@ -15,35 +15,35 @@ const { go } = useRouter()
 const menuItems = ref(
     [
         {
-            title: 'JavaScript 系列',
+            title: 'JavaScript ',
             link: withBase('/javascript/'),
         },
         {
-            title: 'CSS 系列',
+            title: 'CSS ',
             link: withBase('/css/'),
         },
         {
-            title: 'Vue 系列',
+            title: 'Vue ',
             link: withBase('/vue/'),
         },
         {
-            title: 'React 系列',
+            title: 'React ',
             link: withBase('/react/'),
         },
         {
-            title: '网络协议系列',
+            title: '网络协议',
             link: withBase('/network/'),
         },
         {
-            title: '笔试题系列',
+            title: '笔试题',
             link: withBase('/handwritten/'),
         },
         {
-            title: 'Leetcode 系列',
+            title: 'Leetcode ',
             link: withBase('/leetcode/'),
         },
         {
-            title: 'Node.js 系列',
+            title: 'Node.js ',
             link: withBase('/nodejs/'),
         },
     ])
