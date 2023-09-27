@@ -42,6 +42,59 @@ Hooks 是 React 16.8 版本引入的一个新特性，它允许你在不编写 c
 
 4. **更新**: 在后续渲染中，`useState` 会返回当前的状态值。如果你调用了 setter 函数（`useState` 返回的第二个值），React 会重新渲染组件，并使用新的状态值。
 
+要实现一个简化版本的 `useState`，你需要考虑以下关键要点：
+
+1. 创建一个状态队列，用于存储组件的状态。
+2. 提供 `useState` 函数，它会返回当前状态值和状态更新函数。
+3. 在组件渲染时，使用状态队列中的状态值。
+
+下面是一个基本的示例，演示如何手动实现一个简化的 `useState`：
+
+```javascript
+let stateQueue = []; // 状态队列
+
+function useState(initialValue) {
+  // 检查是否有已保存的状态
+  const savedState = stateQueue.shift();
+
+  // 如果有，返回保存的状态
+  if (savedState) {
+    return savedState;
+  }
+
+  // 否则，创建一个新的状态
+  const state = initialValue;
+
+  // 创建状态更新函数
+  const setState = (newValue) => {
+    // 更新状态
+    stateQueue.push(newValue);
+    // 触发重新渲染
+    render();
+  };
+
+  // 返回当前状态和状态更新函数
+  return [state, setState];
+}
+
+// 模拟组件渲染
+function render() {
+  const [count, setCount] = useState(0);
+
+  console.log(`Count: ${count}`);
+
+  // 模拟用户交互
+  setTimeout(() => {
+    setCount(count + 1); // 更新状态
+  }, 1000);
+}
+
+// 第一次渲染
+render();
+```
+
+这是一个非常基本的示例，用于演示 `useState` 的基本原理。在实际的 React 源代码中，实现要复杂得多，还要处理更多的情况，例如多个状态的管理和状态的合并。
+
 ### useEffect
 
 1. **副作用队列**: React 维护了一个副作用（effects）队列，在每次渲染结束后运行。
