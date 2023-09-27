@@ -82,6 +82,7 @@ export default defineConfig({
               { text: '虚拟DOM及diff算法', link: '/react/virtual-dom.md' },
               { text: '解释setState方法和它的工作原理', link: '/react/set-state.md' },
               { text: '什么是props和state，它们之间有什么区别？', link: '/react/props-state.md' },
+              { text: '事件机制', link: '/react/event.md' },
             ]
           },
           {
