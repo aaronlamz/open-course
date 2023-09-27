@@ -94,6 +94,7 @@ React 的这种行为是为了提高性能，因为在一个单一的事件中�
       this.setState({ count: this.state.count + 1 });
       ```
       或基于前一个状态：
+      
       ```jsx
       this.setState(prevState => ({ count: prevState.count + 1 }));
       ```
