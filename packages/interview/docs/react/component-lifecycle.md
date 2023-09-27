@@ -5,7 +5,7 @@
 在React中，组件的生命周期可以分为三个主要阶段：挂载（Mounting）、更新（Updating）和卸载（Unmounting）。React提供了一组特殊的方法，称为“生命周期方法”，这些方法会在组件不同生命周期阶段被自动调用。这里，我将以类组件为例来描述各个生命周期阶段及其对应的方法。
 
 ## 生命周期图示
-![React生命周期图示](./imgs/lifecycle.awebp)
+![React生命周期图示](./imgs/lifecycle.png)
 
 ## 挂载阶段（Mounting）
 
