@@ -1,6 +1,6 @@
-# React 
+# React
 
-深入浅出 React 面试题，包含 React 基础知识、React Hooks、React Router、Redux、React Native 以及架构设计等。
+深入浅出 React，包含 React 基础知识、React Hooks、React Router、Redux、React Native 以及架构设计等。
 
 
 ## 参考资料
