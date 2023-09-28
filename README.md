@@ -20,8 +20,6 @@
 本项目是一个面向Web开发的学习路线资源集合，构建Web知识体系及分享学习心得
 
 ## 状态
-持续更新中...
-
 * [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 * [https://jiajunlin.gitee.io/open-course](https://jiajunlin.gitee.io/open-course/)
 
@@ -35,15 +33,9 @@
 - [ ] [React 组件库开发指南](https://www.ultimate-kernel.fun/open-course/react/)
 - [ ] [从零实现一个轻量React](https://www.ultimate-kernel.fun/open-course/react-framework/)
 - [ ] [Node 开发指南](https://www.ultimate-kernel.fun/open-course/nodejs/)
-
-## 源码
 - [ ] [React 源码学习](https://www.ultimate-kernel.fun/open-course/react-source/)
 - [ ] [Vue2 源码学习](https://www.ultimate-kernel.fun/open-course/vue-source/)
 - [ ] [Vue3 源码学习](https://www.ultimate-kernel.fun/open-course/vue3-source/)
-
-## 跨端
-- [ ] [Electron 证券客户端开发实战](https://www.ultimate-kernel.fun/open-course/electron/)
-- [ ] [ReactNative 学习指南](https://www.ultimate-kernel.fun/open-course/reactnative/)
 
 ## 后端
 - [ ] [Golang 开发实战](https://www.ultimate-kernel.fun/open-course/golang/)
