@@ -23,8 +23,8 @@ onMounted(() => {
                 <h2 class="card__heading">基础</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
-                  <li><a href="/open-course/algorithm/" class="card__cta cta">《数据结构与算法》</a></li>
-                  <li><a href="/open-course/network/" class="card__cta cta">《网络协议学习》</a></li>
+                  <li><a href="/open-course/algorithm/" class="card__cta cta">数据结构与算法</a></li>
+                  <li><a href="/open-course/network/" class="card__cta cta">网络协议学习</a></li>
                 </ul>
               </div>
 
@@ -32,11 +32,11 @@ onMounted(() => {
                 <h2 class="card__heading">前端</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
-                  <li><a href="/open-course/interview/" class="card__cta cta">《前端面试系列》</a></li>
-                  <li><a href="/open-course/qiankun/" class="card__cta cta">《qiankun 微前端实战指南》</a></li>
-                  <li><a href="/open-course/nodejs/" class="card__cta cta">《Node 开发指南》</a></li>
-                  <li><a href="/open-course/react/" class="card__cta cta">《React 组件库开发指南》</a></li>
-                  <li><a href="/open-course/react-framework/" class="card__cta cta">《从零实现一个轻量React》</a></li>
+                  <li><a href="/open-course/interview/" class="card__cta cta">前端面试系列</a></li>
+                  <li><a href="/open-course/qiankun/" class="card__cta cta">qiankun 微前端实战指南</a></li>
+                  <li><a href="/open-course/nodejs/" class="card__cta cta">Node 开发指南</a></li>
+                  <li><a href="/open-course/react/" class="card__cta cta">React 组件库开发指南</a></li>
+                  <li><a href="/open-course/react-framework/" class="card__cta cta">从零实现一个轻量React</a></li>
                 </ul>
               </div>
 
@@ -44,9 +44,9 @@ onMounted(() => {
                 <h2 class="card__heading">源码</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
-                  <li><a href="/open-course/react-source/" class="card__cta cta">《React 源码学习》</a></li>
-                  <li><a href="/open-course/vue2-source/" class="card__cta cta">《Vue2 源码学习》</a></li>
-                  <li><a href="/open-course/vue3-source/" class="card__cta cta">《Vue3 源码学习》</a></li>
+                  <li><a href="/open-course/react-source/" class="card__cta cta">React 源码学习</a></li>
+                  <li><a href="/open-course/vue2-source/" class="card__cta cta">Vue2 源码学习</a></li>
+                  <li><a href="/open-course/vue3-source/" class="card__cta cta">Vue3 源码学习</a></li>
                 </ul>
               </div>
 
@@ -54,7 +54,7 @@ onMounted(() => {
                 <h2 class="card__heading">后端</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
-                  <li><a href="/open-course/golang/" class="card__cta cta">《Golang 开发实战》</a></li>
+                  <li><a href="/open-course/golang/" class="card__cta cta">Golang 开发实战</a></li>
                 </ul>
               </div>
 
@@ -62,9 +62,9 @@ onMounted(() => {
                 <h2 class="card__heading">运维</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
-                  <li><a href="/open-course/linux/" class="card__cta cta">《Linux 学习指南》</a></li>
-                  <li><a href="/open-course/docker/" class="card__cta cta">《Docker 学习指南》</a></li>
-                  <li><a href="/open-course/kubernetes/" class="card__cta cta">《Kubernetes 学习指南》</a></li>
+                  <li><a href="/open-course/linux/" class="card__cta cta">Linux 学习指南</a></li>
+                  <li><a href="/open-course/docker/" class="card__cta cta">Docker 学习指南</a></li>
+                  <li><a href="/open-course/kubernetes/" class="card__cta cta">Kubernetes 学习指南</a></li>
                 </ul>
               </div>
 
@@ -72,9 +72,9 @@ onMounted(() => {
                 <h2 class="card__heading">数据库</h2>
                 <p class="card__price"></p>
                 <ul role="list" class="card__bullets flow">
-                  <li><a href="/open-course/mysql/" class="card__cta cta">《MySQL 学习指南》</a></li>
-                  <li><a href="/open-course/mongodb/" class="card__cta cta">《MongoDB 学习指南》</a></li>
-                  <li><a href="/open-course/redis/" class="card__cta cta">《Redis 学习指南》</a></li>
+                  <li><a href="/open-course/mysql/" class="card__cta cta">MySQL 学习指南</a></li>
+                  <li><a href="/open-course/mongodb/" class="card__cta cta">MongoDB 学习指南</a></li>
+                  <li><a href="/open-course/redis/" class="card__cta cta">Redis 学习指南</a></li>
                 </ul>
               </div>
 
