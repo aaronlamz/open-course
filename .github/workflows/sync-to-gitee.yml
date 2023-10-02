@@ -39,4 +39,4 @@ jobs:
 
         # 推送 gh-pages 分支到 Gitee
         git checkout gh-pages
-        git push gitee gh-pages
+        git push gitee gh-pages --force
