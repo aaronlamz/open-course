@@ -43,12 +43,12 @@ jobs:
         git push gitee gh-pages --force
 
     # 3. 触发 Gitee Pages 重建 , 需要pro用户，才可以调用api
-    - name: Trigger Gitee Pages Rebuild
-      env:
-        GITEE_REPO: jiajunlin/open-course
-        GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
-        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-      run: |
-        curl -X POST https://gitee.com/api/v5/repos/$GITEE_USERNAME/$GITEE_REPO/pages/builds \
-              -H 'Content-Type: application/json;charset=UTF-8' \
-              -d '{"access_token": "$GITEE_TOKEN"}'
+    # - name: Trigger Gitee Pages Rebuild
+    #   env:
+    #     GITEE_REPO: jiajunlin/open-course
+    #     GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
+    #     GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+    #   run: |
+    #     curl -X POST https://gitee.com/api/v5/repos/$GITEE_USERNAME/$GITEE_REPO/pages/builds \
+    #           -H 'Content-Type: application/json;charset=UTF-8' \
+    #           -d '{"access_token": "$GITEE_TOKEN"}'
