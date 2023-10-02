@@ -42,7 +42,7 @@ jobs:
         git pull
         git push gitee gh-pages --force
 
-    # 3. 触发 Gitee Pages 重建
+    # 3. 触发 Gitee Pages 重建 , 需要pro用户，才可以调用api
     - name: Trigger Gitee Pages Rebuild
       env:
         GITEE_REPO: jiajunlin/open-course
