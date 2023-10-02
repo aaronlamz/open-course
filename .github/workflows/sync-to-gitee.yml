@@ -1,8 +1,9 @@
-name: Sync to Gitee
+name: Sync to Gitee after gh-pages build
 
+# 当指定的工作流完成时触发此工作流
 on:
   workflow_run:
-    workflows: ["pages-build-deployment"]
+    workflows: ["pages-build-deployment"] # 替换为你的 gh-pages 构建工作流名称
     types:
       - completed
 
@@ -11,37 +12,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code with full history and all branches
+    # 1. 检出代码，确保获取所有分支和历史
+    - name: Checkout code with full history
       uses: actions/checkout@v2
       with:
-        fetch-depth: 0  # 检出所有历史和分支
+        fetch-depth: 0
+
+    # 2. 同步到 Gitee
+    - name: Push main and gh-pages branches to Gitee
       env:
         GITEE_REPO: jiajunlin/open-course
         GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
         GITEE_EMAIL: ${{ secrets.GITEE_EMAIL }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-
-    - name: Fetch all branches
       run: |
-        git fetch origin
-
-    - name: Set up Git credentials
-      run: |
+        # 设置 Git 用户信息
         git config user.name "$GITEE_USERNAME"
         git config user.email "$GITEE_EMAIL"
 
-    - name: Add Gitee remote
-      run: |
+        # 添加 Gitee 为远程地址
         git remote add gitee https://$GITEE_USERNAME:$GITEE_TOKEN@gitee.com/$GITEE_REPO.git
 
-    - name: Push main branch to Gitee
-      run: |
+        # 推送 main 分支到 Gitee
         git checkout main
         git push gitee main
 
-    - name: Push gh-pages branch to Gitee
-      run: |
+        # 推送 gh-pages 分支到 Gitee
         git checkout gh-pages
         git push gitee gh-pages
-
-
