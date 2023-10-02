@@ -1,9 +1,8 @@
 name: Sync to Gitee after gh-pages build
 
-# 当指定的工作流完成时触发此工作流
 on:
   workflow_run:
-    workflows: ["pages-build-deployment"] # 替换为你的 gh-pages 构建工作流名称
+    workflows: ["pages-build-deployment"]
     types:
       - completed
 
@@ -13,38 +12,34 @@ jobs:
 
     steps:
     # 1. 检出代码，确保获取所有分支和历史
-    - name: Checkout code with full history
+    - name: Checkout code
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
 
-    # 2. 同步到 Gitee
-    - name: Push main and gh-pages branches to Gitee
+    # 2. 设置 Git 配置
+    - name: Set up Git user
+      run: |
+        git config user.name "${{ secrets.GITEE_USERNAME }}"
+        git config user.email "${{ secrets.GITEE_EMAIL }}"
+
+    # 3. 同步到 Gitee
+    - name: Sync branches to Gitee
       env:
         GITEE_REPO: jiajunlin/open-course
-        GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
-        GITEE_EMAIL: ${{ secrets.GITEE_EMAIL }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
       run: |
-        # 设置 Git 用户信息
-        git config user.name "$GITEE_USERNAME"
-        git config user.email "$GITEE_EMAIL"
+        set -e
+        git remote add gitee https://${{ secrets.GITEE_USERNAME }}:$GITEE_TOKEN@gitee.com/$GITEE_REPO.git
+        git push gitee main:main
+        git push gitee gh-pages:gh-pages --force
 
-        # 添加 Gitee 为远程地址
-        git remote add gitee https://$GITEE_USERNAME:$GITEE_TOKEN@gitee.com/$GITEE_REPO.git
-
-        # 推送 main 分支到 Gitee
-        git checkout main
-        git push gitee main
-
-        # 推送 gh-pages 分支到 Gitee
-        git checkout gh-pages
-        git pull
-        git push gitee gh-pages --force
-
-    # 3. 触发 Gitee Pages 重建
+    # 4. 触发 Gitee Pages 重建
     - name: Trigger Gitee Pages Rebuild
+      env:
+        GITEE_REPO: jiajunlin/open-course
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
       run: |
-        curl -X POST https://gitee.com/api/v5/repos/$GITEE_USERNAME/$GITEE_REPO/pages/builds \
+        curl -X POST https://gitee.com/api/v5/repos/${{ secrets.GITEE_USERNAME }}/$GITEE_REPO/pages/builds \
               -H 'Content-Type: application/json;charset=UTF-8' \
               -d '{"access_token": "$GITEE_TOKEN"}'
