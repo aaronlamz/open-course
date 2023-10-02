@@ -1,0 +1,26 @@
+name: Sync to Gitee
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Push to Gitee
+      env:
+        GITEE_REPO: https://gitee.com/jiajunlin/open-course
+        GITEE_USERNAME: jiajunlin
+        GITEE_EMAIL: qylinxia@qq.com
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+      run: |
+        git config user.name "$GITEE_USERNAME"
+        git config user.email "$GITEE_EMAIL"
+        git remote add gitee https://$GITEE_USERNAME:$GITEE_TOKEN@gitee.com/$GITEE_REPO.git
+        git push gitee gh-pages
