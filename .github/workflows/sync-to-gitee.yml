@@ -15,6 +15,11 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0  # 检出所有历史和分支
+      env:
+        GITEE_REPO: jiajunlin/open-course
+        GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
+        GITEE_EMAIL: ${{ secrets.GITEE_EMAIL }}
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
 
     - name: Fetch all branches
       run: |
@@ -39,8 +44,4 @@ jobs:
         git checkout gh-pages
         git push gitee gh-pages
 
-      env:
-        GITEE_REPO: jiajunlin/open-course
-        GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
-        GITEE_EMAIL: ${{ secrets.GITEE_EMAIL }}
-        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+
