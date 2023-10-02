@@ -11,20 +11,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code with full history
+    - name: Checkout code with full history and all branches
       uses: actions/checkout@v2
       with:
-        fetch-depth: 0
+        fetch-depth: 0  # 检出所有历史和分支
 
-    - name: Push to Gitee
+    - name: Fetch all branches
+      run: |
+        git fetch origin
+
+    - name: Set up Git credentials
+      run: |
+        git config user.name "$GITEE_USERNAME"
+        git config user.email "$GITEE_EMAIL"
+
+    - name: Add Gitee remote
+      run: |
+        git remote add gitee https://$GITEE_USERNAME:$GITEE_TOKEN@gitee.com/$GITEE_REPO.git
+
+    - name: Push main branch to Gitee
+      run: |
+        git checkout main
+        git push gitee main
+
+    - name: Push gh-pages branch to Gitee
+      run: |
+        git checkout gh-pages
+        git push gitee gh-pages
+
       env:
         GITEE_REPO: jiajunlin/open-course
         GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
         GITEE_EMAIL: ${{ secrets.GITEE_EMAIL }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-      run: |
-        git config user.name "$GITEE_USERNAME"
-        git config user.email "$GITEE_EMAIL"
-        git remote add gitee https://$GITEE_USERNAME:$GITEE_TOKEN@gitee.com/$GITEE_REPO.git
-        git push gitee main
-        git push gitee gh-pages
