@@ -26,7 +26,6 @@ export default defineConfig({
           { text: '介绍', link: '/guide/introduction.md' },
           { text: 'qiankun 工作原理', link: '/guide/qiankun-core.md' },
           { text: 'single-spa 工作原理', link: '/guide/single-spa-core.md' },
-          { text: '沙箱环境', link: '/guide/sandbox.md' },
         ]
       },
       {
@@ -35,7 +34,6 @@ export default defineConfig({
           { text: '介绍', link: '/admin/index.md' },
           { text: '选择路由模式', link: '/admin/router.md' },
           { text: '构建基座应用', link: '/admin/base.md' },
-          { text: '构建子应用', link: '/admin/sub.md' },
           { text: '构建子应用-React', link: '/admin/sub-react.md' },
           { text: '构建子应用-Vue', link: '/admin/sub-vue.md' },
           { text: '构建子应用-Angular', link: '/admin/sub-angular.md' },
@@ -46,14 +44,9 @@ export default defineConfig({
         ]
       },
       {
-        text: '常见问题&解决方案',
+        text: '源码阅读',
         items: [
-        ]
-      },
-      {
-        text: '源码解析篇',
-        items: [
-          { text: 'qiankun 源码解析', link: '/source/qiankun.md' },
+          { text: '介绍', link: '/source/index.md' },
         ]
       },
       {
