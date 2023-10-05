@@ -33,7 +33,6 @@
 - [ ] [从零实现一个轻量React](https://www.ultimate-kernel.fun/open-course/react-framework/)
 - [ ] [Node 开发指南](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [React 源码学习](https://www.ultimate-kernel.fun/open-course/react-source/)
-- [ ] [Vue2 源码学习](https://www.ultimate-kernel.fun/open-course/vue-source/)
 - [ ] [Vue3 源码学习](https://www.ultimate-kernel.fun/open-course/vue3-source/)
 
 ## 后端
@@ -65,8 +64,6 @@
 
 ## 支持
 如果你觉得这个项目对你有帮助，欢迎Star，谢谢你的支持！
-
-
 
 
 
