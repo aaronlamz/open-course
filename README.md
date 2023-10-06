@@ -37,7 +37,7 @@
 
 ## 后端
 <!-- - [ ] [Golang 开发实战](https://www.ultimate-kernel.fun/open-course/golang/) -->
-- [ ] [Java 知识体系学习](https://www.ultimate-kernel.fun/open-course/java/)
+- [ ] [Java 知识体系学习指南](https://www.ultimate-kernel.fun/open-course/java/)
 
 ## 运维
 - [ ] [Linux 学习指南](https://www.ultimate-kernel.fun/open-course/linux/)
