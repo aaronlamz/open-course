@@ -36,7 +36,8 @@
 - [ ] [Vue3 源码学习](https://www.ultimate-kernel.fun/open-course/vue3-source/)
 
 ## 后端
-- [ ] [Golang 开发实战](https://www.ultimate-kernel.fun/open-course/golang/)
+<!-- - [ ] [Golang 开发实战](https://www.ultimate-kernel.fun/open-course/golang/) -->
+- [ ] [Java 知识体系学习](https://www.ultimate-kernel.fun/open-course/java/)
 
 ## 运维
 - [ ] [Linux 学习指南](https://www.ultimate-kernel.fun/open-course/linux/)
