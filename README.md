@@ -30,14 +30,13 @@
 ## 前端
 - [x] [前端面试系列](https://www.ultimate-kernel.fun/open-course/interview/)
 - [x] [qiankun 微前端实战指南](https://www.ultimate-kernel.fun/open-course/qiankun/)
-- [ ] [从零实现一个轻量React](https://www.ultimate-kernel.fun/open-course/react-framework/)
 - [ ] [Node 开发指南](https://www.ultimate-kernel.fun/open-course/nodejs/)
 - [ ] [React 源码学习](https://www.ultimate-kernel.fun/open-course/react-source/)
-- [ ] [Vue2 源码学习](https://www.ultimate-kernel.fun/open-course/vue-source/)
 - [ ] [Vue3 源码学习](https://www.ultimate-kernel.fun/open-course/vue3-source/)
 
 ## 后端
-- [ ] [Golang 开发实战](https://www.ultimate-kernel.fun/open-course/golang/)
+<!-- - [ ] [Golang 开发实战](https://www.ultimate-kernel.fun/open-course/golang/) -->
+- [ ] [Java 知识体系学习指南](https://www.ultimate-kernel.fun/open-course/java/)
 
 ## 运维
 - [ ] [Linux 学习指南](https://www.ultimate-kernel.fun/open-course/linux/)
@@ -66,8 +65,6 @@
 
 ## 支持
 如果你觉得这个项目对你有帮助，欢迎Star，谢谢你的支持！
-
-
 
 
 
