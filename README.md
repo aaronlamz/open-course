@@ -20,7 +20,6 @@
 本项目是一个面向Web开发的学习路线资源集合，构建Web知识体系及分享学习心得
 
 ## 状态
-* [https://www.ultimate-kernel.fun/open-course](https://www.ultimate-kernel.fun/open-course)
 * [https://jiajunlin.gitee.io/open-course](https://jiajunlin.gitee.io/open-course/)
 
 ## 基础
