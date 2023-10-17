@@ -94,6 +94,7 @@ export default defineConfig({
               { text: '什么是受控组件和非受控组件？', link: '/react/controlled-component.md' },
               { text: '什么是React的context，如何使用它？', link: '/react/context.md' },
               { text: '解释React中的forwardRefs和它们的用途', link: '/react/forward-refs.md' },
+              { text: '函数式组件与类组件区别', link: '/react/functional-component.md' },
             ]
           },
           {
