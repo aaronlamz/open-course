@@ -17,7 +17,7 @@
 </p>
 
 ## 介绍
-本项目是一个面向Web开发的学习路线资源集合，构建Web知识体系及分享学习心得
+本项目是一个面向 Web 开发的学习路线资源集合，构建 Web 知识体系及分享学习心得
 
 ## 状态
 [https://jiajunlin.gitee.io/open-course](https://jiajunlin.gitee.io/open-course/)
@@ -47,11 +47,11 @@
 - [ ] [MongoDB 学习指南](https://www.ultimate-kernel.fun/open-course/mongodb/)
 - [ ] [Redis 学习指南](https://www.ultimate-kernel.fun/open-course/redis/)
 
-## 资源
+<!-- ## 资源
 - [drawio - 画图工具](https://www.drawio.com/)
 - [Developer Roadmaps - 开发者路线集合](https://roadmap.sh/)
 - [brandmark - 快速设计logo、简单易用](https://brandmark.io/)
-- [free-for.dev - 程序员开源免费的资源列表](https://free-for.dev/#/)
+- [free-for.dev - 程序员开源免费的资源列表](https://free-for.dev/#/) -->
 
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8`
