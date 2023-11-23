@@ -217,6 +217,8 @@ export default defineConfig({
           { text: 'XSS', link: '/security/xss.md' },
           { text: 'CSRF', link: '/security/csrf.md' },
           { text: 'CORS', link: '/security/cors.md' },
+          { text: 'JWT', link: '/security/jwt.md' },
+          { text: '中间人攻击' , link: '/security/mitm.md'},
         ]
       },
       {
