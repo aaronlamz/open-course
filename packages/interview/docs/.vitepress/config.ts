@@ -210,6 +210,16 @@ export default defineConfig({
         ]
       },
       {
+        text:'安全',
+        collapsed: true,
+        items: [
+          { text: '介绍', link: '/security/' },
+          { text: 'XSS', link: '/security/xss.md' },
+          { text: 'CSRF', link: '/security/csrf.md' },
+          { text: 'CORS', link: '/security/cors.md' },
+        ]
+      },
+      {
         text: '手写代码',
         collapsed: true,
         items: [
