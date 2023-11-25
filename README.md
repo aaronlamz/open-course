@@ -54,7 +54,7 @@
 - [free-for.dev - 程序员开源免费的资源列表](https://free-for.dev/#/) -->
 
 ## 贡献
-> `Node.js version >=16`，`pnpm version >=8`
+> `Node.js version >=16`，`pnpm version >=8.6.1`
 
 欢迎勘误和贡献，如果你想要贡献一些内容，可以通过以下方式：
 1. Fork 本仓库
