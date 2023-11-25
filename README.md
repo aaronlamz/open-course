@@ -20,7 +20,7 @@
 本项目是一个面向 Web 开发的学习路线资源集合，构建 Web 知识体系及分享学习心得
 
 ## 状态
-[https://jiajunlin.gitee.io/open-course](https://jiajunlin.gitee.io/open-course/)
+[https://open-course.gitee.io](https://open-course.gitee.io)
 
 ## 基础
 - [x] [数据结构与算法](https://www.ultimate-kernel.fun/open-course/algorithm/)
