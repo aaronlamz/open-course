@@ -21,7 +21,7 @@ jobs:
     # 2. 同步到 Gitee
     - name: Push main and gh-pages branches to Gitee
       env:
-        GITEE_REPO: jiajunlin/open-course
+        GITEE_REPO: open-course/open-course
         GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
         GITEE_EMAIL: ${{ secrets.GITEE_EMAIL }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
