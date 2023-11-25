@@ -19,33 +19,9 @@
 ## 介绍
 本项目是一个面向 Web 开发的学习路线资源集合，构建 Web 知识体系及分享学习心得
 
-## 状态
-[https://jiajunlin.gitee.io/open-course](https://jiajunlin.gitee.io/open-course/)
+## 文档
+[https://open-course.gitee.io](https://open-course.gitee.io)
 
-## 基础
-- [x] [数据结构与算法](https://www.ultimate-kernel.fun/open-course/algorithm/)
-- [ ] [网络协议专题](https://www.ultimate-kernel.fun/open-course/network/)
-
-## 前端
-- [x] [前端面试系列](https://www.ultimate-kernel.fun/open-course/interview/)
-- [x] [qiankun 微前端实战指南](https://www.ultimate-kernel.fun/open-course/qiankun/)
-- [ ] [Node 开发指南](https://www.ultimate-kernel.fun/open-course/nodejs/)
-- [ ] [React 源码学习](https://www.ultimate-kernel.fun/open-course/react-source/)
-- [ ] [Vue3 源码学习](https://www.ultimate-kernel.fun/open-course/vue3-source/)
-
-## 后端
-<!-- - [ ] [Golang 开发实战](https://www.ultimate-kernel.fun/open-course/golang/) -->
-- [ ] [Java 学习指南](https://www.ultimate-kernel.fun/open-course/java/)
-
-## 运维
-- [ ] [Linux 学习指南](https://www.ultimate-kernel.fun/open-course/linux/)
-- [ ] [Docker 学习指南](https://www.ultimate-kernel.fun/open-course/docker/)
-- [ ] [Kubernetes 学习指南](https://www.ultimate-kernel.fun/open-course/kubernetes/)
-
-## 数据库
-- [ ] [MySQL 学习指南](https://www.ultimate-kernel.fun/open-course/mysql/)
-- [ ] [MongoDB 学习指南](https://www.ultimate-kernel.fun/open-course/mongodb/)
-- [ ] [Redis 学习指南](https://www.ultimate-kernel.fun/open-course/redis/)
 
 <!-- ## 资源
 - [drawio - 画图工具](https://www.drawio.com/)
