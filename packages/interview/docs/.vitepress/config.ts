@@ -230,12 +230,6 @@ export default defineConfig({
           { text: '最有挑战性的项目是什么？', link: '/open-question/challenge.md' },
           { text: '最有价值的项目是什么？', link: '/open-question/value.md' },
           { text: '最有意思的项目是什么？', link: '/open-question/interesting.md' },
-          { text: '最有难度的项目是什么？', link: '/open-question/difficulty.md' },
-          { text: '最有成就感的事情是什么？', link: '/open-question/achievement-thing.md' },
-          { text: '最有挑战性的事情是什么？', link: '/open-question/challenge-thing.md' },
-          { text: '最有价值的事情是什么？', link: '/open-question/value-thing.md' },
-          { text: '最有意思的事情是什么？', link: '/open-question/interesting-thing.md' },
-          { text: '最有难度的事情是什么？', link: '/open-question/difficulty-thing.md' },
         ]
       },
       {
