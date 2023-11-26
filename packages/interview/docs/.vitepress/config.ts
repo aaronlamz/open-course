@@ -37,7 +37,8 @@ export default defineConfig({
           { text: '变量提升', link: '/javascript/hosting.md' },
           {
             text: 'EventLoop', link: '/javascript/event-loop.md'
-          }
+          },
+          { text: 'new 底层实现', link: '/javascript/new.md' },
         ]
       },
 
@@ -138,6 +139,9 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/nodejs/' },
+          { text: 'Express、koa、egg有什么区别', link: '/nodejs/express-koa-egg.md' },
+          { text: '进程管理工具', link: '/nodejs/process-manager.md' },
+          { text: 'koa 中间件原理', link: '/nodejs/koa-middleware.md' },
         ]
       },
       {
@@ -152,6 +156,9 @@ export default defineConfig({
             text: 'HTTP 协议', link: '/network/http.md'
           },
           {
+            text: 'HTTP 缓存', link: '/network/http-cache.md'
+          },
+          {
             text: 'HTTP 协议升级', link: '/network/http-upgrade.md'
           },
           {
@@ -164,13 +171,11 @@ export default defineConfig({
             text: 'UDP 协议', link: '/network/udp.md'
           },
           {
-            text: 'WebSocket 协议', link: '/network/websocket.md'
-          },
-
-          {
             text: 'CDN', link: '/network/cdn.md'
           },
-
+          {
+            text: 'DNS', link: '/network/dns.md'
+          }
         ]
       },
       {
@@ -183,6 +188,8 @@ export default defineConfig({
           { text: 'preload和prefetch', link: '/performance/preload-prefetch.md' },
           { text: 'defer和async', link: '/performance/defer-async.md' },
           { text: 'css是否会阻塞页面渲染', link: '/performance/css-block.md' },
+          { text: '长列表优化方案', link: '/performance/long-list.md' },
+          { text: '浏览器白屏原因及优化方案',link: 'performance/white-screen.md'}
         ]
       },
       {
@@ -192,6 +199,7 @@ export default defineConfig({
           { text: '介绍', link: '/build-tool/' },
           { text: 'webpack工作原理', link: '/build-tool/webpack.md' },
           { text: 'webpack优化策略', link: '/build-tool/webpack-optimization.md' },
+          { text: 'tree-shaking 实现原理', link: '/build-tool/tree-shaking.md' },
           { text: 'webpack、rollup、vite 等工具适用场景及优缺点', link: '/build-tool/webpack-rollup-vite.md' },
         ]
       },
@@ -210,7 +218,7 @@ export default defineConfig({
         ]
       },
       {
-        text:'安全',
+        text: '安全',
         collapsed: true,
         items: [
           { text: '介绍', link: '/security/' },
@@ -218,7 +226,7 @@ export default defineConfig({
           { text: 'CSRF', link: '/security/csrf.md' },
           { text: 'CORS', link: '/security/cors.md' },
           { text: 'JWT', link: '/security/jwt.md' },
-          { text: '中间人攻击' , link: '/security/mitm.md'},
+          { text: '中间人攻击', link: '/security/mitm.md' },
         ]
       },
       {
@@ -230,12 +238,6 @@ export default defineConfig({
           { text: '最有挑战性的项目是什么？', link: '/open-question/challenge.md' },
           { text: '最有价值的项目是什么？', link: '/open-question/value.md' },
           { text: '最有意思的项目是什么？', link: '/open-question/interesting.md' },
-          { text: '最有难度的项目是什么？', link: '/open-question/difficulty.md' },
-          { text: '最有成就感的事情是什么？', link: '/open-question/achievement-thing.md' },
-          { text: '最有挑战性的事情是什么？', link: '/open-question/challenge-thing.md' },
-          { text: '最有价值的事情是什么？', link: '/open-question/value-thing.md' },
-          { text: '最有意思的事情是什么？', link: '/open-question/interesting-thing.md' },
-          { text: '最有难度的事情是什么？', link: '/open-question/difficulty-thing.md' },
         ]
       },
       {
