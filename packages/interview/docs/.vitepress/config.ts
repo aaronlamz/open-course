@@ -37,7 +37,8 @@ export default defineConfig({
           { text: '变量提升', link: '/javascript/hosting.md' },
           {
             text: 'EventLoop', link: '/javascript/event-loop.md'
-          }
+          },
+          { text: 'new 底层实现', link: '/javascript/new.md' },
         ]
       },
 
