@@ -139,6 +139,9 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '介绍', link: '/nodejs/' },
+          { text: 'Express、koa、egg有什么区别', link: '/nodejs/express-koa-egg.md' },
+          { text: '进程管理工具', link: '/nodejs/process-manager.md' },
+          { text: 'koa 中间件原理', link: '/nodejs/koa-middleware.md' },
         ]
       },
       {
