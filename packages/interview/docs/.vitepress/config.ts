@@ -171,13 +171,11 @@ export default defineConfig({
             text: 'UDP 协议', link: '/network/udp.md'
           },
           {
-            text: 'WebSocket 协议', link: '/network/websocket.md'
-          },
-
-          {
             text: 'CDN', link: '/network/cdn.md'
           },
-
+          {
+            text: 'DNS', link: '/network/dns.md'
+          }
         ]
       },
       {
@@ -218,7 +216,7 @@ export default defineConfig({
         ]
       },
       {
-        text:'安全',
+        text: '安全',
         collapsed: true,
         items: [
           { text: '介绍', link: '/security/' },
@@ -226,7 +224,7 @@ export default defineConfig({
           { text: 'CSRF', link: '/security/csrf.md' },
           { text: 'CORS', link: '/security/cors.md' },
           { text: 'JWT', link: '/security/jwt.md' },
-          { text: '中间人攻击' , link: '/security/mitm.md'},
+          { text: '中间人攻击', link: '/security/mitm.md' },
         ]
       },
       {
