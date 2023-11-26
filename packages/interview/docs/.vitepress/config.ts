@@ -156,6 +156,9 @@ export default defineConfig({
             text: 'HTTP 协议', link: '/network/http.md'
           },
           {
+            text: 'HTTP 缓存', link: '/network/http-cache.md'
+          },
+          {
             text: 'HTTP 协议升级', link: '/network/http-upgrade.md'
           },
           {
