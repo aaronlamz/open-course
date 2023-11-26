@@ -1,0 +1,1 @@
+import{_ as t,o,c as e,O as r}from"./chunks/framework.7decba4c.js";const m=JSON.parse('{"title":"为什么要学习数据结构和算法？","description":"","frontmatter":{},"headers":[],"relativePath":"guide/01.md","filePath":"guide/01.md"}'),s={name:"guide/01.md"},n=r("",3),i=[n];function a(l,p,_,c,g,d){return o(),e("div",null,i)}const u=t(s,[["render",a]]);export{m as __pageData,u as default};

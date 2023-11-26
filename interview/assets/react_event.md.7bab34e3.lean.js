@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a,U as s}from"./chunks/framework.8610b7e0.js";const y=JSON.parse('{"title":"React 事件机制","description":"","frontmatter":{},"headers":[],"relativePath":"react/event.md","filePath":"react/event.md"}'),o={name:"react/event.md"},n=s("",9),l=[n];function c(p,r,i,d,_,h){return e(),a("div",null,l)}const g=t(o,[["render",c]]);export{y as __pageData,g as default};

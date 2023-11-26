@@ -1,0 +1,1 @@
+import{_ as l,o as i,c as e,O as a}from"./chunks/framework.7decba4c.js";const m=JSON.parse('{"title":"如何系统高效地学习数据结构与算法？","description":"","frontmatter":{},"headers":[],"relativePath":"guide/02.md","filePath":"guide/02.md"}'),t={name:"guide/02.md"},o=a("",4),u=[o];function r(_,c,s,n,d,h){return i(),e("div",null,u)}const f=l(t,[["render",r]]);export{m as __pageData,f as default};

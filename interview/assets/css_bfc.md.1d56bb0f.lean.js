@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as o,U as l}from"./chunks/framework.8610b7e0.js";const d=JSON.parse('{"title":"CSS中的BFC是什么以及它的作用","description":"","frontmatter":{},"headers":[],"relativePath":"css/bfc.md","filePath":"css/bfc.md"}'),n={name:"css/bfc.md"},p=l("",19),e=[p];function t(c,r,F,i,D,y){return a(),o("div",null,e)}const g=s(n,[["render",t]]);export{d as __pageData,g as default};

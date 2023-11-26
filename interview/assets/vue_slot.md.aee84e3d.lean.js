@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,U as l}from"./chunks/framework.8610b7e0.js";const A=JSON.parse('{"title":"Vue中的slot","description":"","frontmatter":{},"headers":[],"relativePath":"vue/slot.md","filePath":"vue/slot.md"}'),o={name:"vue/slot.md"},p=l("",33),t=[p];function e(c,r,F,D,y,i){return n(),a("div",null,t)}const d=s(o,[["render",e]]);export{A as __pageData,d as default};

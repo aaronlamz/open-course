@@ -1,0 +1,1 @@
+import{_ as a,o as s,c as e,U as t}from"./chunks/framework.8610b7e0.js";const u=JSON.parse('{"title":"XSS","description":"","frontmatter":{},"headers":[],"relativePath":"security/xss.md","filePath":"security/xss.md"}'),o={name:"security/xss.md"},l=t("",32),r=[l];function n(i,c,p,d,S,h){return s(),e("div",null,r)}const x=a(o,[["render",n]]);export{u as __pageData,x as default};

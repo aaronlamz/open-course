@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,U as l}from"./chunks/framework.8610b7e0.js";const A=JSON.parse('{"title":"JSX以及工作原理","description":"","frontmatter":{},"headers":[],"relativePath":"react/jsx.md","filePath":"react/jsx.md"}'),o={name:"react/jsx.md"},p=l("",20),e=[p];function t(c,r,D,F,y,i){return a(),n("div",null,e)}const u=s(o,[["render",t]]);export{A as __pageData,u as default};

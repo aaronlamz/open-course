@@ -1,0 +1,1 @@
+import{_ as a,o as l,c as o,U as t}from"./chunks/framework.8610b7e0.js";const b=JSON.parse('{"title":"JWT","description":"","frontmatter":{},"headers":[],"relativePath":"security/jwt.md","filePath":"security/jwt.md"}'),r={name:"security/jwt.md"},e=t("",58),i=[e];function n(s,h,d,u,c,g){return l(),o("div",null,i)}const q=a(r,[["render",n]]);export{b as __pageData,q as default};

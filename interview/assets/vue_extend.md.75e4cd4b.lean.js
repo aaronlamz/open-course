@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,U as l}from"./chunks/framework.8610b7e0.js";const i=JSON.parse('{"title":"Vue中的extend","description":"","frontmatter":{},"headers":[],"relativePath":"vue/extend.md","filePath":"vue/extend.md"}'),p={name:"vue/extend.md"},o=l("",22),e=[o];function t(c,r,y,F,D,A){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};

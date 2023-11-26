@@ -1,0 +1,1 @@
+import{_ as e,o,c as s,U as a}from"./chunks/framework.8610b7e0.js";const S=JSON.parse('{"title":"CSRF","description":"","frontmatter":{},"headers":[],"relativePath":"security/csrf.md","filePath":"security/csrf.md"}'),t={name:"security/csrf.md"},r=a("",9),n=[r];function l(c,i,p,d,F,h){return o(),s("div",null,n)}const f=e(t,[["render",l]]);export{S as __pageData,f as default};
