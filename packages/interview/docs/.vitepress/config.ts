@@ -188,6 +188,8 @@ export default defineConfig({
           { text: 'preload和prefetch', link: '/performance/preload-prefetch.md' },
           { text: 'defer和async', link: '/performance/defer-async.md' },
           { text: 'css是否会阻塞页面渲染', link: '/performance/css-block.md' },
+          { text: '长列表优化方案', link: '/performance/long-list.md' },
+          { text: '浏览器白屏原因及优化方案',link: 'performance/white-screen.md'}
         ]
       },
       {
