@@ -17,7 +17,7 @@
 </p>
 
 ## 介绍
-本项目是一个面向 Web 开发的学习路线资源集合，构建 Web 知识体系及分享学习心得
+本项目是一个面向 Web 开发的学习路线资源集合，构建 Web 开发知识体系及分享学习心得
 
 ## 文档
 [https://open-course.gitee.io](https://open-course.gitee.io)
