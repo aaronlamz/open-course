@@ -22,13 +22,6 @@
 ## 文档
 [https://open-course.gitee.io](https://open-course.gitee.io)
 
-
-<!-- ## 资源
-- [drawio - 画图工具](https://www.drawio.com/)
-- [Developer Roadmaps - 开发者路线集合](https://roadmap.sh/)
-- [brandmark - 快速设计logo、简单易用](https://brandmark.io/)
-- [free-for.dev - 程序员开源免费的资源列表](https://free-for.dev/#/) -->
-
 ## 贡献
 > `Node.js version >=16`，`pnpm version >=8.6.1`
 
