@@ -4,7 +4,7 @@
   "description": "OpenSource learning ebook",
   "main": "index.js",
   "scripts": {
-    "dev": "node scripts/dev.js",
+    "dev": "pnpm i && node scripts/dev.js",
     "dev:home": "pnpm --dir packages/home dev",
     "dev:nodejs": "pnpm --dir packages/nodejs docs:dev",
     "dev:interview": "pnpm --dir packages/interview docs:dev",
